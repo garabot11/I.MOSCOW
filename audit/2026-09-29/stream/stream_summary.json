@@ -1,0 +1,24 @@
+[
+  {
+    "bag": "roundT_doubleT",
+    "player_exit": 0,
+    "node_exit": 0,
+    "statuses_before_any_input": 0,
+    "status_messages_total": 254,
+    "stale_unknown_statuses": 3,
+    "logged_frames": 251,
+    "first_input_stamp": 946692931733415008,
+    "last_input_stamp": 946692956733317971
+  },
+  {
+    "bag": "doubleT_obstacle",
+    "player_exit": 0,
+    "node_exit": 0,
+    "statuses_before_any_input": 0,
+    "status_messages_total": 201,
+    "stale_unknown_statuses": 3,
+    "logged_frames": 198,
+    "first_input_stamp": 946687297399942040,
+    "last_input_stamp": 946687317499968052
+  }
+]

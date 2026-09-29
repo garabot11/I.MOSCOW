@@ -1,0 +1,183 @@
+{
+ "bag": "bag",
+ "topic": "/sensing/lidar/hesai128/pointcloud",
+ "reference": "sent = every message of the bag (ros2 bag play publishes all of them when it exits with 0); processed = node log records; published = statuses seen by a separate subscriber; matched by header stamp",
+ "player_exit_code": 0,
+ "sent": 201,
+ "processed": 172,
+ "processed_fraction": 0.8557,
+ "not_processed": 29,
+ "not_processed_indices": [
+  0,
+  2,
+  7,
+  9,
+  13,
+  19,
+  36,
+  39,
+  42,
+  47,
+  50,
+  53,
+  55,
+  57,
+  59,
+  61,
+  64,
+  71,
+  146,
+  148,
+  151,
+  153,
+  155,
+  158,
+  159,
+  161,
+  163,
+  194,
+  198
+ ],
+ "not_processed_runs": [
+  [
+   0,
+   0
+  ],
+  [
+   2,
+   2
+  ],
+  [
+   7,
+   7
+  ],
+  [
+   9,
+   9
+  ],
+  [
+   13,
+   13
+  ],
+  [
+   19,
+   19
+  ],
+  [
+   36,
+   36
+  ],
+  [
+   39,
+   39
+  ],
+  [
+   42,
+   42
+  ],
+  [
+   47,
+   47
+  ],
+  [
+   50,
+   50
+  ],
+  [
+   53,
+   53
+  ],
+  [
+   55,
+   55
+  ],
+  [
+   57,
+   57
+  ],
+  [
+   59,
+   59
+  ],
+  [
+   61,
+   61
+  ],
+  [
+   64,
+   64
+  ],
+  [
+   71,
+   71
+  ],
+  [
+   146,
+   146
+  ],
+  [
+   148,
+   148
+  ],
+  [
+   151,
+   151
+  ],
+  [
+   153,
+   153
+  ],
+  [
+   155,
+   155
+  ],
+  [
+   158,
+   159
+  ],
+  [
+   161,
+   161
+  ],
+  [
+   163,
+   163
+  ],
+  [
+   194,
+   194
+  ],
+  [
+   198,
+   198
+  ]
+ ],
+ "not_processed_at_start": 1,
+ "not_processed_at_end": 0,
+ "not_processed_inside": 28,
+ "log_records": 172,
+ "log_records_not_in_bag": 0,
+ "log_records_duplicate": 0,
+ "status_counts": {
+  "clear": 133,
+  "detected": 39
+ },
+ "processing_ms": {
+  "median": 70.22,
+  "p95": 123.58,
+  "max": 152.71
+ },
+ "inter_arrival_s": {
+  "median": 0.1072,
+  "p95": 0.188,
+  "max": 0.4033
+ },
+ "observer": {
+  "status_messages": 179,
+  "published_results_for_bag_frames": 172,
+  "processed_but_not_observed": 0,
+  "unknown_before_first_input": 4,
+  "unknown_after_input_stopped": 3,
+  "first_unknown_diagnostics": "no input: no cloud received on /sensing/lidar/hesai128/pointcloud since start (1.5 s)"
+ }
+}

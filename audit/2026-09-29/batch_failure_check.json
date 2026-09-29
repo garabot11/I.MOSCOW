@@ -1,0 +1,15 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "",
+  "ALLDONE_exists": true,
+  "jsonl_count": 0,
+  "logs": {
+    "roundT_doubleT.log": "docker: Error response from daemon: create results/failed_probe: \"results/failed_probe\" includes invalid characters for a local volume name, only \"[a-zA-Z0-9][a-zA-Z0-9_.-]\" are allowed. If you intended to pass a host directory, use absolute path\n\nRun 'docker run --help' for more information\n",
+    "roundT_pressureGate_roundT.log": "docker: Error response from daemon: create results/failed_probe: \"results/failed_probe\" includes invalid characters for a local volume name, only \"[a-zA-Z0-9][a-zA-Z0-9_.-]\" are allowed. If you intended to pass a host directory, use absolute path\n\nRun 'docker run --help' for more information\n",
+    "doubleT_platform.log": "docker: Error response from daemon: create results/failed_probe: \"results/failed_probe\" includes invalid characters for a local volume name, only \"[a-zA-Z0-9][a-zA-Z0-9_.-]\" are allowed. If you intended to pass a host directory, use absolute path\n\nRun 'docker run --help' for more information\n",
+    "squareT_platform_squareT_switch.log": "docker: Error response from daemon: create results/failed_probe: \"results/failed_probe\" includes invalid characters for a local volume name, only \"[a-zA-Z0-9][a-zA-Z0-9_.-]\" are allowed. If you intended to pass a host directory, use absolute path\n\nRun 'docker run --help' for more information\n",
+    "roundT_squareT_pressureGate_squareT.log": "docker: Error response from daemon: create results/failed_probe: \"results/failed_probe\" includes invalid characters for a local volume name, only \"[a-zA-Z0-9][a-zA-Z0-9_.-]\" are allowed. If you intended to pass a host directory, use absolute path\n\nRun 'docker run --help' for more information\n",
+    "doubleT_obstacle.log": "docker: Error response from daemon: create results/failed_probe: \"results/failed_probe\" includes invalid characters for a local volume name, only \"[a-zA-Z0-9][a-zA-Z0-9_.-]\" are allowed. If you intended to pass a host directory, use absolute path\n\nRun 'docker run --help' for more information\n"
+  }
+}

@@ -1,0 +1,265 @@
+{
+ "runs": [
+  {
+   "run": "doubleT_obstacle_run1",
+   "bag": "doubleT_obstacle",
+   "sent": 201,
+   "processed": 201,
+   "missing": [],
+   "player": 0,
+   "published": 201,
+   "unknown_before": 9,
+   "unknown_after": 4,
+   "status_same_as_offline": 201,
+   "detected": 52,
+   "first_detection": [
+    13,
+    55.65120010375976
+   ],
+   "proc": {
+    "median": 47.74,
+    "p95": 54.94,
+    "max": 73.23
+   },
+   "inter": {
+    "median": 0.1004,
+    "p95": 0.113,
+    "max": 0.4109
+   }
+  },
+  {
+   "run": "doubleT_obstacle_run2",
+   "bag": "doubleT_obstacle",
+   "sent": 201,
+   "processed": 201,
+   "missing": [],
+   "player": 0,
+   "published": 201,
+   "unknown_before": 8,
+   "unknown_after": 3,
+   "status_same_as_offline": 201,
+   "detected": 52,
+   "first_detection": [
+    13,
+    55.65120010375976
+   ],
+   "proc": {
+    "median": 47.53,
+    "p95": 52.99,
+    "max": 56.27
+   },
+   "inter": {
+    "median": 0.0997,
+    "p95": 0.1149,
+    "max": 0.4111
+   }
+  },
+  {
+   "run": "doubleT_obstacle_run3",
+   "bag": "doubleT_obstacle",
+   "sent": 201,
+   "processed": 201,
+   "missing": [],
+   "player": 0,
+   "published": 201,
+   "unknown_before": 8,
+   "unknown_after": 3,
+   "status_same_as_offline": 201,
+   "detected": 52,
+   "first_detection": [
+    13,
+    55.65120010375976
+   ],
+   "proc": {
+    "median": 47.48,
+    "p95": 53.74,
+    "max": 57.54
+   },
+   "inter": {
+    "median": 0.1004,
+    "p95": 0.1175,
+    "max": 0.4111
+   }
+  },
+  {
+   "run": "doubleT_platform_run1",
+   "bag": "doubleT_platform",
+   "sent": 345,
+   "processed": 345,
+   "missing": [],
+   "player": 0,
+   "published": 345,
+   "unknown_before": 8,
+   "unknown_after": 4,
+   "status_same_as_offline": 345,
+   "detected": 1,
+   "first_detection": [
+    73,
+    58.55999755859375
+   ],
+   "proc": {
+    "median": 22.83,
+    "p95": 39.58,
+    "max": 44.46
+   },
+   "inter": {
+    "median": 0.0996,
+    "p95": 0.1148,
+    "max": 0.1332
+   }
+  },
+  {
+   "run": "roundT_doubleT_run1",
+   "bag": "roundT_doubleT",
+   "sent": 252,
+   "processed": 252,
+   "missing": [],
+   "player": 0,
+   "published": 252,
+   "unknown_before": 8,
+   "unknown_after": 3,
+   "status_same_as_offline": 252,
+   "detected": 0,
+   "first_detection": null,
+   "proc": {
+    "median": 25.61,
+    "p95": 43.03,
+    "max": 46.58
+   },
+   "inter": {
+    "median": 0.0997,
+    "p95": 0.1153,
+    "max": 0.1241
+   }
+  },
+  {
+   "run": "roundT_doubleT_run2",
+   "bag": "roundT_doubleT",
+   "sent": 252,
+   "processed": 252,
+   "missing": [],
+   "player": 0,
+   "published": 252,
+   "unknown_before": 8,
+   "unknown_after": 3,
+   "status_same_as_offline": 252,
+   "detected": 0,
+   "first_detection": null,
+   "proc": {
+    "median": 25.6,
+    "p95": 43.79,
+    "max": 49.76
+   },
+   "inter": {
+    "median": 0.0995,
+    "p95": 0.1148,
+    "max": 0.1229
+   }
+  },
+  {
+   "run": "roundT_doubleT_run3",
+   "bag": "roundT_doubleT",
+   "sent": 252,
+   "processed": 252,
+   "missing": [],
+   "player": 0,
+   "published": 252,
+   "unknown_before": 8,
+   "unknown_after": 3,
+   "status_same_as_offline": 252,
+   "detected": 0,
+   "first_detection": null,
+   "proc": {
+    "median": 25.53,
+    "p95": 43.56,
+    "max": 49.46
+   },
+   "inter": {
+    "median": 0.1,
+    "p95": 0.1159,
+    "max": 0.1251
+   }
+  },
+  {
+   "run": "roundT_pressureGate_roundT_run1",
+   "bag": "roundT_pressureGate_roundT",
+   "sent": 268,
+   "processed": 268,
+   "missing": [],
+   "player": 0,
+   "published": 268,
+   "unknown_before": 7,
+   "unknown_after": 3,
+   "status_same_as_offline": 268,
+   "detected": 0,
+   "first_detection": null,
+   "proc": {
+    "median": 23.18,
+    "p95": 37.38,
+    "max": 44.98
+   },
+   "inter": {
+    "median": 0.0995,
+    "p95": 0.1211,
+    "max": 0.1356
+   }
+  },
+  {
+   "run": "roundT_squareT_pressureGate_squareT_run1",
+   "bag": "roundT_squareT_pressureGate_squareT",
+   "sent": 545,
+   "processed": 545,
+   "missing": [],
+   "player": 0,
+   "published": 545,
+   "unknown_before": 8,
+   "unknown_after": 4,
+   "status_same_as_offline": 545,
+   "detected": 0,
+   "first_detection": null,
+   "proc": {
+    "median": 22.67,
+    "p95": 39.29,
+    "max": 43.78
+   },
+   "inter": {
+    "median": 0.1003,
+    "p95": 0.1185,
+    "max": 1.0988
+   }
+  },
+  {
+   "run": "squareT_platform_squareT_switch_run1",
+   "bag": "squareT_platform_squareT_switch",
+   "sent": 877,
+   "processed": 875,
+   "missing": [
+    798,
+    800
+   ],
+   "player": 0,
+   "published": 875,
+   "unknown_before": 8,
+   "unknown_after": 3,
+   "status_same_as_offline": 875,
+   "detected": 2,
+   "first_detection": [
+    776,
+    58.94400405883789
+   ],
+   "proc": {
+    "median": 20.94,
+    "p95": 43.59,
+    "max": 166.84
+   },
+   "inter": {
+    "median": 0.1,
+    "p95": 0.1187,
+    "max": 0.6939
+   }
+  }
+ ],
+ "total_sent": 3394,
+ "total_processed": 3392,
+ "processed_fraction": 0.99941
+}

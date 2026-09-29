@@ -1,0 +1,25 @@
+[INFO] [1790677011.015050853] [rosbag2_storage]: Opened database '/data/bag/doubleT_platform_0.db3' for READ_ONLY.
+{
+ "bag": "bag",
+ "frames_processed": 345,
+ "status_counts": {
+  "clear": 344,
+  "detected": 1,
+  "unknown": 0
+ },
+ "status_counts_raw": {
+  "clear": 342,
+  "detected": 3,
+  "unknown": 0
+ },
+ "processing_ms": {
+  "median": 31.48,
+  "p95": 55.03,
+  "p99": 59.4,
+  "max": 60.24,
+  "mean": 37.55
+ },
+ "read_ms_median": 11.72,
+ "wall_s": 17.51,
+ "frames_per_s_including_io": 19.7
+}

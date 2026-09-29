@@ -1,0 +1,5 @@
+stream test: bag /home/gag/i.mos/mcap_check/roundT_doubleT_mcap, topic auto, QoS reliable depth 1, results /home/gag/i.mos/solution/results/recheck/stream_final/roundT_doubleT_mcap
+[3]+  Done                    ros2 bag play /data/bag --rate 1.0 --start-paused --read-ahead-queue-size 20 --disable-keyboard-controls --wait-for-all-acked 5000 > /results/play.log 2>&1
+[2]+  Done                    ros2 launch metro_obstacle_detector detector.launch.py input_topic:=auto qos_reliability:=reliable qos_depth:=1 log_path:=/results/stream.jsonl > /results/node.log 2>&1
+[1]+  Done                    python3 -m metro_obstacle_detector.status_monitor --quiet --jsonl /results/observed_status.jsonl > /results/observer.log 2>&1
+{"bag": "roundT_doubleT_mcap", "sent": 252, "processed": 252, "not_processed": 0, "not_processed_runs": [], "status_counts": {"clear": 252}, "observer": {"status_messages": 262, "published_results_for_bag_frames": 252, "processed_but_not_observed": 0, "unknown_before_first_input": 7, "unknown_after_input_stopped": 3, "first_unknown_diagnostics": "no input: waiting for a PointCloud2 topic (input_topic:=auto) (1.5 s since start)"}}

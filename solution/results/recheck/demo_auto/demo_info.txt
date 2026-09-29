@@ -1,0 +1,1 @@
+bag: doubleT_obstacle   topic: /sensing/lidar/hesai128/pointcloud   playback rate: 1.0   (ros2 bag play inside the Humble container)

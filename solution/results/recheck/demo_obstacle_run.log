@@ -1,0 +1,6 @@
+[INFO] [1790680209.901241500] [rosbag2_storage]: Opened database '/data/bag/doubleT_obstacle_0.db3' for READ_ONLY.
+[INFO] [1790680209.904613298] [rosbag2_storage]: Opened database '/data/bag/doubleT_obstacle_0.db3' for READ_ONLY.
+bag: /home/gag/i.mos/dataset/for_hackathon/doubleT_obstacle  topic: /sensing/lidar/hesai128/pointcloud  fixed frame: lidar_livox  results: /home/gag/i.mos/solution/results/recheck/demo_obstacle
+stdin is not a terminal device. Keyboard handling disabled.[INFO] [1790680216.922338750] [rosbag2_storage]: Opened database '/data/bag/doubleT_obstacle_0.db3' for READ_ONLY.
+[INFO] [1790680216.922375701] [rosbag2_player]: Set rate to 1
+[INFO] [1790680216.925656210] [rosbag2_storage]: Opened database '/data/bag/doubleT_obstacle_0.db3' for READ_ONLY.

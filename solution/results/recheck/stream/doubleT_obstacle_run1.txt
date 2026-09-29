@@ -1,0 +1,7 @@
+stream test: bag /home/gag/i.mos/dataset/for_hackathon/doubleT_obstacle, topic /sensing/lidar/hesai128/pointcloud, QoS reliable depth 1, results /home/gag/i.mos/solution/results/recheck/stream/doubleT_obstacle_run1
+[3]+  Done                    ros2 bag play /data/bag --rate 1.0 --start-paused --read-ahead-queue-size 20 --disable-keyboard-controls --wait-for-all-acked 5000 > /results/play.log 2>&1
+[2]+  Done                    ros2 launch metro_obstacle_detector detector.launch.py input_topic:=/sensing/lidar/hesai128/pointcloud qos_reliability:=reliable qos_depth:=1 log_path:=/results/stream.jsonl > /results/node.log 2>&1
+[1]+  Done                    python3 -m metro_obstacle_detector.status_monitor --quiet --jsonl /results/observed_status.jsonl > /results/observer.log 2>&1
+[INFO] [1790680702.871575295] [rosbag2_storage]: Opened database '/data/bag/doubleT_obstacle_0.db3' for READ_ONLY.
+[INFO] [1790680702.873682768] [rosbag2_storage]: Opened database '/data/bag/doubleT_obstacle_0.db3' for READ_ONLY.
+{"bag": "doubleT_obstacle", "sent": 201, "processed": 201, "not_processed": 0, "not_processed_runs": [], "status_counts": {"clear": 149, "detected": 52}, "observer": {"status_messages": 214, "published_results_for_bag_frames": 201, "processed_but_not_observed": 0, "unknown_before_first_input": 9, "unknown_after_input_stopped": 4, "first_unknown_diagnostics": "no input: no cloud received on /sensing/lidar/hesai128/pointcloud since start (1.5 s)"}}

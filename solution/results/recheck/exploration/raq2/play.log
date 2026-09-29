@@ -1,0 +1,27 @@
+stdin is not a terminal device. Keyboard handling disabled.[INFO] [1790679895.303412439] [rosbag2_storage]: Opened database '/data/bag/roundT_doubleT_0.db3' for READ_ONLY.
+[INFO] [1790679895.303446891] [rosbag2_player]: Set rate to 1
+[INFO] [1790679895.305572476] [rosbag2_player]: Sleep 1000000000 ns
+[INFO] [1790679896.305867329] [rosbag2_storage]: Opened database '/data/bag/roundT_doubleT_0.db3' for READ_ONLY.
+[WARN] [1790679896.418605405] [rosbag2_player]: Message queue starved. Messages will be delayed. Consider increasing the --read-ahead-queue-size option.
+[WARN] [1790679897.586652152] [rosbag2_player]: Message queue starved. Messages will be delayed. Consider increasing the --read-ahead-queue-size option.
+[WARN] [1790679898.592456894] [rosbag2_player]: Message queue starved. Messages will be delayed. Consider increasing the --read-ahead-queue-size option.
+[WARN] [1790679899.592550553] [rosbag2_player]: Message queue starved. Messages will be delayed. Consider increasing the --read-ahead-queue-size option.
+[WARN] [1790679900.780534258] [rosbag2_player]: Message queue starved. Messages will be delayed. Consider increasing the --read-ahead-queue-size option.
+[WARN] [1790679901.785604056] [rosbag2_player]: Message queue starved. Messages will be delayed. Consider increasing the --read-ahead-queue-size option.
+[WARN] [1790679902.981154502] [rosbag2_player]: Message queue starved. Messages will be delayed. Consider increasing the --read-ahead-queue-size option.
+[WARN] [1790679903.986348938] [rosbag2_player]: Message queue starved. Messages will be delayed. Consider increasing the --read-ahead-queue-size option.
+[WARN] [1790679905.186297503] [rosbag2_player]: Message queue starved. Messages will be delayed. Consider increasing the --read-ahead-queue-size option.
+[WARN] [1790679906.382961571] [rosbag2_player]: Message queue starved. Messages will be delayed. Consider increasing the --read-ahead-queue-size option.
+[WARN] [1790679907.385046786] [rosbag2_player]: Message queue starved. Messages will be delayed. Consider increasing the --read-ahead-queue-size option.
+[WARN] [1790679908.587332815] [rosbag2_player]: Message queue starved. Messages will be delayed. Consider increasing the --read-ahead-queue-size option.
+[WARN] [1790679909.787763021] [rosbag2_player]: Message queue starved. Messages will be delayed. Consider increasing the --read-ahead-queue-size option.
+[WARN] [1790679910.978488374] [rosbag2_player]: Message queue starved. Messages will be delayed. Consider increasing the --read-ahead-queue-size option.
+[WARN] [1790679911.980160524] [rosbag2_player]: Message queue starved. Messages will be delayed. Consider increasing the --read-ahead-queue-size option.
+[WARN] [1790679913.177324416] [rosbag2_player]: Message queue starved. Messages will be delayed. Consider increasing the --read-ahead-queue-size option.
+[WARN] [1790679914.179996159] [rosbag2_player]: Message queue starved. Messages will be delayed. Consider increasing the --read-ahead-queue-size option.
+[WARN] [1790679915.375177519] [rosbag2_player]: Message queue starved. Messages will be delayed. Consider increasing the --read-ahead-queue-size option.
+[WARN] [1790679916.378254818] [rosbag2_player]: Message queue starved. Messages will be delayed. Consider increasing the --read-ahead-queue-size option.
+[WARN] [1790679917.378315176] [rosbag2_player]: Message queue starved. Messages will be delayed. Consider increasing the --read-ahead-queue-size option.
+[WARN] [1790679918.380729033] [rosbag2_player]: Message queue starved. Messages will be delayed. Consider increasing the --read-ahead-queue-size option.
+[WARN] [1790679919.577277000] [rosbag2_player]: Message queue starved. Messages will be delayed. Consider increasing the --read-ahead-queue-size option.
+[WARN] [1790679920.577919825] [rosbag2_player]: Message queue starved. Messages will be delayed. Consider increasing the --read-ahead-queue-size option.

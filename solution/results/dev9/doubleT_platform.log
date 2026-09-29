@@ -1,0 +1,112 @@
+[INFO] [1790633538.347421523] [rosbag2_storage]: Opened database '/home/gag/i.mos/dataset/for_hackathon/doubleT_platform/doubleT_platform_0.db3' for READ_ONLY.
+[doubleT_platform] #   0 t=   0.00s clear    dist=- box=   48 rej=19 curve a=+0.0042 b=+1.19e-05 l0=-0.22 n=33 rail z0=-1.34 g=-0.0016   67.9ms
+[doubleT_platform] #   4 t=   0.39s clear    dist=- box=   12 rej=11 curve a=+0.0023 b=-2.10e-05 l0=-0.18 n=32 rail z0=-1.34 g=-0.0008   61.3ms
+[doubleT_platform] #   8 t=   0.80s clear    dist=- box=    2 rej=1 curve a=+0.0032 b=-3.93e-05 l0=-0.15 n=28 rail z0=-1.31 g=-0.0065   65.5ms
+[doubleT_platform] #  12 t=   1.19s clear    dist=- box=    0 curve a=+0.0006 b=-5.41e-05 l0=-0.12 n=34 rail z0=-1.31 g=-0.0068   49.5ms
+[doubleT_platform] #  16 t=   1.59s clear    dist=- box=    0 curve a=-0.0008 b=-5.53e-05 l0=-0.09 n=35 rail z0=-1.34 g=-0.0038   52.4ms
+[doubleT_platform] #  20 t=   2.00s clear    dist=- box=    3 rej=2 curve a=-0.0031 b=-8.31e-05 l0=-0.02 n=34 rail z0=-1.34 g=-0.0035   79.3ms
+[doubleT_platform] #  24 t=   2.39s clear    dist=- box=    0 curve a=+0.0004 b=-1.01e-04 l0=-0.11 n=32 rail z0=-1.37 g=+0.0015   54.8ms
+[doubleT_platform] #  28 t=   2.79s clear    dist=- box=   10 rej=4 curve a=-0.0012 b=-1.15e-04 l0=-0.06 n=30 rail z0=-1.34 g=+0.0012   74.0ms
+[doubleT_platform] #  32 t=   3.20s clear    dist=- box=   48 rej=25 curve a=-0.0040 b=-1.50e-04 l0=+0.02 n=32 rail z0=-1.28 g=-0.0094   69.5ms
+[doubleT_platform] #  36 t=   3.59s clear    dist=- box=    8 rej=5 curve a=-0.0019 b=-1.70e-04 l0=-0.03 n=33 rail z0=-1.20 g=-0.0197   65.2ms
+[doubleT_platform] #  40 t=   3.99s clear    dist=- box=   15 rej=7 curve a=-0.0006 b=-1.57e-04 l0=-0.05 n=26 rail z0=-1.46 g=+0.0027   62.6ms
+[doubleT_platform] #  44 t=   4.39s clear    dist=- box=   28 rej=14 curve a=-0.0012 b=-1.58e-04 l0=-0.05 n=22 rail z0=-1.45 g=+0.0007   61.4ms
+[doubleT_platform] #  48 t=   4.79s clear    dist=- box=   24 rej=14 curve a=-0.0001 b=-1.50e-04 l0=-0.05 n=24 rail z0=-1.36 g=-0.0006   65.6ms
+[doubleT_platform] #  52 t=   5.20s clear    dist=- box=   43 rej=22 curve a=-0.0018 b=-1.79e-04 l0=-0.01 n=23 rail z0=-1.42 g=-0.0006   66.7ms
+[doubleT_platform] #  56 t=   5.60s clear    dist=- box=  102 rej=42 curve a=-0.0064 b=-2.07e-04 l0=+0.06 n=26 rail z0=-1.33 g=-0.0042   66.9ms
+[doubleT_platform] #  60 t=   5.99s clear    dist=- box=  958 rej=12 curve a=-0.0012 b=-1.57e-04 l0=-0.08 n=29 rail z0=-1.40 g=-0.0065   68.5ms
+[doubleT_platform] #  64 t=   6.40s clear    dist=- box= 8044 rej=24 curve a=-0.0018 b=-1.49e-04 l0=-0.12 n=22 rail z0=-1.35 g=-0.0077   72.0ms
+[doubleT_platform] #  68 t=   6.80s clear    dist=- box=   77 rej=31 curve a=-0.0045 b=-1.93e-04 l0=+0.02 n=23 rail z0=-1.40 g=-0.0003   67.5ms
+[doubleT_platform] #  72 t=   7.19s clear    dist=- box=  164 rej=47 nearest raw:   52.0 m (d=52.0 l=-1.02 h=1.33 n=6 conf=0.68) curve a=-0.0070 b=-2.21e-04 l0=+0.05 n=27 rail z0=-1.43 g=+0.0002   81.6ms
+[doubleT_platform] #  76 t=   7.60s clear    dist=- box= 6113 rej=43 nearest raw:   67.5 m (d=67.5 l=-0.77 h=1.15 n=5 conf=0.95) curve a=-0.0018 b=-2.12e-04 l0=-0.11 n=30 rail z0=-1.35 g=-0.0074   88.0ms
+[doubleT_platform] #  80 t=   7.99s clear    dist=- box=   32 rej=16 curve a=-0.0007 b=-2.22e-04 l0=-0.06 n=26 rail z0=-1.31 g=-0.0137   72.2ms
+[doubleT_platform] #  84 t=   8.39s clear    dist=- box=   71 rej=25 curve a=-0.0007 b=-2.67e-04 l0=-0.04 n=32 rail z0=-1.44 g=-0.0004   71.6ms
+[doubleT_platform] #  88 t=   8.79s clear    dist=- box=   59 rej=20 curve a=+0.0023 b=-2.77e-04 l0=-0.05 n=23 rail z0=-1.41 g=-0.0027   69.5ms
+[doubleT_platform] #  92 t=   9.20s clear    dist=- box= 5567 rej=3 curve a=+0.0051 b=-1.92e-04 l0=-0.15 n=31 rail z0=-1.40 g=-0.0059   73.3ms
+[doubleT_platform] #  96 t=   9.59s clear    dist=- box= 2632 rej=13 curve a=+0.0058 b=-1.78e-04 l0=-0.13 n=25 rail z0=-1.40 g=-0.0059   73.5ms
+[doubleT_platform] # 100 t=  10.00s clear    dist=- box= 7186 rej=3 curve a=+0.0038 b=-1.88e-04 l0=-0.20 n=28 rail z0=-1.40 g=-0.0048   74.0ms
+[doubleT_platform] # 104 t=  10.39s clear    dist=- box= 7315 rej=2 curve a=+0.0035 b=-1.53e-04 l0=-0.20 n=23 rail z0=-1.41 g=-0.0020   74.9ms
+[doubleT_platform] # 108 t=  10.79s clear    dist=- box= 7448 rej=6 curve a=+0.0041 b=-1.05e-04 l0=-0.20 n=27 rail z0=-1.39 g=-0.0060   74.2ms
+[doubleT_platform] # 112 t=  11.20s clear    dist=- box= 6471 rej=6 curve a=+0.0027 b=-1.29e-04 l0=-0.14 n=29 rail z0=-1.40 g=-0.0050   75.5ms
+[doubleT_platform] # 116 t=  11.60s clear    dist=- box= 8117 rej=5 curve a=+0.0058 b=-9.58e-05 l0=-0.29 n=28 rail z0=-1.36 g=-0.0058   73.8ms
+[doubleT_platform] # 120 t=  11.99s clear    dist=- box= 5586 rej=21 curve a=+0.0051 b=-8.41e-05 l0=-0.16 n=26 rail z0=-1.43 g=+0.0002   71.5ms
+[doubleT_platform] # 124 t=  12.39s clear    dist=- box= 6391 rej=22 curve a=+0.0050 b=-7.14e-05 l0=-0.16 n=25 rail z0=-1.44 g=+0.0022   77.7ms
+[doubleT_platform] # 128 t=  12.79s clear    dist=- box= 5478 rej=27 curve a=+0.0031 b=-2.66e-05 l0=-0.13 n=31 rail z0=-1.42 g=-0.0019   71.3ms
+[doubleT_platform] # 132 t=  13.19s clear    dist=- box= 4789 rej=37 curve a=+0.0016 b=-1.43e-05 l0=-0.13 n=31 rail z0=-1.42 g=-0.0003   72.8ms
+[doubleT_platform] # 136 t=  13.60s clear    dist=- box= 8587 rej=29 curve a=+0.0026 b=+1.30e-05 l0=-0.18 n=36 rail z0=-1.37 g=-0.0045   74.2ms
+[doubleT_platform] # 140 t=  14.00s clear    dist=- box= 8125 rej=7 curve a=-0.0023 b=+7.91e-05 l0=-0.13 n=42 rail z0=-1.34 g=-0.0100   82.7ms
+[doubleT_platform] # 144 t=  14.39s clear    dist=- box=  242 rej=1 curve a=-0.0051 b=+1.06e-04 l0=-0.07 n=38 rail z0=-1.39 g=-0.0047   82.0ms
+[doubleT_platform] # 148 t=  14.80s clear    dist=- box= 9232 rej=1 curve a=-0.0042 b=+1.88e-04 l0=-0.18 n=42 rail z0=-1.33 g=-0.0140  116.0ms
+[doubleT_platform] # 152 t=  15.20s clear    dist=- box=    0 curve a=-0.0099 b=+2.11e-04 l0=-0.05 n=41 rail z0=-1.38 g=-0.0081   82.9ms
+[doubleT_platform] # 156 t=  15.60s clear    dist=- box=    0 curve a=-0.0133 b=+2.55e-04 l0=-0.00 n=38 rail z0=-1.39 g=-0.0024   96.9ms
+[doubleT_platform] # 160 t=  16.00s clear    dist=- box=    0 curve a=-0.0169 b=+2.90e-04 l0=+0.05 n=43 rail z0=-1.41 g=-0.0010  100.4ms
+[doubleT_platform] # 164 t=  16.40s clear    dist=- box=    0 curve a=-0.0206 b=+3.10e-04 l0=+0.11 n=41 rail z0=-1.43 g=-0.0047  109.5ms
+[doubleT_platform] # 168 t=  16.80s clear    dist=- box=    0 curve a=-0.0216 b=+3.88e-04 l0=+0.05 n=44 rail z0=-1.46 g=+0.0015  125.8ms
+[doubleT_platform] # 172 t=  17.19s clear    dist=- box=    2 rej=1 curve a=-0.0253 b=+4.32e-04 l0=+0.10 n=45 rail z0=-1.46 g=+0.0031  167.8ms
+[doubleT_platform] # 176 t=  17.60s clear    dist=- box=    0 curve a=-0.0285 b=+4.75e-04 l0=+0.19 n=43 rail z0=-1.44 g=+0.0021  129.9ms
+[doubleT_platform] # 180 t=  18.00s clear    dist=- box=    0 curve a=-0.0291 b=+5.37e-04 l0=+0.16 n=41 rail z0=-1.44 g=+0.0047  245.1ms
+[doubleT_platform] # 184 t=  18.39s clear    dist=- box=    0 curve a=-0.0331 b=+5.51e-04 l0=+0.26 n=48 rail z0=-1.46 g=+0.0078  267.8ms
+[doubleT_platform] # 188 t=  18.79s clear    dist=- box=    0 curve a=-0.0338 b=+5.99e-04 l0=+0.24 n=37 rail z0=-1.48 g=+0.0087  158.9ms
+[doubleT_platform] # 192 t=  19.20s clear    dist=- box=    0 curve a=-0.0351 b=+6.42e-04 l0=+0.17 n=44 rail z0=-1.49 g=+0.0085  123.4ms
+[doubleT_platform] # 196 t=  19.60s clear    dist=- box=    0 curve a=-0.0351 b=+6.69e-04 l0=+0.21 n=44 rail z0=-1.48 g=+0.0084  113.1ms
+[doubleT_platform] # 200 t=  19.99s clear    dist=- box=    0 curve a=-0.0349 b=+7.00e-04 l0=+0.20 n=43 rail z0=-1.46 g=+0.0084  113.2ms
+[doubleT_platform] # 204 t=  20.40s clear    dist=- box=    0 curve a=-0.0361 b=+7.26e-04 l0=+0.24 n=40 rail z0=-1.41 g=+0.0044  100.0ms
+[doubleT_platform] # 208 t=  20.79s clear    dist=- box=    0 curve a=-0.0355 b=+7.78e-04 l0=+0.19 n=46 rail z0=-1.42 g=+0.0043   98.8ms
+[doubleT_platform] # 212 t=  21.20s clear    dist=- box=    0 curve a=-0.0382 b=+8.04e-04 l0=+0.22 n=48 rail z0=-1.36 g=-0.0004   95.2ms
+[doubleT_platform] # 216 t=  21.60s clear    dist=- box=    0 curve a=-0.0433 b=+8.22e-04 l0=+0.33 n=45 rail z0=-1.32 g=-0.0033   89.7ms
+[doubleT_platform] # 220 t=  22.00s clear    dist=- box=    0 curve a=-0.0441 b=+8.39e-04 l0=+0.37 n=48 rail z0=-1.30 g=-0.0051   83.3ms
+[doubleT_platform] # 224 t=  22.39s clear    dist=- box=    0 curve a=-0.0452 b=+8.78e-04 l0=+0.39 n=50 rail z0=-1.29 g=-0.0057   80.5ms
+[doubleT_platform] # 228 t=  22.79s clear    dist=- box=    0 curve a=-0.0452 b=+9.09e-04 l0=+0.37 n=48 rail z0=-1.28 g=-0.0058   78.1ms
+[doubleT_platform] # 232 t=  23.20s clear    dist=- box=    0 curve a=-0.0461 b=+9.35e-04 l0=+0.42 n=50 rail z0=-1.27 g=-0.0068   78.1ms
+[doubleT_platform] # 236 t=  23.59s clear    dist=- box=    0 curve a=-0.0476 b=+9.40e-04 l0=+0.42 n=45 rail z0=-1.26 g=-0.0078   82.5ms
+[doubleT_platform] # 240 t=  24.00s clear    dist=- box=    0 curve a=-0.0495 b=+9.60e-04 l0=+0.41 n=44 rail z0=-1.27 g=-0.0077   78.9ms
+[doubleT_platform] # 244 t=  24.40s clear    dist=- box=    0 curve a=-0.0460 b=+9.83e-04 l0=+0.38 n=46 rail z0=-1.27 g=-0.0073   74.4ms
+[doubleT_platform] # 248 t=  24.80s clear    dist=- box=    0 curve a=-0.0484 b=+9.82e-04 l0=+0.41 n=44 rail z0=-1.28 g=-0.0074   75.1ms
+[doubleT_platform] # 252 t=  25.19s clear    dist=- box=    0 curve a=-0.0507 b=+9.96e-04 l0=+0.41 n=39 rail z0=-1.28 g=-0.0072   76.3ms
+[doubleT_platform] # 256 t=  25.59s clear    dist=- box=    0 curve a=-0.0511 b=+1.01e-03 l0=+0.41 n=41 rail z0=-1.28 g=-0.0074   76.5ms
+[doubleT_platform] # 260 t=  26.00s clear    dist=- box=    0 curve a=-0.0522 b=+1.04e-03 l0=+0.42 n=46 rail z0=-1.29 g=-0.0067   77.1ms
+[doubleT_platform] # 264 t=  26.39s clear    dist=- box=    0 curve a=-0.0535 b=+1.04e-03 l0=+0.41 n=44 rail z0=-1.28 g=-0.0063   79.9ms
+[doubleT_platform] # 268 t=  26.79s clear    dist=- box=    0 curve a=-0.0544 b=+1.06e-03 l0=+0.41 n=45 rail z0=-1.28 g=-0.0076   94.9ms
+[doubleT_platform] # 272 t=  27.19s clear    dist=- box=    0 curve a=-0.0560 b=+1.07e-03 l0=+0.41 n=44 rail z0=-1.28 g=-0.0075   88.2ms
+[doubleT_platform] # 276 t=  27.59s clear    dist=- box=    0 curve a=-0.0556 b=+1.09e-03 l0=+0.41 n=44 rail z0=-1.28 g=-0.0072   97.3ms
+[doubleT_platform] # 280 t=  28.00s clear    dist=- box=    0 curve a=-0.0573 b=+1.10e-03 l0=+0.41 n=42 rail z0=-1.28 g=-0.0075   96.0ms
+[doubleT_platform] # 284 t=  28.39s clear    dist=- box=    0 curve a=-0.0592 b=+1.08e-03 l0=+0.41 n=46 rail z0=-1.28 g=-0.0075   95.4ms
+[doubleT_platform] # 288 t=  28.80s clear    dist=- box=    0 curve a=-0.0600 b=+1.10e-03 l0=+0.41 n=44 rail z0=-1.28 g=-0.0073   94.8ms
+[doubleT_platform] # 292 t=  29.21s clear    dist=- box=    0 curve a=-0.0588 b=+1.09e-03 l0=+0.41 n=45 rail z0=-1.28 g=-0.0075   92.8ms
+[doubleT_platform] # 296 t=  29.60s clear    dist=- box=    0 curve a=-0.0583 b=+1.10e-03 l0=+0.41 n=43 rail z0=-1.28 g=-0.0074   94.0ms
+[doubleT_platform] # 300 t=  30.01s clear    dist=- box=    0 curve a=-0.0572 b=+1.10e-03 l0=+0.41 n=46 rail z0=-1.28 g=-0.0072   94.5ms
+[doubleT_platform] # 304 t=  30.40s clear    dist=- box=    0 curve a=-0.0582 b=+1.09e-03 l0=+0.41 n=46 rail z0=-1.28 g=-0.0076   97.0ms
+[doubleT_platform] # 308 t=  30.80s clear    dist=- box=    0 curve a=-0.0581 b=+1.09e-03 l0=+0.41 n=44 rail z0=-1.28 g=-0.0076   99.5ms
+[doubleT_platform] # 312 t=  31.22s clear    dist=- box=    0 curve a=-0.0580 b=+1.09e-03 l0=+0.41 n=45 rail z0=-1.28 g=-0.0075   97.9ms
+[doubleT_platform] # 316 t=  31.60s clear    dist=- box=    0 curve a=-0.0584 b=+1.10e-03 l0=+0.41 n=44 rail z0=-1.28 g=-0.0075   91.1ms
+[doubleT_platform] # 320 t=  32.00s clear    dist=- box=    0 curve a=-0.0586 b=+1.12e-03 l0=+0.41 n=44 rail z0=-1.28 g=-0.0074   84.9ms
+[doubleT_platform] # 324 t=  32.39s clear    dist=- box=    0 curve a=-0.0591 b=+1.11e-03 l0=+0.41 n=46 rail z0=-1.28 g=-0.0076   86.5ms
+[doubleT_platform] # 328 t=  32.80s clear    dist=- box=    1 rej=1 curve a=-0.0595 b=+1.10e-03 l0=+0.41 n=43 rail z0=-1.28 g=-0.0077  115.5ms
+[doubleT_platform] # 332 t=  33.21s clear    dist=- box=    1 rej=1 curve a=-0.0595 b=+1.10e-03 l0=+0.41 n=43 rail z0=-1.28 g=-0.0076  116.2ms
+[doubleT_platform] # 336 t=  33.60s clear    dist=- box=    0 curve a=-0.0591 b=+1.10e-03 l0=+0.41 n=43 rail z0=-1.28 g=-0.0073   92.3ms
+[doubleT_platform] # 340 t=  34.01s clear    dist=- box=    0 curve a=-0.0578 b=+1.11e-03 l0=+0.41 n=43 rail z0=-1.28 g=-0.0073   85.4ms
+[doubleT_platform] # 344 t=  34.42s clear    dist=- box=    0 curve a=-0.0583 b=+1.11e-03 l0=+0.41 n=44 rail z0=-1.28 g=-0.0072   83.0ms
+{
+ "bag": "doubleT_platform",
+ "frames_processed": 87,
+ "status_counts": {
+  "clear": 87,
+  "detected": 0,
+  "unknown": 0
+ },
+ "status_counts_raw": {
+  "clear": 85,
+  "detected": 2,
+  "unknown": 0
+ },
+ "processing_ms": {
+  "median": 81.57,
+  "p95": 128.66,
+  "p99": 248.27,
+  "max": 267.77,
+  "mean": 89.4
+ },
+ "read_ms_median": 13.07,
+ "wall_s": 13.33,
+ "frames_per_s_including_io": 6.53
+}

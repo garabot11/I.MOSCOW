@@ -1,0 +1,6 @@
+[WARN] [1790689256.289820885] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS instead.
+[WARN] [1790689256.289845727] [rcl]: 'localhost_only' is enabled, 'automatic_discovery_range' and 'static_peers' will be ignored.
+[INFO] [1790689256.296506650] [rosbag2_storage]: Opened database '/home/gag/i.mos/dataset/for_hackathon/roundT_doubleT/roundT_doubleT_0.db3' for READ_ONLY.
+[INFO] [1790689256.304044978] [rosbag2_player]: Set rate to 1
+[INFO] [1790689256.307613147] [rosbag2_player]: Playback until timestamp: -1
+[INFO] [1790689256.307875645] [rosbag2_player]: Sleep 2000000000 ns

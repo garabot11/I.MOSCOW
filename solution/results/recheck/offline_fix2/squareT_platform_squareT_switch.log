@@ -1,0 +1,30 @@
+[INFO] [1790688387.178918276] [rosbag2_storage]: Opened database '/data/squareT_platform_squareT_switch/squareT_platform_squareT_switch_0.db3' for READ_ONLY.
+{
+ "bag": "squareT_platform_squareT_switch",
+ "messages_in_metadata": 877,
+ "messages_read": 877,
+ "stride": 1,
+ "frames_expected": 877,
+ "frames_processed": 877,
+ "complete": true,
+ "status_counts": {
+  "clear": 875,
+  "detected": 2,
+  "unknown": 0
+ },
+ "status_counts_raw": {
+  "clear": 873,
+  "detected": 4,
+  "unknown": 0
+ },
+ "processing_ms": {
+  "median": 27.59,
+  "p95": 63.95,
+  "p99": 78.66,
+  "max": 174.89,
+  "mean": 34.6
+ },
+ "read_ms_median": 8.74,
+ "wall_s": 37.62,
+ "frames_per_s_including_io": 23.31
+}

@@ -1,0 +1,205 @@
+{
+ "results_dir": "/home/gag/i.mos/solution/results/final_offline",
+ "bags": {
+  "doubleT_obstacle": {
+   "frames": 201,
+   "tp": 47,
+   "fp": 0,
+   "fn": 0,
+   "tn": 0,
+   "uncertain_frames": 154,
+   "unknown_on_positive": 0,
+   "unknown_on_negative": 0,
+   "false_alarm_events": [],
+   "uncertain_alarm_events": [],
+   "obstacle_events": [
+    {
+     "event_id": "obstacle_1",
+     "frames_processed": 47,
+     "frames_detected": 47,
+     "detected": true,
+     "first_detection": {
+      "frame": 16,
+      "time_s": 1.5996,
+      "distance_m": 55.662
+     },
+     "distance_reported_m": [
+      55.662,
+      56.332
+     ],
+     "distance_reference_m": [
+      55.4,
+      56.7
+     ]
+    }
+   ],
+   "processing_ms": {
+    "median": 204.2,
+    "p95": 268.5,
+    "p99": 307.3,
+    "max": 353.5
+   }
+  },
+  "doubleT_platform": {
+   "frames": 345,
+   "tp": 0,
+   "fp": 2,
+   "fn": 0,
+   "tn": 343,
+   "uncertain_frames": 0,
+   "unknown_on_positive": 0,
+   "unknown_on_negative": 0,
+   "false_alarm_events": [
+    {
+     "frames": [
+      71,
+      73
+     ],
+     "time_s": [
+      7.0935,
+      7.2919
+     ],
+     "distance_m": [
+      54.288,
+      61.688
+     ],
+     "n_frames": 3
+    }
+   ],
+   "uncertain_alarm_events": [],
+   "obstacle_events": [],
+   "processing_ms": {
+    "median": 120.5,
+    "p95": 205.9,
+    "p99": 260.5,
+    "max": 324.0
+   }
+  },
+  "roundT_doubleT": {
+   "frames": 252,
+   "tp": 0,
+   "fp": 0,
+   "fn": 0,
+   "tn": 252,
+   "uncertain_frames": 0,
+   "unknown_on_positive": 0,
+   "unknown_on_negative": 0,
+   "false_alarm_events": [],
+   "uncertain_alarm_events": [],
+   "obstacle_events": [],
+   "processing_ms": {
+    "median": 136.6,
+    "p95": 211.1,
+    "p99": 226.9,
+    "max": 249.1
+   }
+  },
+  "roundT_pressureGate_roundT": {
+   "frames": 268,
+   "tp": 0,
+   "fp": 0,
+   "fn": 0,
+   "tn": 268,
+   "uncertain_frames": 0,
+   "unknown_on_positive": 0,
+   "unknown_on_negative": 0,
+   "false_alarm_events": [],
+   "uncertain_alarm_events": [],
+   "obstacle_events": [],
+   "processing_ms": {
+    "median": 125.3,
+    "p95": 192.9,
+    "p99": 218.1,
+    "max": 286.7
+   }
+  },
+  "roundT_squareT_pressureGate_squareT": {
+   "frames": 545,
+   "tp": 0,
+   "fp": 1,
+   "fn": 0,
+   "tn": 544,
+   "uncertain_frames": 0,
+   "unknown_on_positive": 0,
+   "unknown_on_negative": 0,
+   "false_alarm_events": [
+    {
+     "frames": [
+      298,
+      298
+     ],
+     "time_s": [
+      30.8015,
+      30.8015
+     ],
+     "distance_m": [
+      108.072,
+      108.072
+     ],
+     "n_frames": 1
+    }
+   ],
+   "uncertain_alarm_events": [],
+   "obstacle_events": [],
+   "processing_ms": {
+    "median": 115.7,
+    "p95": 188.5,
+    "p99": 236.1,
+    "max": 281.4
+   }
+  },
+  "squareT_platform_squareT_switch": {
+   "frames": 877,
+   "tp": 0,
+   "fp": 0,
+   "fn": 0,
+   "tn": 745,
+   "uncertain_frames": 132,
+   "unknown_on_positive": 0,
+   "unknown_on_negative": 0,
+   "false_alarm_events": [],
+   "uncertain_alarm_events": [
+    {
+     "frames": [
+      774,
+      774
+     ],
+     "n_frames": 1
+    },
+    {
+     "frames": [
+      777,
+      778
+     ],
+     "n_frames": 2
+    },
+    {
+     "frames": [
+      797,
+      799
+     ],
+     "n_frames": 3
+    }
+   ],
+   "obstacle_events": [],
+   "processing_ms": {
+    "median": 105.3,
+    "p95": 200.7,
+    "p99": 259.1,
+    "max": 380.9
+   }
+  }
+ },
+ "totals": {
+  "tp": 47,
+  "fp": 3,
+  "fn": 0,
+  "tn": 2152,
+  "false_alarm_events": 2,
+  "uncertain_frames": 286,
+  "frames": 2488,
+  "precision": 0.94,
+  "recall": 1.0,
+  "f1": 0.9690721649484536
+ }
+}

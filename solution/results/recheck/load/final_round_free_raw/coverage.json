@@ -1,0 +1,31 @@
+{
+ "bag": "roundT_doubleT",
+ "topic": "/lidar_points",
+ "reference": "sent = every message of the bag (ros2 bag play publishes all of them when it exits with 0); processed = node log records; published = statuses seen by a separate subscriber; matched by header stamp",
+ "player_exit_code": null,
+ "sent": 252,
+ "processed": 252,
+ "processed_fraction": 1.0,
+ "not_processed": 0,
+ "not_processed_indices": [],
+ "not_processed_runs": [],
+ "not_processed_at_start": 0,
+ "not_processed_at_end": 0,
+ "not_processed_inside": 0,
+ "log_records": 252,
+ "log_records_not_in_bag": 0,
+ "log_records_duplicate": 0,
+ "status_counts": {
+  "clear": 252
+ },
+ "processing_ms": {
+  "median": 24.0,
+  "p95": 45.27,
+  "max": 49.91
+ },
+ "inter_arrival_s": {
+  "median": 0.0998,
+  "p95": 0.1163,
+  "max": 0.1248
+ }
+}

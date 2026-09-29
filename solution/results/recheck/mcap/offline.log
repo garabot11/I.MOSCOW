@@ -1,0 +1,29 @@
+{
+ "bag": "roundT_doubleT_mcap",
+ "messages_in_metadata": 252,
+ "messages_read": 252,
+ "stride": 1,
+ "frames_expected": 252,
+ "frames_processed": 252,
+ "complete": true,
+ "status_counts": {
+  "clear": 252,
+  "detected": 0,
+  "unknown": 0
+ },
+ "status_counts_raw": {
+  "clear": 252,
+  "detected": 0,
+  "unknown": 0
+ },
+ "processing_ms": {
+  "median": 24.87,
+  "p95": 43.85,
+  "p99": 46.69,
+  "max": 47.84,
+  "mean": 28.99
+ },
+ "read_ms_median": 5.11,
+ "wall_s": 8.6,
+ "frames_per_s_including_io": 29.3
+}

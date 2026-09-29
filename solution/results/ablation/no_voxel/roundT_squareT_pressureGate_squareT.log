@@ -1,0 +1,25 @@
+[INFO] [1790635061.484179149] [rosbag2_storage]: Opened database '/data/roundT_squareT_pressureGate_squareT/roundT_squareT_pressureGate_squareT_0.db3' for READ_ONLY.
+{
+ "bag": "roundT_squareT_pressureGate_squareT",
+ "frames_processed": 273,
+ "status_counts": {
+  "clear": 273,
+  "detected": 0,
+  "unknown": 0
+ },
+ "status_counts_raw": {
+  "clear": 271,
+  "detected": 2,
+  "unknown": 0
+ },
+ "processing_ms": {
+  "median": 37.25,
+  "p95": 63.62,
+  "p99": 66.29,
+  "max": 67.2,
+  "mean": 40.98
+ },
+ "read_ms_median": 10.03,
+ "wall_s": 17.17,
+ "frames_per_s_including_io": 15.9
+}

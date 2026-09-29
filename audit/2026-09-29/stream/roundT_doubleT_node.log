@@ -1,0 +1,27 @@
+[INFO] [launch]: All log files can be found below /home/imos/.ros/log/2026-09-29-10-19-40-715028-MSI-33
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [detector_node-1]: process started with pid [34]
+[detector_node-1] [INFO] [1790677181.064996707] [metro_obstacle_detector]: subscribed to /lidar_points (reliable, depth 1); axes forward=-y up=+z; config=/workspace/install/share/metro_obstacle_detector/config/detector.yaml; log=/results/roundT_doubleT_stream.jsonl
+[detector_node-1] [INFO] [1790677191.765006864] [metro_obstacle_detector]: frames=50 status=clear dist=None proc ms median=28.3 p95=45.2 max=46.3
+[detector_node-1] [INFO] [1790677196.771433384] [metro_obstacle_detector]: frames=100 status=clear dist=None proc ms median=24.8 p95=46.3 max=51.8
+[detector_node-1] [INFO] [1790677201.757691468] [metro_obstacle_detector]: frames=150 status=clear dist=None proc ms median=26.7 p95=49.0 max=52.5
+[detector_node-1] [INFO] [1790677206.737730889] [metro_obstacle_detector]: frames=200 status=clear dist=None proc ms median=27.2 p95=48.3 max=52.5
+[detector_node-1] [INFO] [1790677211.763492845] [metro_obstacle_detector]: frames=250 status=clear dist=None proc ms median=27.6 p95=47.9 max=52.5
+[detector_node-1] [WARN] [1790677213.550184053] [metro_obstacle_detector]: no input cloud for 1.5 s: publishing UNKNOWN
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [detector_node-1]: sending signal 'SIGINT' to process[detector_node-1]
+[detector_node-1] Traceback (most recent call last):
+[detector_node-1]   File "/workspace/install/lib/metro_obstacle_detector/detector_node", line 33, in <module>
+[detector_node-1]     sys.exit(load_entry_point('metro-obstacle-detector==0.1.0', 'console_scripts', 'detector_node')())
+[detector_node-1]   File "/workspace/install/lib/python3.10/site-packages/metro_obstacle_detector/node.py", line 214, in main
+[detector_node-1]     node.destroy_node()
+[detector_node-1]   File "/workspace/install/lib/python3.10/site-packages/metro_obstacle_detector/node.py", line 203, in destroy_node
+[detector_node-1]     super().destroy_node()
+[detector_node-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 1687, in destroy_node
+[detector_node-1]     self.destroy_subscription(self._subscriptions[0])
+[detector_node-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/node.py", line 1583, in destroy_subscription
+[detector_node-1]     subscription.destroy()
+[detector_node-1]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rclpy/subscription.py", line 80, in destroy
+[detector_node-1]     self.handle.destroy_when_not_in_use()
+[detector_node-1] KeyboardInterrupt
+[ERROR] [detector_node-1]: process has died [pid 34, exit code -2, cmd '/workspace/install/lib/metro_obstacle_detector/detector_node --ros-args -r __node:=metro_obstacle_detector --params-file /tmp/launch_params_sji0w6a1'].

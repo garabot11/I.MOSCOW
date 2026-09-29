@@ -1,0 +1,7 @@
+[INFO] [1790688570.419588951] [metro_obstacle_detector]: input auto (reliable, depth 1, raw CDR decoding); axes forward=-y up=+z; config=defaults; log=/results/stream.jsonl
+[WARN] [1790688571.889558913] [metro_obstacle_detector]: no input: waiting for a PointCloud2 topic (input_topic:=auto) (1.5 s since start): publishing UNKNOWN
+[INFO] [1790688574.389983500] [metro_obstacle_detector]: input_topic:=auto -> subscribed to /sensing/lidar/hesai128/pointcloud (reliable)
+[INFO] [1790688583.563884896] [metro_obstacle_detector]: frames=50 status=detected dist=56.33200454711914 proc ms median=76.6 p95=82.7 max=85.4
+[INFO] [1790688590.525456803] [metro_obstacle_detector]: frames=100 status=clear dist=None proc ms median=75.7 p95=80.8 max=85.4
+[INFO] [1790688597.757798268] [metro_obstacle_detector]: frames=150 status=clear dist=None proc ms median=75.5 p95=80.8 max=85.4
+[WARN] [1790688599.389574133] [metro_obstacle_detector]: input stale: no cloud for > 1.5 s: publishing UNKNOWN

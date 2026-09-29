@@ -1,0 +1,8 @@
+[INFO] [launch]: All log files can be found below /home/imos/.ros/log/2026-09-28-22-41-48-131920-MSI-37
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [detector_node-1]: process started with pid [39]
+[detector_node-1] [INFO] [1790635308.402389646] [metro_obstacle_detector]: subscribed to /sensing/lidar/hesai128/pointcloud (reliable, depth 1); axes forward=-y up=+z; config=/workspace/install/share/metro_obstacle_detector/config/detector.yaml; log=/results/stream.jsonl
+[detector_node-1] [INFO] [1790635317.435445441] [metro_obstacle_detector]: frames=50 status=detected dist=56.06959915161133 proc ms median=48.3 p95=50.3 max=57.4
+[detector_node-1] [INFO] [1790635322.445882580] [metro_obstacle_detector]: frames=100 status=clear dist=None proc ms median=47.9 p95=50.0 max=57.4
+[detector_node-1] [INFO] [1790635327.525769891] [metro_obstacle_detector]: frames=150 status=clear dist=None proc ms median=46.2 p95=49.5 max=57.4
+[detector_node-1] [WARN] [1790635334.390262287] [metro_obstacle_detector]: no input cloud for 1.5 s: publishing UNKNOWN

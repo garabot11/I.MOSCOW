@@ -1,0 +1,175 @@
+{
+ "results_dir": "results/final_offline_v3",
+ "bags": {
+  "doubleT_obstacle": {
+   "frames": 201,
+   "tp": 47,
+   "fp": 0,
+   "fn": 0,
+   "tn": 0,
+   "uncertain_frames": 154,
+   "unknown_on_positive": 0,
+   "unknown_on_negative": 0,
+   "false_alarm_events": [],
+   "uncertain_alarm_events": [],
+   "obstacle_events": [
+    {
+     "event_id": "obstacle_1",
+     "frames_processed": 47,
+     "frames_detected": 47,
+     "detected": true,
+     "first_detection": {
+      "frame": 16,
+      "time_s": 1.5996,
+      "distance_m": 55.662
+     },
+     "distance_reported_m": [
+      55.662,
+      56.332
+     ],
+     "distance_reference_m": [
+      55.4,
+      56.7
+     ]
+    }
+   ],
+   "processing_ms": {
+    "median": 66.2,
+    "p95": 73.8,
+    "p99": 80.8,
+    "max": 82.5
+   }
+  },
+  "doubleT_platform": {
+   "frames": 345,
+   "tp": 0,
+   "fp": 1,
+   "fn": 0,
+   "tn": 344,
+   "uncertain_frames": 0,
+   "unknown_on_positive": 0,
+   "unknown_on_negative": 0,
+   "false_alarm_events": [
+    {
+     "frames": [
+      73,
+      73
+     ],
+     "time_s": [
+      7.2919,
+      7.2919
+     ],
+     "distance_m": [
+      58.56,
+      58.56
+     ],
+     "n_frames": 1
+    }
+   ],
+   "uncertain_alarm_events": [],
+   "obstacle_events": [],
+   "processing_ms": {
+    "median": 33.8,
+    "p95": 56.3,
+    "p99": 60.5,
+    "max": 69.7
+   }
+  },
+  "roundT_doubleT": {
+   "frames": 252,
+   "tp": 0,
+   "fp": 0,
+   "fn": 0,
+   "tn": 252,
+   "uncertain_frames": 0,
+   "unknown_on_positive": 0,
+   "unknown_on_negative": 0,
+   "false_alarm_events": [],
+   "uncertain_alarm_events": [],
+   "obstacle_events": [],
+   "processing_ms": {
+    "median": 37.9,
+    "p95": 62.4,
+    "p99": 67.4,
+    "max": 70.7
+   }
+  },
+  "roundT_pressureGate_roundT": {
+   "frames": 268,
+   "tp": 0,
+   "fp": 0,
+   "fn": 0,
+   "tn": 268,
+   "uncertain_frames": 0,
+   "unknown_on_positive": 0,
+   "unknown_on_negative": 0,
+   "false_alarm_events": [],
+   "uncertain_alarm_events": [],
+   "obstacle_events": [],
+   "processing_ms": {
+    "median": 34.7,
+    "p95": 54.4,
+    "p99": 62.0,
+    "max": 64.8
+   }
+  },
+  "roundT_squareT_pressureGate_squareT": {
+   "frames": 545,
+   "tp": 0,
+   "fp": 0,
+   "fn": 0,
+   "tn": 545,
+   "uncertain_frames": 0,
+   "unknown_on_positive": 0,
+   "unknown_on_negative": 0,
+   "false_alarm_events": [],
+   "uncertain_alarm_events": [],
+   "obstacle_events": [],
+   "processing_ms": {
+    "median": 32.5,
+    "p95": 54.7,
+    "p99": 59.6,
+    "max": 66.4
+   }
+  },
+  "squareT_platform_squareT_switch": {
+   "frames": 877,
+   "tp": 0,
+   "fp": 0,
+   "fn": 0,
+   "tn": 745,
+   "uncertain_frames": 132,
+   "unknown_on_positive": 0,
+   "unknown_on_negative": 0,
+   "false_alarm_events": [],
+   "uncertain_alarm_events": [
+    {
+     "frames": [
+      776,
+      777
+     ],
+     "n_frames": 2
+    }
+   ],
+   "obstacle_events": [],
+   "processing_ms": {
+    "median": 29.5,
+    "p95": 62.4,
+    "p99": 66.7,
+    "max": 187.1
+   }
+  }
+ },
+ "totals": {
+  "tp": 47,
+  "fp": 1,
+  "fn": 0,
+  "tn": 2154,
+  "false_alarm_events": 1,
+  "uncertain_frames": 286,
+  "frames": 2488,
+  "precision": 0.9791666666666666,
+  "recall": 1.0,
+  "f1": 0.9894736842105264
+ }
+}

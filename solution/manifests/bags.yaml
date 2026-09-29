@@ -1,0 +1,197 @@
+generated: '2026-09-29'
+source_archive: датасет.zip -> archive/for_hackathon.zst (tar+zstd) -> six rosbag2 directories
+total_db_bytes: 23106916352
+total_messages: 2488
+total_duration_s: 250.168
+point_layout:
+  point_step: 26
+  fields:
+  - - x
+    - float32
+    - 0
+  - - y
+    - float32
+    - 4
+  - - z
+    - float32
+    - 8
+  - - intensity
+    - float32
+    - 12
+  - - ring
+    - uint16
+    - 16
+  - - timestamp
+    - float64
+    - 18
+split_policy: 'no train/test split of frames: parameters were tuned on all six development bags (whole-bag inspection); the
+  organisers'' hidden control bag is the only independent test'
+bags:
+- name: doubleT_obstacle
+  path: dataset/for_hackathon/doubleT_obstacle
+  files:
+    doubleT_obstacle_0.db3:
+      bytes: 4821250048
+      sha256: 05f1d7f7d1bbbc5e9453877416cc9f7367c19e31d35a5291271d863fc89c5ad9
+    metadata.yaml:
+      sha256: 90f3314528232a912a0a2a1de8e90e1d155a814ab59a130aec3fcf65d76a6c09
+  storage: sqlite3
+  serialization: cdr
+  ros_distro_in_schema: humble
+  topic: /sensing/lidar/hesai128/pointcloud
+  type: sensor_msgs/msg/PointCloud2
+  messages_actual: 201
+  message_count_metadata_top: 201
+  message_count_metadata_files: 205
+  duration_s: 20.392
+  mean_rate_hz: 9.808
+  interval_s:
+    min: 0.064
+    median: 0.1
+    max: 0.413
+  bag_time_first_ns: 1788354623110040384
+  bag_time_last_ns: 1788354643502070680
+  serialized_message_bytes: 23961800
+  points_per_message: 921600
+  frame_id: lidar_livox
+  role: positive example (moving object at ~56 m, train stationary); also the only bag with the second sensor configuration
+- name: doubleT_platform
+  path: dataset/for_hackathon/doubleT_platform
+  files:
+    doubleT_platform_0.db3:
+      bytes: 2758447104
+      sha256: 826e4161822ac39953acbda84d813f77061abbfdd9b47eea3327164ff05ee2c3
+    metadata.yaml:
+      sha256: 58111dca59feceaeac484f67ee765b01cdbb512a9a576d47dfe7c5c6476d6dcf
+  storage: sqlite3
+  serialization: cdr
+  ros_distro_in_schema: humble
+  topic: /lidar_points
+  type: sensor_msgs/msg/PointCloud2
+  messages_actual: 345
+  message_count_metadata_top: 345
+  message_count_metadata_files: 345
+  duration_s: 34.42
+  mean_rate_hz: 9.994
+  interval_s:
+    min: 0.081
+    median: 0.1
+    max: 0.123
+  bag_time_first_ns: 1788359712599450851
+  bag_time_last_ns: 1788359747019017037
+  serialized_message_bytes: 7987400
+  points_per_message: 307200
+  frame_id: hesai_lidar
+  role: negative example (no known obstacle); used to tune false-alarm suppression
+- name: roundT_doubleT
+  path: dataset/for_hackathon/roundT_doubleT
+  files:
+    roundT_doubleT_0.db3:
+      bytes: 2014867456
+      sha256: 6b5d3780bb8e373fae9c1a72080c34084f5a743efca5899526eb15c148a2b90d
+    metadata.yaml:
+      sha256: 6ffb15678cae39ac117c33289fdf1aa280211d758fcfd530d9e3fe21cf3bf17d
+  storage: sqlite3
+  serialization: cdr
+  ros_distro_in_schema: humble
+  topic: /lidar_points
+  type: sensor_msgs/msg/PointCloud2
+  messages_actual: 252
+  message_count_metadata_top: 252
+  message_count_metadata_files: 252
+  duration_s: 25.072
+  mean_rate_hz: 10.011
+  interval_s:
+    min: 0.08
+    median: 0.1
+    max: 0.12
+  bag_time_first_ns: 1788359059199396182
+  bag_time_last_ns: 1788359084271366826
+  serialized_message_bytes: 7987400
+  points_per_message: 307200
+  frame_id: hesai_lidar
+  role: negative example (no known obstacle); used to tune false-alarm suppression
+- name: roundT_pressureGate_roundT
+  path: dataset/for_hackathon/roundT_pressureGate_roundT
+  files:
+    roundT_pressureGate_roundT_0.db3:
+      bytes: 2142801920
+      sha256: df41bcc7f5ce83ba83f9440d6ebafb2bb3648ad04fbc248d3777411d876922c6
+    metadata.yaml:
+      sha256: bec21b5aa0581936678824b5cb43043dfe99c7b1eb468c3dddf8e25554b703c1
+  storage: sqlite3
+  serialization: cdr
+  ros_distro_in_schema: humble
+  topic: /lidar_points
+  type: sensor_msgs/msg/PointCloud2
+  messages_actual: 268
+  message_count_metadata_top: 268
+  message_count_metadata_files: 268
+  duration_s: 26.699
+  mean_rate_hz: 10.0
+  interval_s:
+    min: 0.066
+    median: 0.1
+    max: 0.147
+  bag_time_first_ns: 1788358838051667137
+  bag_time_last_ns: 1788358864750447332
+  serialized_message_bytes: 7987400
+  points_per_message: 307200
+  frame_id: hesai_lidar
+  role: negative example (no known obstacle); used to tune false-alarm suppression
+- name: roundT_squareT_pressureGate_squareT
+  path: dataset/for_hackathon/roundT_squareT_pressureGate_squareT
+  files:
+    roundT_squareT_pressureGate_squareT_0.db3:
+      bytes: 4357537792
+      sha256: 364760cfcc682a58ec1efdff5d0940150c009e860868f577aab7732b8a36d266
+    metadata.yaml:
+      sha256: 9e9cedccc7a02337cd1f1020efebe22a4684c3598b2f7b5562b5fd044eafa616
+  storage: sqlite3
+  serialization: cdr
+  ros_distro_in_schema: humble
+  topic: /lidar_points
+  type: sensor_msgs/msg/PointCloud2
+  messages_actual: 545
+  message_count_metadata_top: 545
+  message_count_metadata_files: 555
+  duration_s: 55.377
+  mean_rate_hz: 9.823
+  interval_s:
+    min: 0.066
+    median: 0.1
+    max: 1.099
+  bag_time_first_ns: 1788356943781195141
+  bag_time_last_ns: 1788356999158695083
+  serialized_message_bytes: 7987400
+  points_per_message: 307200
+  frame_id: hesai_lidar
+  role: negative example (no known obstacle); used to tune false-alarm suppression
+- name: squareT_platform_squareT_switch
+  path: dataset/for_hackathon/squareT_platform_squareT_switch
+  files:
+    squareT_platform_squareT_switch_0.db3:
+      bytes: 7012012032
+      sha256: df9014f180ea39592c50a5bdfc33a3ae2cab371a5213eb33be624c8fed65aac9
+    metadata.yaml:
+      sha256: 46b6f276a63bca7642a091e11d78416951bc952e7889d940c0b43309b7060553
+  storage: sqlite3
+  serialization: cdr
+  ros_distro_in_schema: humble
+  topic: /lidar_points
+  type: sensor_msgs/msg/PointCloud2
+  messages_actual: 877
+  message_count_metadata_top: 877
+  message_count_metadata_files: 883
+  duration_s: 88.208
+  mean_rate_hz: 9.931
+  interval_s:
+    min: 0.069
+    median: 0.1
+    max: 0.704
+  bag_time_first_ns: 1788358443342122534
+  bag_time_last_ns: 1788358531550098466
+  serialized_message_bytes: 7987400
+  points_per_message: 307200
+  frame_id: hesai_lidar
+  role: negative example (no known obstacle); used to tune false-alarm suppression

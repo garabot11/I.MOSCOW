@@ -1,0 +1,127 @@
+# Manual annotation of the development bags (version 1, 2026-09-29).
+#
+# Method: montage views of every 20th frame of all six bags (top / side / front projections),
+# fine cross-section histograms, and for doubleT_obstacle a frame-difference analysis against
+# frame 0 (the train is stationary in that bag, so returns that are absent in frame 0 belong to
+# moving objects).  No official labels, calibration or reference distances were supplied.
+#
+# Conventions
+#   frame_index    0-based index of PointCloud2 messages in bag order (identical in the offline
+#                  evaluator and here).  NOT the same as frame_index of the ROS node / its log,
+#                  which counts the clouds *received* by the node from 1 and skips frames that
+#                  were replaced in the depth-1 queue or not delivered; match online results with
+#                  these labels by header_time_ns (bag_tools coverage maps stamps to indices).
+#   relative_time  seconds from the first message of the bag (bag/SQLite time scale)
+#   distance       Euclidean range (m) from the lidar origin to the nearest point of the object,
+#                  read from the same cloud - a working reference, not independent metrology
+#   labels         obstacle   - object on the track bed inside the car clearance ahead of the train
+#                  uncertain  - object present but at the clearance edge / scene too ambiguous to
+#                               call either way; excluded from TP/FP/FN counting
+#                  clear      - no obstacle-like object seen in the inspected frames
+schema: 1
+bags:
+  doubleT_obstacle:
+    topic: /sensing/lidar/hesai128/pointcloud
+    frame_id: lidar_livox
+    frames: 201
+    train_motion: stationary (cloud statistics constant over the whole bag)
+    sensor_offset_note: >
+      This sensor is mounted ~2.0 m above the track bed and about 0.3-0.6 m to the right of the
+      track centre (drainage trough centred at x=-0.5, tunnel wall at x=-3.0, column row at
+      x=+1.5).  Odd and even frames use two different scan patterns, so frame differencing is
+      only meaningful between frames of the same parity.
+    review_status: inspected frame by frame through the frame-difference statistics; object type not confirmed by organisers
+    track_centre_note: >
+      The tunnel wall on the left moves from x=-2.9 m (5-12 m ahead) to x=-4.0 m (50-62 m ahead)
+      while the drainage trough of this track lies at x=-0.6 m near the train, so the track centre
+      at the object's range (55-57 m) is at x ~ -1.6 +- 0.3 m (sensor frame).  Lateral offsets below
+      are given relative to that estimate.
+    events:
+      - event_id: obstacle_1_edge_in
+        label: uncertain
+        frame_range: [0, 15]
+        relative_time_s: [0.0, 1.5]
+        distance_reference_m: [55.4, 56.0]
+        geometry: object at x=-0.5..-0.6 m, i.e. ~1.0-1.1 m right of the track centre - at the edge of the car body (half-width 1.35 m)
+        notes: touching-the-edge case; not counted as positive or negative
+      - event_id: obstacle_1
+        label: obstacle
+        frame_range: [16, 62]
+        relative_time_s: [1.6, 6.2]
+        distance_reference_m: [55.4, 56.7]
+        geometry: >
+          compact object ~0.9 m wide and ~0.85 m high standing on the track bed at 55.5-56.7 m along
+          the track; lateral position (sensor frame x) -0.6 m (frame 16) -> -1.7 m (frames 30-45)
+          -> -0.85 m (frame 62), i.e. within +-0.8 m of the track centre.  Probably a crouching
+          person or a person carrying an object; 60-250 returns per frame.
+        visibility: fully visible, no occlusion; 0.85 m height leaves ~0.4-0.6 m above the box bottom
+      - event_id: obstacle_1_edge_out
+        label: uncertain
+        frame_range: [63, 200]
+        relative_time_s: [6.3, 20.4]
+        distance_reference_m: [54.7, 56.8]
+        geometry: >
+          same object moving from x=-0.8 m to x=+0.95 m (sensor frame) and standing there from frame
+          ~90 on, 0.5-0.7 m from the column row, i.e. 1.2-2.5 m right of the track centre - outside
+          the estimated car-body clearance.
+        notes: >
+          not an obstacle for the car under the clearance used here, but the organisers may regard a
+          person beside the track as one; excluded from TP/FP/FN counting.
+  doubleT_platform:
+    topic: /lidar_points
+    frame_id: hesai_lidar
+    frames: 345
+    review_status: montage of every 20th frame inspected; no obstacle-like object seen on the track
+    events:
+      - event_id: clear_all
+        label: clear
+        frame_range: [0, 344]
+        notes: double-track tunnel, then a station with an island platform and columns; the train stops in the station (t ~ 20-34 s)
+  roundT_doubleT:
+    topic: /lidar_points
+    frame_id: hesai_lidar
+    frames: 252
+    review_status: montage of every 20th frame inspected; no obstacle-like object seen on the track
+    events:
+      - event_id: clear_all
+        label: clear
+        frame_range: [0, 251]
+        notes: round single-track tunnel with a right-hand curve, transition into a double-track tunnel at t ~ 10-12 s
+  roundT_pressureGate_roundT:
+    topic: /lidar_points
+    frame_id: hesai_lidar
+    frames: 268
+    review_status: montage of every 20th frame inspected; no obstacle-like object seen on the track
+    events:
+      - event_id: clear_all
+        label: clear
+        frame_range: [0, 267]
+        notes: round tunnel, a pressure gate (4.0 x 3.8 m opening) passed at t ~ 6 s, then a left-hand curve (R ~ 600-1000 m)
+  roundT_squareT_pressureGate_squareT:
+    topic: /lidar_points
+    frame_id: hesai_lidar
+    frames: 545
+    review_status: montage of every 20th frame inspected; no obstacle-like object seen on the track
+    events:
+      - event_id: clear_all
+        label: clear
+        frame_range: [0, 544]
+        notes: round and rectangular tunnel sections with a pressure gate; mostly straight
+  squareT_platform_squareT_switch:
+    topic: /lidar_points
+    frame_id: hesai_lidar
+    frames: 877
+    review_status: montage of every 20th frame inspected; no obstacle-like object seen on the track
+    events:
+      - event_id: clear_main
+        label: clear
+        frame_range: [0, 744]
+        notes: rectangular tunnel, a side-platform station (train stops t ~ 32-66 s), rectangular tunnel
+      - event_id: switch_region
+        label: uncertain
+        frame_range: [745, 876]
+        relative_time_s: [74.5, 88.2]
+        notes: >
+          junction / switch region with a second track converging, dense structure (signals, switch
+          machine, walls of the diverging tunnel) beside and between the tracks at 40-90 m; without
+          organiser information it cannot be decided what counts as an obstacle here.

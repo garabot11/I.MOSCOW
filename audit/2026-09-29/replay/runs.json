@@ -1,0 +1,32 @@
+[
+  {
+    "bag": "doubleT_obstacle",
+    "exit": 0,
+    "wall_s": 16.55406286599998
+  },
+  {
+    "bag": "doubleT_platform",
+    "exit": 0,
+    "wall_s": 18.257470639000076
+  },
+  {
+    "bag": "roundT_doubleT",
+    "exit": 0,
+    "wall_s": 14.049607703999982
+  },
+  {
+    "bag": "roundT_pressureGate_roundT",
+    "exit": 0,
+    "wall_s": 12.596569227000032
+  },
+  {
+    "bag": "roundT_squareT_pressureGate_squareT",
+    "exit": 0,
+    "wall_s": 35.29641751500003
+  },
+  {
+    "bag": "squareT_platform_squareT_switch",
+    "exit": 0,
+    "wall_s": 44.61653789800005
+  }
+]

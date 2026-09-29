@@ -1,0 +1,27 @@
+[INFO] [launch]: All log files can be found below /home/imos/.ros/log/2026-09-29-13-59-18-654931-MSI-39
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [detector_node-1]: process started with pid [53]
+[detector_node-1] [INFO] [1790690358.956428116] [metro_obstacle_detector]: input auto (reliable, depth 1, raw CDR decoding); axes forward=-y up=+z; config=/workspace/install/share/metro_obstacle_detector/config/detector.yaml; log=/results/stream.jsonl
+[detector_node-1] [WARN] [1790690360.442772611] [metro_obstacle_detector]: no input: waiting for a PointCloud2 topic (input_topic:=auto) (1.5 s since start): publishing UNKNOWN
+[detector_node-1] [INFO] [1790690361.443216241] [metro_obstacle_detector]: input_topic:=auto -> subscribed to /lidar_points (reliable)
+[detector_node-1] [INFO] [1790690368.970264023] [metro_obstacle_detector]: frames=50 status=clear dist=None proc ms median=20.1 p95=22.5 max=42.0
+[detector_node-1] [INFO] [1790690373.989814149] [metro_obstacle_detector]: frames=100 status=clear dist=None proc ms median=20.6 p95=38.8 max=42.0
+[detector_node-1] [INFO] [1790690379.604099132] [metro_obstacle_detector]: frames=150 status=clear dist=None proc ms median=37.3 p95=46.6 max=48.8
+[detector_node-1] [INFO] [1790690384.596081541] [metro_obstacle_detector]: frames=200 status=clear dist=None proc ms median=38.8 p95=47.0 max=49.9
+[detector_node-1] [INFO] [1790690389.567615226] [metro_obstacle_detector]: frames=250 status=clear dist=None proc ms median=38.8 p95=46.9 max=49.9
+[detector_node-1] [INFO] [1790690394.569420200] [metro_obstacle_detector]: frames=300 status=clear dist=None proc ms median=37.3 p95=46.7 max=49.9
+[detector_node-1] [INFO] [1790690399.576130725] [metro_obstacle_detector]: frames=350 status=clear dist=None proc ms median=35.6 p95=46.4 max=49.9
+[detector_node-1] [INFO] [1790690404.572103667] [metro_obstacle_detector]: frames=400 status=clear dist=None proc ms median=21.0 p95=46.2 max=49.9
+[detector_node-1] [INFO] [1790690409.608411170] [metro_obstacle_detector]: frames=450 status=clear dist=None proc ms median=20.4 p95=45.6 max=49.9
+[detector_node-1] [INFO] [1790690414.581840261] [metro_obstacle_detector]: frames=500 status=clear dist=None proc ms median=20.0 p95=45.4 max=49.9
+[detector_node-1] [INFO] [1790690419.572560928] [metro_obstacle_detector]: frames=550 status=clear dist=None proc ms median=19.8 p95=45.3 max=49.9
+[detector_node-1] [INFO] [1790690424.571492990] [metro_obstacle_detector]: frames=600 status=clear dist=None proc ms median=19.5 p95=45.2 max=49.9
+[detector_node-1] [INFO] [1790690429.581282822] [metro_obstacle_detector]: frames=650 status=clear dist=None proc ms median=18.9 p95=45.1 max=49.9
+[detector_node-1] [INFO] [1790690434.596410219] [metro_obstacle_detector]: frames=700 status=clear dist=None proc ms median=18.6 p95=45.0 max=49.9
+[detector_node-1] [INFO] [1790690439.594091371] [metro_obstacle_detector]: frames=750 status=clear dist=None proc ms median=19.1 p95=44.9 max=49.9
+[detector_node-1] [INFO] [1790690444.846144079] [metro_obstacle_detector]: frames=800 status=clear dist=None proc ms median=19.6 p95=45.0 max=183.2
+[detector_node-1] [INFO] [1790690449.803672991] [metro_obstacle_detector]: frames=850 status=clear dist=None proc ms median=19.9 p95=44.9 max=183.2
+[detector_node-1] [WARN] [1790690453.942758460] [metro_obstacle_detector]: input stale: no cloud for > 1.5 s: publishing UNKNOWN
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [detector_node-1]: sending signal 'SIGINT' to process[detector_node-1]
+[INFO] [detector_node-1]: process has finished cleanly [pid 53]

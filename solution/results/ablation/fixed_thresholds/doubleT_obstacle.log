@@ -1,0 +1,25 @@
+[INFO] [1790634938.461203517] [rosbag2_storage]: Opened database '/data/doubleT_obstacle/doubleT_obstacle_0.db3' for READ_ONLY.
+{
+ "bag": "doubleT_obstacle",
+ "frames_processed": 101,
+ "status_counts": {
+  "clear": 71,
+  "detected": 30,
+  "unknown": 0
+ },
+ "status_counts_raw": {
+  "clear": 60,
+  "detected": 41,
+  "unknown": 0
+ },
+ "processing_ms": {
+  "median": 83.26,
+  "p95": 88.07,
+  "p99": 91.09,
+  "max": 91.25,
+  "mean": 83.44
+ },
+ "read_ms_median": 32.28,
+ "wall_s": 15.4,
+ "frames_per_s_including_io": 6.56
+}

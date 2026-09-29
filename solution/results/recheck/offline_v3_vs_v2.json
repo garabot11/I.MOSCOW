@@ -1,0 +1,50 @@
+{
+ "reference": "results/final_offline_v2",
+ "new": "results/final_offline_v3",
+ "bags": {
+  "doubleT_obstacle": {
+   "frames": 201,
+   "differences": 0,
+   "first_differences": [],
+   "processing_ms_median_ref": 61.22,
+   "processing_ms_median_new": 66.21
+  },
+  "doubleT_platform": {
+   "frames": 345,
+   "differences": 0,
+   "first_differences": [],
+   "processing_ms_median_ref": 38.14,
+   "processing_ms_median_new": 33.82
+  },
+  "roundT_doubleT": {
+   "frames": 252,
+   "differences": 0,
+   "first_differences": [],
+   "processing_ms_median_ref": 43.09,
+   "processing_ms_median_new": 37.9
+  },
+  "roundT_pressureGate_roundT": {
+   "frames": 268,
+   "differences": 0,
+   "first_differences": [],
+   "processing_ms_median_ref": 39.8,
+   "processing_ms_median_new": 34.71
+  },
+  "roundT_squareT_pressureGate_squareT": {
+   "frames": 545,
+   "differences": 0,
+   "first_differences": [],
+   "processing_ms_median_ref": 32.84,
+   "processing_ms_median_new": 32.53
+  },
+  "squareT_platform_squareT_switch": {
+   "frames": 877,
+   "differences": 0,
+   "first_differences": [],
+   "processing_ms_median_ref": 29.1,
+   "processing_ms_median_new": 29.54
+  }
+ },
+ "total_frames": 2488,
+ "total_differences": 0
+}

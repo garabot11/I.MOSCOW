@@ -1,0 +1,6 @@
+variant full done
+variant no_temporal done
+variant box_only done
+variant fixed_thresholds done
+variant straight_corridor done
+variant no_voxel done

@@ -1,0 +1,10 @@
+doubleT_obstacle run1 exit=0 {"bag": "doubleT_obstacle", "sent": 201, "processed": 201, "not_processed": 0, "not_processed_runs": [], "status_counts": {"clear": 149, "detected": 52}, "obser
+doubleT_platform run1 exit=0 {"bag": "doubleT_platform", "sent": 345, "processed": 345, "not_processed": 0, "not_processed_runs": [], "status_counts": {"clear": 344, "detected": 1}, "observ
+roundT_doubleT run1 exit=0 {"bag": "roundT_doubleT", "sent": 252, "processed": 252, "not_processed": 0, "not_processed_runs": [], "status_counts": {"clear": 252}, "observer": {"status_mes
+roundT_pressureGate_roundT run1 exit=0 {"bag": "roundT_pressureGate_roundT", "sent": 268, "processed": 268, "not_processed": 0, "not_processed_runs": [], "status_counts": {"clear": 268}, "observer": 
+roundT_squareT_pressureGate_squareT run1 exit=0 {"bag": "roundT_squareT_pressureGate_squareT", "sent": 545, "processed": 545, "not_processed": 0, "not_processed_runs": [], "status_counts": {"clear": 545}, "ob
+squareT_platform_squareT_switch run1 exit=0 {"bag": "squareT_platform_squareT_switch", "sent": 877, "processed": 875, "not_processed": 2, "not_processed_runs": [[798, 798], [800, 800]], "status_counts": {
+roundT_doubleT run2 exit=0 {"bag": "roundT_doubleT", "sent": 252, "processed": 252, "not_processed": 0, "not_processed_runs": [], "status_counts": {"clear": 252}, "observer": {"status_mes
+doubleT_obstacle run2 exit=0 {"bag": "doubleT_obstacle", "sent": 201, "processed": 201, "not_processed": 0, "not_processed_runs": [], "status_counts": {"clear": 149, "detected": 52}, "obser
+roundT_doubleT run3 exit=0 {"bag": "roundT_doubleT", "sent": 252, "processed": 252, "not_processed": 0, "not_processed_runs": [], "status_counts": {"clear": 252}, "observer": {"status_mes
+doubleT_obstacle run3 exit=0 {"bag": "doubleT_obstacle", "sent": 201, "processed": 201, "not_processed": 0, "not_processed_runs": [], "status_counts": {"clear": 149, "detected": 52}, "obser

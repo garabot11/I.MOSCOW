@@ -1,0 +1,13 @@
+doubleT_obstacle/doubleT_obstacle_0.db3: OK
+doubleT_obstacle/metadata.yaml: OK
+doubleT_platform/doubleT_platform_0.db3: OK
+doubleT_platform/metadata.yaml: OK
+roundT_doubleT/roundT_doubleT_0.db3: OK
+roundT_doubleT/metadata.yaml: OK
+roundT_pressureGate_roundT/roundT_pressureGate_roundT_0.db3: OK
+roundT_pressureGate_roundT/metadata.yaml: OK
+roundT_squareT_pressureGate_squareT/roundT_squareT_pressureGate_squareT_0.db3: OK
+roundT_squareT_pressureGate_squareT/metadata.yaml: OK
+squareT_platform_squareT_switch/squareT_platform_squareT_switch_0.db3: OK
+squareT_platform_squareT_switch/metadata.yaml: OK
+exit=0

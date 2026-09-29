@@ -1,0 +1,112 @@
+[INFO] [1790631314.254724710] [rosbag2_storage]: Opened database '/home/gag/i.mos/dataset/for_hackathon/doubleT_platform/doubleT_platform_0.db3' for READ_ONLY.
+[doubleT_platform] #   0 t=   0.00s clear    dist=- box=  543 rej=10 curve a=+0.0075 b=-1.22e-04 l0=-0.24 n=28 rail z0=-1.33 g=-0.0027   86.8ms
+[doubleT_platform] #   4 t=   0.39s clear    dist=- box=   93 rej=5 curve a=+0.0065 b=-1.17e-04 l0=-0.23 n=32 rail z0=-1.32 g=-0.0048   80.2ms
+[doubleT_platform] #   8 t=   0.80s clear    dist=- box= 1005 rej=8 curve a=+0.0078 b=-1.31e-04 l0=-0.22 n=28 rail z0=-1.31 g=-0.0060   84.6ms
+[doubleT_platform] #  12 t=   1.19s clear    dist=- box= 1485 rej=4 nearest raw:  199.4 m (d=199.4 l=+0.40 h=1.64 n=5 conf=1.00) curve a=+0.0026 b=-9.49e-05 l0=-0.14 n=34 rail z0=-1.31 g=-0.0065   83.4ms
+[doubleT_platform] #  16 t=   1.59s clear    dist=- box=  150 rej=28 curve a=+0.0026 b=-1.19e-04 l0=-0.13 n=36 rail z0=-1.34 g=-0.0023   82.6ms
+[doubleT_platform] #  20 t=   2.00s clear    dist=- box=  163 rej=35 curve a=-0.0010 b=-9.65e-05 l0=-0.07 n=34 rail z0=-1.33 g=-0.0037   84.9ms
+[doubleT_platform] #  24 t=   2.39s clear    dist=- box=  130 rej=16 curve a=+0.0025 b=-1.21e-04 l0=-0.12 n=21 rail z0=-1.34 g=-0.0027   87.2ms
+[doubleT_platform] #  28 t=   2.79s clear    dist=- box=  750 rej=44 nearest raw:   88.5 m (d=88.5 l=-1.03 h=1.68 n=5 conf=1.00) curve a=-0.0016 b=-1.01e-04 l0=-0.07 n=31 rail z0=-1.34 g=+0.0001   92.4ms
+[doubleT_platform] #  32 t=   3.20s clear    dist=- box= 2309 rej=51 curve a=-0.0093 b=-3.86e-05 l0=+0.04 n=38 rail z0=-1.28 g=-0.0100   91.7ms
+[doubleT_platform] #  36 t=   3.59s clear    dist=- box= 9767 rej=36 nearest raw:   58.8 m (d=58.8 l=-1.28 h=1.03 n=6 conf=0.86) curve a=-0.0013 b=-1.66e-04 l0=-0.05 n=30 rail z0=-1.20 g=-0.0187   88.2ms
+[doubleT_platform] #  40 t=   3.99s clear    dist=- box=10043 rej=46 nearest raw:   30.3 m (d=30.3 l=-1.33 h=1.25 n=5 conf=0.19) curve a=-0.0056 b=-1.09e-04 l0=+0.01 n=25 rail z0=-1.41 g=-0.0032   89.9ms
+[doubleT_platform] #  44 t=   4.39s detected dist=  29.2 box= 9693 rej=44 nearest raw:   29.2 m (d=29.1 l=-1.30 h=1.28 n=9 conf=0.32) curve a=-0.0077 b=-1.05e-04 l0=+0.04 n=25 rail z0=-1.41 g=-0.0036   87.4ms
+[doubleT_platform] #  48 t=   4.79s clear    dist=- box= 9297 rej=49 curve a=-0.0105 b=-7.35e-05 l0=+0.08 n=27 rail z0=-1.31 g=-0.0068   89.5ms
+[doubleT_platform] #  52 t=   5.20s clear    dist=- box= 8906 rej=57 nearest raw:   54.6 m (d=54.6 l=-1.20 h=1.07 n=6 conf=0.74) curve a=-0.0089 b=-7.94e-05 l0=+0.06 n=24 rail z0=-1.40 g=-0.0032   93.1ms
+[doubleT_platform] #  56 t=   5.60s detected dist=  48.9 box= 9153 rej=48 nearest raw:   31.9 m (d=31.9 l=-1.35 h=1.27 n=7 conf=0.30) curve a=-0.0072 b=-1.41e-04 l0=+0.05 n=28 rail z0=-1.29 g=-0.0095   93.3ms
+[doubleT_platform] #  60 t=   5.99s detected dist=  43.5 box= 9315 rej=42 nearest raw:   43.5 m (d=43.5 l=-1.29 h=1.05 n=6 conf=0.47) curve a=-0.0093 b=-8.85e-05 l0=+0.05 n=28 rail z0=-1.38 g=-0.0067   93.2ms
+[doubleT_platform] #  64 t=   6.40s detected dist=  55.9 box= 9010 rej=48 nearest raw:   48.4 m (d=48.4 l=-1.21 h=1.17 n=7 conf=0.68) curve a=-0.0108 b=-8.15e-05 l0=+0.05 n=23 rail z0=-1.32 g=-0.0109   89.9ms
+[doubleT_platform] #  68 t=   6.80s clear    dist=- box= 8506 rej=53 nearest raw:   95.3 m (d=95.3 l=-0.14 h=2.06 n=5 conf=1.00) curve a=-0.0033 b=-1.89e-04 l0=-0.01 n=22 rail z0=-1.42 g=+0.0021   85.3ms
+[doubleT_platform] #  72 t=   7.19s clear    dist=- box= 2181 rej=59 nearest raw:   29.2 m (d=29.1 l=-1.23 h=1.33 n=5 conf=0.18) curve a=-0.0170 b=-1.33e-05 l0=+0.15 n=29 rail z0=-1.40 g=-0.0039   86.2ms
+[doubleT_platform] #  76 t=   7.60s detected dist=  41.1 box= 5060 rej=58 nearest raw:   41.1 m (d=41.0 l=-1.25 h=1.06 n=6 conf=0.42) curve a=-0.0174 b=+3.75e-05 l0=+0.12 n=26 rail z0=-1.33 g=-0.0089   89.5ms
+[doubleT_platform] #  80 t=   7.99s clear    dist=- box= 1998 rej=51 curve a=-0.0162 b=+4.29e-05 l0=+0.12 n=27 rail z0=-1.30 g=-0.0149   85.1ms
+[doubleT_platform] #  84 t=   8.39s detected dist=  33.9 box= 2716 rej=42 nearest raw:   33.9 m (d=33.9 l=-1.30 h=1.30 n=5 conf=0.24) curve a=-0.0178 b=+7.95e-05 l0=+0.13 n=32 rail z0=-1.37 g=-0.0085   89.9ms
+[doubleT_platform] #  88 t=   8.79s clear    dist=- box= 8083 rej=35 curve a=-0.0125 b=+4.95e-05 l0=+0.08 n=26 rail z0=-1.36 g=-0.0108   82.9ms
+[doubleT_platform] #  92 t=   9.20s clear    dist=- box= 7798 rej=44 nearest raw:  147.2 m (d=147.2 l=-0.93 h=1.38 n=4 conf=1.00) curve a=-0.0155 b=+8.05e-05 l0=+0.09 n=31 rail z0=-1.37 g=-0.0090   88.2ms
+[doubleT_platform] #  96 t=   9.59s clear    dist=- box= 7955 rej=41 curve a=-0.0093 b=+2.05e-05 l0=+0.03 n=23 rail z0=-1.37 g=-0.0089   90.5ms
+[doubleT_platform] # 100 t=  10.00s clear    dist=- box= 7915 rej=36 curve a=-0.0119 b=+5.69e-05 l0=-0.00 n=30 rail z0=-1.38 g=-0.0076   84.9ms
+[doubleT_platform] # 104 t=  10.39s clear    dist=- box= 7990 rej=32 curve a=-0.0120 b=+6.51e-05 l0=+0.02 n=23 rail z0=-1.36 g=-0.0084   91.6ms
+[doubleT_platform] # 108 t=  10.79s clear    dist=- box= 7904 rej=31 curve a=-0.0109 b=+7.01e-05 l0=+0.03 n=22 rail z0=-1.38 g=-0.0089   86.7ms
+[doubleT_platform] # 112 t=  11.20s clear    dist=- box= 7827 rej=42 nearest raw:  126.2 m (d=126.2 l=-0.86 h=2.04 n=6 conf=1.00) curve a=-0.0045 b=+1.60e-05 l0=-0.06 n=29 rail z0=-1.39 g=-0.0054   89.1ms
+[doubleT_platform] # 116 t=  11.60s detected dist= 121.8 box= 8617 rej=33 nearest raw:  121.8 m (d=121.8 l=-0.75 h=1.82 n=6 conf=1.00) curve a=-0.0012 b=-1.67e-05 l0=-0.12 n=32 rail z0=-1.38 g=-0.0043   89.2ms
+[doubleT_platform] # 120 t=  11.99s detected dist= 118.7 box= 7965 rej=45 nearest raw:   29.7 m (d=29.6 l=-1.43 h=1.27 n=8 conf=0.29) curve a=-0.0040 b=-8.50e-07 l0=-0.06 n=29 rail z0=-1.41 g=-0.0023   89.1ms
+[doubleT_platform] # 124 t=  12.39s clear    dist=- box= 8954 rej=42 nearest raw:  129.7 m (d=129.7 l=+0.25 h=2.16 n=4 conf=1.00) curve a=-0.0031 b=+1.58e-06 l0=-0.07 n=27 rail z0=-1.44 g=+0.0012   95.6ms
+[doubleT_platform] # 128 t=  12.79s detected dist=  29.3 box= 8256 rej=40 nearest raw:   29.3 m (d=29.2 l=-1.40 h=1.26 n=5 conf=0.18) curve a=-0.0094 b=+6.83e-05 l0=+0.02 n=32 rail z0=-1.41 g=-0.0038   88.8ms
+[doubleT_platform] # 132 t=  13.19s detected dist= 128.7 box= 8639 rej=46 nearest raw:  128.7 m (d=128.7 l=-0.06 h=2.13 n=4 conf=1.00) curve a=-0.0101 b=+8.25e-05 l0=+0.02 n=36 rail z0=-1.38 g=-0.0059   93.7ms
+[doubleT_platform] # 136 t=  13.60s detected dist=  28.6 box= 9706 rej=36 nearest raw:   28.6 m (d=28.5 l=-1.42 h=1.30 n=5 conf=0.17) curve a=-0.0075 b=+6.96e-05 l0=-0.03 n=38 rail z0=-1.34 g=-0.0097   89.3ms
+[doubleT_platform] # 140 t=  14.00s detected dist=  30.4 box= 9656 rej=38 nearest raw:   26.6 m (d=26.5 l=-1.38 h=1.26 n=8 conf=0.24) curve a=-0.0137 b=+1.36e-04 l0=+0.06 n=39 rail z0=-1.36 g=-0.0060  101.5ms
+[doubleT_platform] # 144 t=  14.39s clear    dist=- box= 9518 rej=38 curve a=-0.0149 b=+1.64e-04 l0=+0.08 n=39 rail z0=-1.34 g=-0.0111   93.3ms
+[doubleT_platform] # 148 t=  14.80s clear    dist=- box= 9633 rej=32 curve a=-0.0157 b=+1.93e-04 l0=+0.06 n=36 rail z0=-1.38 g=-0.0096   95.8ms
+[doubleT_platform] # 152 t=  15.20s clear    dist=- box= 6473 rej=34 curve a=-0.0197 b=+2.45e-04 l0=+0.12 n=42 rail z0=-1.35 g=-0.0104   90.5ms
+[doubleT_platform] # 156 t=  15.60s clear    dist=- box= 1607 rej=32 nearest raw:   26.1 m (d=25.8 l=-1.34 h=1.26 n=11 conf=0.31) curve a=-0.0257 b=+3.25e-04 l0=+0.20 n=39 rail z0=-1.33 g=-0.0100   88.1ms
+[doubleT_platform] # 160 t=  16.00s detected dist=  28.8 box= 1197 rej=28 nearest raw:   28.8 m (d=28.7 l=-1.32 h=1.28 n=5 conf=0.17) curve a=-0.0285 b=+3.71e-04 l0=+0.24 n=44 rail z0=-1.35 g=-0.0090   82.2ms
+[doubleT_platform] # 164 t=  16.40s clear    dist=- box= 1397 rej=34 nearest raw:    3.4 m (d=3.0 l=+0.62 h=0.33 n=35 conf=0.58) curve a=-0.0311 b=+4.01e-04 l0=+0.27 n=43 rail z0=-1.41 g=-0.0063   85.5ms
+[doubleT_platform] # 168 t=  16.80s clear    dist=- box= 1230 rej=35 curve a=-0.0362 b=+4.77e-04 l0=+0.31 n=45 rail z0=-1.40 g=-0.0051   80.9ms
+[doubleT_platform] # 172 t=  17.19s clear    dist=- box= 1345 rej=36 curve a=-0.0400 b=+5.41e-04 l0=+0.33 n=47 rail z0=-1.39 g=-0.0045   84.0ms
+[doubleT_platform] # 176 t=  17.60s clear    dist=- box= 1814 rej=35 curve a=-0.0400 b=+5.57e-04 l0=+0.36 n=44 rail z0=-1.38 g=-0.0050   79.1ms
+[doubleT_platform] # 180 t=  18.00s clear    dist=- box= 5510 rej=30 curve a=-0.0404 b=+5.80e-04 l0=+0.37 n=42 rail z0=-1.35 g=-0.0054   93.3ms
+[doubleT_platform] # 184 t=  18.39s clear    dist=- box=15913 rej=22 nearest raw:  129.9 m (d=129.8 l=+0.39 h=1.54 n=4 conf=1.00) curve a=-0.0432 b=+6.26e-04 l0=+0.42 n=50 rail z0=-1.39 g=-0.0031   97.7ms
+[doubleT_platform] # 188 t=  18.79s clear    dist=- box=11452 rej=22 curve a=-0.0433 b=+6.52e-04 l0=+0.40 n=42 rail z0=-1.40 g=-0.0025   92.5ms
+[doubleT_platform] # 192 t=  19.20s clear    dist=- box=  713 rej=31 curve a=-0.0381 b=+5.91e-04 l0=+0.32 n=39 rail z0=-1.37 g=-0.0047   82.5ms
+[doubleT_platform] # 196 t=  19.60s clear    dist=- box= 1923 rej=27 curve a=-0.0405 b=+6.58e-04 l0=+0.35 n=48 rail z0=-1.38 g=-0.0043   85.3ms
+[doubleT_platform] # 200 t=  19.99s clear    dist=- box=  607 rej=20 nearest raw:  124.6 m (d=124.4 l=-0.25 h=1.69 n=5 conf=1.00) curve a=-0.0408 b=+7.07e-04 l0=+0.32 n=42 rail z0=-1.36 g=-0.0042   81.4ms
+[doubleT_platform] # 204 t=  20.40s clear    dist=- box=  479 rej=26 curve a=-0.0409 b=+7.30e-04 l0=+0.32 n=42 rail z0=-1.31 g=-0.0082   84.7ms
+[doubleT_platform] # 208 t=  20.79s detected dist= 122.6 box=  482 rej=13 nearest raw:  122.6 m (d=122.4 l=-0.83 h=2.11 n=6 conf=1.00) curve a=-0.0411 b=+7.75e-04 l0=+0.31 n=40 rail z0=-1.32 g=-0.0080   83.9ms
+[doubleT_platform] # 212 t=  21.20s detected dist= 121.5 box=  598 rej=18 nearest raw:  116.7 m (d=116.6 l=-0.88 h=1.32 n=4 conf=1.00) curve a=-0.0367 b=+7.23e-04 l0=+0.26 n=42 rail z0=-1.28 g=-0.0105   86.4ms
+[doubleT_platform] # 216 t=  21.60s clear    dist=- box=  722 rej=27 curve a=-0.0359 b=+7.06e-04 l0=+0.26 n=39 rail z0=-1.26 g=-0.0110   92.4ms
+[doubleT_platform] # 220 t=  22.00s detected dist= 120.0 box=  891 rej=19 nearest raw:  120.0 m (d=119.9 l=-0.27 h=1.67 n=5 conf=1.00) curve a=-0.0372 b=+7.41e-04 l0=+0.27 n=43 rail z0=-1.23 g=-0.0134   82.9ms
+[doubleT_platform] # 224 t=  22.39s detected dist= 119.0 box=  398 rej=24 nearest raw:  119.0 m (d=118.8 l=-0.13 h=2.07 n=7 conf=1.00) curve a=-0.0377 b=+7.51e-04 l0=+0.30 n=43 rail z0=-1.23 g=-0.0138   86.9ms
+[doubleT_platform] # 228 t=  22.79s clear    dist=- box=  562 rej=27 curve a=-0.0352 b=+7.45e-04 l0=+0.25 n=41 rail z0=-1.23 g=-0.0137   84.0ms
+[doubleT_platform] # 232 t=  23.20s detected dist= 120.6 box=  340 rej=27 nearest raw:  120.6 m (d=120.4 l=+1.01 h=1.98 n=5 conf=1.00) curve a=-0.0291 b=+6.24e-04 l0=+0.22 n=42 rail z0=-1.22 g=-0.0135   82.9ms
+[doubleT_platform] # 236 t=  23.59s clear    dist=- box=  593 rej=26 curve a=-0.0266 b=+5.92e-04 l0=+0.19 n=35 rail z0=-1.23 g=-0.0135   77.8ms
+[doubleT_platform] # 240 t=  24.00s clear    dist=- box=  354 rej=26 curve a=-0.0286 b=+6.28e-04 l0=+0.21 n=37 rail z0=-1.23 g=-0.0133   78.3ms
+[doubleT_platform] # 244 t=  24.40s clear    dist=- box=  627 rej=26 nearest raw:  118.9 m (d=118.7 l=+0.33 h=1.94 n=5 conf=1.00) curve a=-0.0297 b=+6.90e-04 l0=+0.21 n=40 rail z0=-1.24 g=-0.0132   76.6ms
+[doubleT_platform] # 248 t=  24.80s clear    dist=- box=  240 rej=24 curve a=-0.0324 b=+7.24e-04 l0=+0.24 n=38 rail z0=-1.23 g=-0.0136   74.1ms
+[doubleT_platform] # 252 t=  25.19s clear    dist=- box=  192 rej=26 nearest raw:  123.7 m (d=123.2 l=+0.71 h=1.54 n=14 conf=1.00) curve a=-0.0348 b=+7.41e-04 l0=+0.27 n=33 rail z0=-1.24 g=-0.0133   80.9ms
+[doubleT_platform] # 256 t=  25.59s clear    dist=- box=  181 rej=22 nearest raw:  119.2 m (d=119.0 l=+0.26 h=2.09 n=5 conf=1.00) curve a=-0.0378 b=+7.77e-04 l0=+0.28 n=35 rail z0=-1.25 g=-0.0129   77.6ms
+[doubleT_platform] # 260 t=  26.00s detected dist= 119.0 box=  127 rej=21 nearest raw:  119.0 m (d=118.8 l=-0.35 h=2.07 n=5 conf=1.00) curve a=-0.0408 b=+8.44e-04 l0=+0.30 n=36 rail z0=-1.25 g=-0.0128   79.3ms
+[doubleT_platform] # 264 t=  26.39s clear    dist=- box=  528 rej=24 nearest raw:  109.9 m (d=109.7 l=-0.97 h=1.70 n=8 conf=1.00) curve a=-0.0437 b=+8.66e-04 l0=+0.36 n=36 rail z0=-1.25 g=-0.0121   80.7ms
+[doubleT_platform] # 268 t=  26.79s detected dist= 122.9 box=  591 rej=16 nearest raw:  122.9 m (d=122.7 l=-0.41 h=1.53 n=7 conf=1.00) curve a=-0.0448 b=+8.95e-04 l0=+0.37 n=39 rail z0=-1.25 g=-0.0129   78.6ms
+[doubleT_platform] # 272 t=  27.19s clear    dist=- box= 3800 rej=12 nearest raw:  130.8 m (d=130.4 l=-0.20 h=1.62 n=4 conf=1.00) curve a=-0.0469 b=+9.31e-04 l0=+0.39 n=36 rail z0=-1.25 g=-0.0130   80.5ms
+[doubleT_platform] # 276 t=  27.59s detected dist= 130.2 box= 4975 rej=10 nearest raw:  130.2 m (d=129.8 l=-0.49 h=1.45 n=5 conf=1.00) curve a=-0.0488 b=+9.60e-04 l0=+0.41 n=39 rail z0=-1.25 g=-0.0129   82.2ms
+[doubleT_platform] # 280 t=  28.00s clear    dist=- box= 4448 rej=15 curve a=-0.0482 b=+9.51e-04 l0=+0.40 n=35 rail z0=-1.25 g=-0.0128   78.7ms
+[doubleT_platform] # 284 t=  28.39s clear    dist=- box= 3903 rej=8 nearest raw:  118.4 m (d=118.2 l=-0.99 h=1.93 n=5 conf=1.00) curve a=-0.0470 b=+9.30e-04 l0=+0.39 n=36 rail z0=-1.25 g=-0.0129   82.8ms
+[doubleT_platform] # 288 t=  28.80s clear    dist=- box= 3140 rej=8 curve a=-0.0467 b=+9.29e-04 l0=+0.39 n=35 rail z0=-1.25 g=-0.0131   81.9ms
+[doubleT_platform] # 292 t=  29.21s clear    dist=- box=  755 rej=9 nearest raw:  129.6 m (d=129.2 l=-0.26 h=1.59 n=4 conf=1.00) curve a=-0.0458 b=+9.25e-04 l0=+0.37 n=35 rail z0=-1.25 g=-0.0131   85.0ms
+[doubleT_platform] # 296 t=  29.60s detected dist= 130.3 box=  190 rej=9 nearest raw:  123.6 m (d=122.7 l=-0.80 h=1.51 n=10 conf=1.00) curve a=-0.0453 b=+9.27e-04 l0=+0.36 n=36 rail z0=-1.25 g=-0.0129   87.4ms
+[doubleT_platform] # 300 t=  30.01s clear    dist=- box=   58 rej=6 curve a=-0.0444 b=+9.37e-04 l0=+0.34 n=36 rail z0=-1.25 g=-0.0128   88.5ms
+[doubleT_platform] # 304 t=  30.40s detected dist= 130.3 box=   74 rej=13 nearest raw:  130.3 m (d=130.0 l=-0.58 h=1.52 n=6 conf=1.00) curve a=-0.0444 b=+9.35e-04 l0=+0.34 n=36 rail z0=-1.25 g=-0.0131   86.1ms
+[doubleT_platform] # 308 t=  30.80s detected dist= 130.3 box=   61 rej=11 nearest raw:  130.3 m (d=129.9 l=-0.60 h=1.55 n=5 conf=1.00) curve a=-0.0447 b=+9.37e-04 l0=+0.35 n=36 rail z0=-1.25 g=-0.0132   87.6ms
+[doubleT_platform] # 312 t=  31.22s detected dist= 127.3 box=   67 rej=8 nearest raw:  122.7 m (d=122.5 l=-0.92 h=1.55 n=9 conf=1.00) curve a=-0.0449 b=+9.35e-04 l0=+0.35 n=35 rail z0=-1.25 g=-0.0127   87.2ms
+[doubleT_platform] # 316 t=  31.60s clear    dist=- box=   79 rej=11 curve a=-0.0450 b=+9.28e-04 l0=+0.35 n=36 rail z0=-1.25 g=-0.0132   82.9ms
+[doubleT_platform] # 320 t=  32.00s detected dist= 122.7 box=  272 rej=11 nearest raw:  122.7 m (d=122.4 l=-0.94 h=1.62 n=9 conf=1.00) curve a=-0.0458 b=+9.40e-04 l0=+0.36 n=36 rail z0=-1.25 g=-0.0132   87.1ms
+[doubleT_platform] # 324 t=  32.39s clear    dist=- box=   49 rej=8 nearest raw:  130.3 m (d=129.9 l=-0.67 h=1.53 n=5 conf=1.00) curve a=-0.0457 b=+9.48e-04 l0=+0.34 n=39 rail z0=-1.26 g=-0.0125   87.7ms
+[doubleT_platform] # 328 t=  32.80s clear    dist=- box=   63 rej=13 curve a=-0.0454 b=+9.43e-04 l0=+0.35 n=36 rail z0=-1.25 g=-0.0130   83.7ms
+[doubleT_platform] # 332 t=  33.21s clear    dist=- box=   84 rej=9 nearest raw:  123.6 m (d=122.6 l=-0.77 h=1.62 n=10 conf=1.00) curve a=-0.0445 b=+9.26e-04 l0=+0.35 n=36 rail z0=-1.24 g=-0.0134   87.3ms
+[doubleT_platform] # 336 t=  33.60s clear    dist=- box=  126 rej=9 nearest raw:  130.2 m (d=129.9 l=-0.58 h=1.53 n=5 conf=1.00) curve a=-0.0463 b=+9.51e-04 l0=+0.36 n=39 rail z0=-1.25 g=-0.0130   84.9ms
+[doubleT_platform] # 340 t=  34.01s detected dist= 130.3 box=   67 rej=8 nearest raw:  130.3 m (d=130.0 l=-0.79 h=1.60 n=4 conf=1.00) curve a=-0.0465 b=+9.63e-04 l0=+0.36 n=36 rail z0=-1.25 g=-0.0128   85.1ms
+[doubleT_platform] # 344 t=  34.42s clear    dist=- box=   53 rej=10 curve a=-0.0458 b=+9.57e-04 l0=+0.35 n=36 rail z0=-1.25 g=-0.0130   83.9ms
+{
+ "bag": "doubleT_platform",
+ "frames_processed": 87,
+ "status_counts": {
+  "clear": 60,
+  "detected": 27,
+  "unknown": 0
+ },
+ "status_counts_raw": {
+  "clear": 36,
+  "detected": 51,
+  "unknown": 0
+ },
+ "processing_ms": {
+  "median": 86.18,
+  "p95": 93.57,
+  "p99": 98.23,
+  "max": 101.54,
+  "mean": 86.28
+ },
+ "read_ms_median": 11.77,
+ "wall_s": 11.86,
+ "frames_per_s_including_io": 7.34
+}

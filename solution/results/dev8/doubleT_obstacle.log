@@ -1,0 +1,76 @@
+[INFO] [1790633198.985447923] [rosbag2_storage]: Opened database '/home/gag/i.mos/dataset/for_hackathon/doubleT_obstacle/doubleT_obstacle_0.db3' for READ_ONLY.
+[doubleT_obstacle] #   0 t=   0.00s clear    dist=- box=   56 rej=3 curve a=-0.0162 b=-4.00e-05 l0=-0.03 n=29 rail z0=-1.75 g=-0.0111  113.7ms
+[doubleT_obstacle] #   4 t=   0.38s clear    dist=- box=  115 rej=5 curve a=-0.0237 b=+2.65e-05 l0=+0.22 n=35 rail z0=-1.77 g=-0.0104  121.1ms
+[doubleT_obstacle] #   8 t=   0.79s clear    dist=- box=   90 rej=1 nearest raw:   55.6 m (d=55.5 l=+0.87 h=1.12 n=22 conf=1.00) curve a=-0.0293 b=+7.71e-05 l0=+0.21 n=35 rail z0=-1.77 g=-0.0085  123.3ms
+[doubleT_obstacle] #  12 t=   1.20s detected dist=  55.7 box=   97 nearest raw:   55.7 m (d=55.6 l=+0.66 h=1.07 n=25 conf=1.00) curve a=-0.0326 b=+9.88e-05 l0=+0.22 n=34 rail z0=-1.77 g=-0.0089  119.0ms
+[doubleT_obstacle] #  16 t=   1.60s detected dist=  55.7 box=  105 nearest raw:   55.7 m (d=55.6 l=+0.54 h=1.16 n=27 conf=1.00) curve a=-0.0348 b=+9.16e-05 l0=+0.18 n=33 rail z0=-1.77 g=-0.0078  116.1ms
+[doubleT_obstacle] #  20 t=   1.99s detected dist=  55.7 box=  112 nearest raw:   55.7 m (d=55.7 l=+0.17 h=1.16 n=27 conf=1.00) curve a=-0.0358 b=+1.40e-04 l0=+0.22 n=33 rail z0=-1.77 g=-0.0088  117.5ms
+[doubleT_obstacle] #  24 t=   2.38s detected dist=  55.9 box=  126 nearest raw:   55.9 m (d=55.8 l=+0.00 h=1.12 n=26 conf=1.00) curve a=-0.0375 b=+1.55e-04 l0=+0.22 n=35 rail z0=-1.77 g=-0.0082  113.7ms
+[doubleT_obstacle] #  28 t=   2.79s detected dist=  55.9 box=  121 nearest raw:   55.9 m (d=55.8 l=-0.14 h=0.96 n=27 conf=1.00) curve a=-0.0381 b=+1.32e-04 l0=+0.20 n=34 rail z0=-1.77 g=-0.0081  110.4ms
+[doubleT_obstacle] #  32 t=   3.19s detected dist=  55.8 box=  108 nearest raw:   55.8 m (d=55.7 l=-0.25 h=0.83 n=28 conf=1.00) curve a=-0.0378 b=+1.24e-04 l0=+0.22 n=34 rail z0=-1.78 g=-0.0083  110.9ms
+[doubleT_obstacle] #  36 t=   3.60s detected dist=  55.9 box=   93 nearest raw:   55.9 m (d=55.7 l=-0.31 h=0.93 n=21 conf=1.00) curve a=-0.0385 b=+1.41e-04 l0=+0.23 n=30 rail z0=-1.78 g=-0.0082  104.9ms
+[doubleT_obstacle] #  40 t=   3.98s detected dist=  55.8 box=  109 nearest raw:   55.8 m (d=55.7 l=-0.32 h=0.97 n=20 conf=1.00) curve a=-0.0384 b=+1.53e-04 l0=+0.23 n=27 rail z0=-1.78 g=-0.0081  104.1ms
+[doubleT_obstacle] #  44 t=   4.39s detected dist=  55.9 box=  117 nearest raw:   55.9 m (d=55.7 l=-0.30 h=0.91 n=24 conf=1.00) curve a=-0.0381 b=+1.56e-04 l0=+0.23 n=29 rail z0=-1.78 g=-0.0082  106.0ms
+[doubleT_obstacle] #  48 t=   4.78s detected dist=  55.9 box=  125 nearest raw:   55.9 m (d=55.8 l=-0.06 h=1.08 n=26 conf=1.00) curve a=-0.0386 b=+1.27e-04 l0=+0.23 n=28 rail z0=-1.77 g=-0.0086  101.7ms
+[doubleT_obstacle] #  52 t=   5.19s detected dist=  56.1 box=  125 nearest raw:   56.1 m (d=56.0 l=+0.14 h=1.11 n=32 conf=1.00) curve a=-0.0378 b=+1.25e-04 l0=+0.23 n=27 rail z0=-1.77 g=-0.0084  101.3ms
+[doubleT_obstacle] #  56 t=   5.59s detected dist=  56.2 box=  111 nearest raw:   56.2 m (d=56.1 l=+0.39 h=1.14 n=22 conf=1.00) curve a=-0.0372 b=+9.41e-05 l0=+0.23 n=28 rail z0=-1.78 g=-0.0083   99.1ms
+[doubleT_obstacle] #  60 t=   6.00s detected dist=  56.3 box=  110 nearest raw:   56.3 m (d=56.2 l=+0.50 h=1.15 n=21 conf=1.00) curve a=-0.0363 b=+1.13e-04 l0=+0.23 n=32 rail z0=-1.78 g=-0.0084   98.6ms
+[doubleT_obstacle] #  64 t=   6.39s detected dist=  56.4 box=   77 nearest raw:   56.4 m (d=56.3 l=+0.82 h=1.13 n=19 conf=1.00) curve a=-0.0366 b=+1.24e-04 l0=+0.23 n=28 rail z0=-1.77 g=-0.0090  102.0ms
+[doubleT_obstacle] #  68 t=   6.79s clear    dist=- box=   14 rej=1 curve a=-0.0367 b=+9.23e-05 l0=+0.22 n=26 rail z0=-1.76 g=-0.0110  101.3ms
+[doubleT_obstacle] #  72 t=   7.19s clear    dist=- box=    0 curve a=-0.0357 b=+9.24e-05 l0=+0.14 n=28 rail z0=-1.76 g=-0.0105   91.4ms
+[doubleT_obstacle] #  76 t=   7.59s clear    dist=- box=    0 curve a=-0.0351 b=+7.18e-05 l0=+0.19 n=30 rail z0=-1.76 g=-0.0105   90.8ms
+[doubleT_obstacle] #  80 t=   8.01s clear    dist=- box=    0 curve a=-0.0353 b=+1.05e-04 l0=+0.23 n=29 rail z0=-1.76 g=-0.0103   92.4ms
+[doubleT_obstacle] #  84 t=   8.39s clear    dist=- box=    0 curve a=-0.0357 b=+1.48e-04 l0=+0.23 n=28 rail z0=-1.76 g=-0.0105   90.1ms
+[doubleT_obstacle] #  88 t=   8.78s clear    dist=- box=    0 curve a=-0.0364 b=+1.36e-04 l0=+0.18 n=28 rail z0=-1.76 g=-0.0102   88.1ms
+[doubleT_obstacle] #  92 t=   9.19s clear    dist=- box=    0 curve a=-0.0370 b=+1.56e-04 l0=+0.22 n=31 rail z0=-1.76 g=-0.0100   88.2ms
+[doubleT_obstacle] #  96 t=   9.58s clear    dist=- box=    0 curve a=-0.0375 b=+1.42e-04 l0=+0.20 n=30 rail z0=-1.76 g=-0.0101   85.6ms
+[doubleT_obstacle] # 100 t=  10.00s clear    dist=- box=    0 curve a=-0.0373 b=+1.33e-04 l0=+0.20 n=29 rail z0=-1.76 g=-0.0102   85.1ms
+[doubleT_obstacle] # 104 t=  10.41s clear    dist=- box=    0 curve a=-0.0372 b=+1.26e-04 l0=+0.20 n=30 rail z0=-1.76 g=-0.0103   88.5ms
+[doubleT_obstacle] # 108 t=  10.78s clear    dist=- box=    0 curve a=-0.0369 b=+1.21e-04 l0=+0.21 n=28 rail z0=-1.76 g=-0.0104   85.8ms
+[doubleT_obstacle] # 112 t=  11.18s clear    dist=- box=    0 curve a=-0.0371 b=+1.18e-04 l0=+0.17 n=29 rail z0=-1.76 g=-0.0105   86.5ms
+[doubleT_obstacle] # 116 t=  11.58s clear    dist=- box=    0 curve a=-0.0361 b=+1.28e-04 l0=+0.14 n=30 rail z0=-1.76 g=-0.0104   87.2ms
+[doubleT_obstacle] # 120 t=  11.99s clear    dist=- box=    0 curve a=-0.0370 b=+1.41e-04 l0=+0.21 n=34 rail z0=-1.76 g=-0.0103   92.3ms
+[doubleT_obstacle] # 124 t=  12.41s clear    dist=- box=    0 curve a=-0.0372 b=+1.42e-04 l0=+0.19 n=32 rail z0=-1.76 g=-0.0102  101.9ms
+[doubleT_obstacle] # 128 t=  12.79s clear    dist=- box=    0 curve a=-0.0374 b=+1.63e-04 l0=+0.18 n=30 rail z0=-1.76 g=-0.0095  114.4ms
+[doubleT_obstacle] # 132 t=  13.19s clear    dist=- box=    0 curve a=-0.0383 b=+1.25e-04 l0=+0.23 n=30 rail z0=-1.76 g=-0.0101  122.9ms
+[doubleT_obstacle] # 136 t=  13.60s clear    dist=- box=    0 curve a=-0.0376 b=+1.52e-04 l0=+0.23 n=28 rail z0=-1.77 g=-0.0089  127.4ms
+[doubleT_obstacle] # 140 t=  14.09s clear    dist=- box=    0 curve a=-0.0372 b=+1.25e-04 l0=+0.19 n=31 rail z0=-1.76 g=-0.0103  130.4ms
+[doubleT_obstacle] # 144 t=  14.49s clear    dist=- box=    0 curve a=-0.0376 b=+1.44e-04 l0=+0.23 n=28 rail z0=-1.77 g=-0.0094  122.1ms
+[doubleT_obstacle] # 148 t=  14.89s clear    dist=- box=    0 curve a=-0.0367 b=+1.20e-04 l0=+0.19 n=27 rail z0=-1.77 g=-0.0094  120.3ms
+[doubleT_obstacle] # 152 t=  15.29s clear    dist=- box=    0 curve a=-0.0373 b=+9.44e-05 l0=+0.22 n=28 rail z0=-1.76 g=-0.0109  114.9ms
+[doubleT_obstacle] # 156 t=  15.69s clear    dist=- box=    0 curve a=-0.0358 b=+9.52e-05 l0=+0.20 n=27 rail z0=-1.76 g=-0.0104  115.2ms
+[doubleT_obstacle] # 160 t=  16.09s clear    dist=- box=   22 rej=1 curve a=-0.0347 b=+9.58e-05 l0=+0.15 n=29 rail z0=-1.77 g=-0.0093  143.9ms
+[doubleT_obstacle] # 164 t=  16.49s clear    dist=- box=    0 curve a=-0.0345 b=+9.12e-05 l0=+0.19 n=29 rail z0=-1.77 g=-0.0093  131.2ms
+[doubleT_obstacle] # 168 t=  17.19s clear    dist=- box=    0 curve a=-0.0357 b=+1.15e-04 l0=+0.23 n=32 rail z0=-1.76 g=-0.0104  127.6ms
+[doubleT_obstacle] # 172 t=  17.59s clear    dist=- box=    0 curve a=-0.0350 b=+1.03e-04 l0=+0.18 n=30 rail z0=-1.76 g=-0.0109  128.5ms
+[doubleT_obstacle] # 176 t=  17.99s clear    dist=- box=    0 curve a=-0.0355 b=+9.23e-05 l0=+0.21 n=29 rail z0=-1.76 g=-0.0103  130.3ms
+[doubleT_obstacle] # 180 t=  18.39s clear    dist=- box=    0 curve a=-0.0367 b=+1.35e-04 l0=+0.23 n=32 rail z0=-1.77 g=-0.0094  119.2ms
+[doubleT_obstacle] # 184 t=  18.79s clear    dist=- box=    0 curve a=-0.0367 b=+1.09e-04 l0=+0.19 n=30 rail z0=-1.76 g=-0.0106  114.0ms
+[doubleT_obstacle] # 188 t=  19.19s clear    dist=- box=    0 curve a=-0.0364 b=+1.36e-04 l0=+0.23 n=33 rail z0=-1.76 g=-0.0100  111.4ms
+[doubleT_obstacle] # 192 t=  19.59s clear    dist=- box=    0 curve a=-0.0366 b=+1.04e-04 l0=+0.19 n=29 rail z0=-1.76 g=-0.0097  110.0ms
+[doubleT_obstacle] # 196 t=  19.98s clear    dist=- box=    0 curve a=-0.0357 b=+1.30e-04 l0=+0.18 n=33 rail z0=-1.76 g=-0.0096  113.3ms
+[doubleT_obstacle] # 200 t=  20.39s clear    dist=- box=    0 curve a=-0.0372 b=+1.35e-04 l0=+0.23 n=30 rail z0=-1.76 g=-0.0104  118.6ms
+{
+ "bag": "doubleT_obstacle",
+ "frames_processed": 51,
+ "status_counts": {
+  "clear": 37,
+  "detected": 14,
+  "unknown": 0
+ },
+ "status_counts_raw": {
+  "clear": 36,
+  "detected": 15,
+  "unknown": 0
+ },
+ "processing_ms": {
+  "median": 110.92,
+  "p95": 130.34,
+  "p99": 137.54,
+  "max": 143.9,
+  "mean": 108.51
+ },
+ "read_ms_median": 23.38,
+ "wall_s": 10.43,
+ "frames_per_s_including_io": 4.89
+}

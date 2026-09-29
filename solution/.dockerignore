@@ -1,0 +1,16 @@
+results/
+video/
+build/
+install/
+log/
+**/__pycache__/
+*.db3
+*.zip
+*.zst
+*.tar
+*.tar.gz
+*.gz
+*.mcap
+*.mp4
+*.png
+.pytest_cache/

@@ -1,0 +1,9 @@
+[INFO] [1790690624.074744056] [metro_obstacle_detector]: input auto (reliable, depth 1, raw CDR decoding); axes forward=-y up=+z; config=defaults; log=/results/stream.jsonl
+[WARN] [1790690625.547833293] [metro_obstacle_detector]: no input: waiting for a PointCloud2 topic (input_topic:=auto) (1.5 s since start): publishing UNKNOWN
+[INFO] [1790690628.048344574] [metro_obstacle_detector]: input_topic:=auto -> subscribed to /lidar_points (reliable)
+[INFO] [1790690636.132505855] [metro_obstacle_detector]: frames=50 status=clear dist=None proc ms median=46.0 p95=66.9 max=68.6
+[INFO] [1790690641.132718849] [metro_obstacle_detector]: frames=100 status=clear dist=None proc ms median=34.9 p95=67.8 max=76.7
+[INFO] [1790690646.098044999] [metro_obstacle_detector]: frames=150 status=clear dist=None proc ms median=38.1 p95=71.0 max=76.7
+[INFO] [1790690651.106610005] [metro_obstacle_detector]: frames=200 status=clear dist=None proc ms median=38.7 p95=69.2 max=76.7
+[INFO] [1790690656.117719079] [metro_obstacle_detector]: frames=250 status=clear dist=None proc ms median=39.4 p95=68.8 max=76.7
+[WARN] [1790690658.047939836] [metro_obstacle_detector]: input stale: no cloud for > 1.5 s: publishing UNKNOWN

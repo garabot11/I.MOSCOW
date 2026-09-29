@@ -1,0 +1,277 @@
+listening on /obstacles/status ...
+t+   0.2s frame     0 | UNKNOWN  | distance    --    | proc   0.0 ms | no input: no cloud received on /lidar_points since start (12.0 s)
+t+   0.7s frame     0 | UNKNOWN  | distance    --    | proc   0.0 ms | no input: no cloud received on /lidar_points since start (12.5 s)
+t+   1.2s frame     0 | UNKNOWN  | distance    --    | proc   0.0 ms | no input: no cloud received on /lidar_points since start (13.0 s)
+t+   1.7s frame     0 | UNKNOWN  | distance    --    | proc   0.0 ms | no input: no cloud received on /lidar_points since start (13.5 s)
+t+   2.1s frame     1 | CLEAR    | distance    --    | proc  29.1 ms
+t+   2.2s frame     2 | CLEAR    | distance    --    | proc  23.9 ms
+t+   2.3s frame     3 | CLEAR    | distance    --    | proc  41.3 ms
+t+   2.4s frame     4 | CLEAR    | distance    --    | proc  41.8 ms
+t+   2.5s frame     5 | CLEAR    | distance    --    | proc  23.5 ms
+t+   2.6s frame     6 | CLEAR    | distance    --    | proc  22.9 ms
+t+   2.7s frame     7 | CLEAR    | distance    --    | proc  23.5 ms
+t+   2.8s frame     8 | CLEAR    | distance    --    | proc  25.9 ms
+t+   2.9s frame     9 | CLEAR    | distance    --    | proc  23.3 ms
+t+   3.0s frame    10 | CLEAR    | distance    --    | proc  21.7 ms
+t+   3.1s frame    11 | CLEAR    | distance    --    | proc  22.7 ms
+t+   3.2s frame    12 | CLEAR    | distance    --    | proc  21.8 ms
+t+   3.3s frame    13 | CLEAR    | distance    --    | proc  40.0 ms
+t+   3.4s frame    14 | CLEAR    | distance    --    | proc  39.5 ms
+t+   3.5s frame    15 | CLEAR    | distance    --    | proc  40.2 ms
+t+   3.6s frame    16 | CLEAR    | distance    --    | proc  39.4 ms
+t+   3.7s frame    17 | CLEAR    | distance    --    | proc  42.3 ms
+t+   3.8s frame    18 | CLEAR    | distance    --    | proc  41.9 ms
+t+   3.9s frame    19 | CLEAR    | distance    --    | proc  38.6 ms
+t+   4.0s frame    20 | CLEAR    | distance    --    | proc  21.9 ms
+t+   4.1s frame    21 | CLEAR    | distance    --    | proc  22.0 ms
+t+   4.2s frame    22 | CLEAR    | distance    --    | proc  22.2 ms
+t+   4.3s frame    23 | CLEAR    | distance    --    | proc  22.7 ms
+t+   4.4s frame    24 | CLEAR    | distance    --    | proc  22.4 ms
+t+   4.5s frame    25 | CLEAR    | distance    --    | proc  21.9 ms
+t+   4.6s frame    26 | CLEAR    | distance    --    | proc  21.8 ms
+t+   4.7s frame    27 | CLEAR    | distance    --    | proc  22.7 ms
+t+   4.8s frame    28 | CLEAR    | distance    --    | proc  25.7 ms
+t+   4.9s frame    29 | CLEAR    | distance    --    | proc  40.7 ms
+t+   5.0s frame    30 | CLEAR    | distance    --    | proc  23.5 ms
+t+   5.1s frame    31 | CLEAR    | distance    --    | proc  22.6 ms
+t+   5.2s frame    32 | CLEAR    | distance    --    | proc  22.5 ms
+t+   5.3s frame    33 | CLEAR    | distance    --    | proc  22.7 ms
+t+   5.4s frame    34 | CLEAR    | distance    --    | proc  23.4 ms
+t+   5.5s frame    35 | CLEAR    | distance    --    | proc  23.9 ms
+t+   5.6s frame    36 | CLEAR    | distance    --    | proc  21.5 ms
+t+   5.7s frame    37 | CLEAR    | distance    --    | proc  39.3 ms
+t+   5.8s frame    38 | CLEAR    | distance    --    | proc  45.0 ms
+t+   5.9s frame    39 | CLEAR    | distance    --    | proc  40.9 ms
+t+   6.0s frame    40 | CLEAR    | distance    --    | proc  41.7 ms
+t+   6.1s frame    41 | CLEAR    | distance    --    | proc  40.8 ms
+t+   6.2s frame    42 | CLEAR    | distance    --    | proc  41.7 ms
+t+   6.3s frame    43 | CLEAR    | distance    --    | proc  42.5 ms
+t+   6.4s frame    44 | CLEAR    | distance    --    | proc  41.9 ms
+t+   6.5s frame    45 | CLEAR    | distance    --    | proc  42.5 ms
+t+   6.6s frame    46 | CLEAR    | distance    --    | proc  40.8 ms
+t+   6.7s frame    47 | CLEAR    | distance    --    | proc  42.6 ms
+t+   6.8s frame    48 | CLEAR    | distance    --    | proc  44.0 ms
+t+   6.9s frame    49 | CLEAR    | distance    --    | proc  41.1 ms
+t+   7.0s frame    50 | CLEAR    | distance    --    | proc  40.5 ms
+t+   7.1s frame    51 | CLEAR    | distance    --    | proc  41.3 ms
+t+   7.2s frame    52 | CLEAR    | distance    --    | proc  41.7 ms
+t+   7.3s frame    53 | CLEAR    | distance    --    | proc  43.1 ms
+t+   7.4s frame    54 | CLEAR    | distance    --    | proc  42.1 ms
+t+   7.5s frame    55 | CLEAR    | distance    --    | proc  42.2 ms
+t+   7.6s frame    56 | CLEAR    | distance    --    | proc  22.9 ms
+t+   7.7s frame    57 | CLEAR    | distance    --    | proc  22.0 ms
+t+   7.8s frame    58 | CLEAR    | distance    --    | proc  22.6 ms
+t+   7.9s frame    59 | CLEAR    | distance    --    | proc  22.7 ms
+t+   8.0s frame    60 | CLEAR    | distance    --    | proc  21.6 ms
+t+   8.1s frame    61 | CLEAR    | distance    --    | proc  22.2 ms
+t+   8.2s frame    62 | CLEAR    | distance    --    | proc  22.9 ms
+t+   8.3s frame    63 | CLEAR    | distance    --    | proc  22.3 ms
+t+   8.3s frame    64 | CLEAR    | distance    --    | proc  21.8 ms
+t+   8.4s frame    65 | CLEAR    | distance    --    | proc  22.9 ms
+t+   8.6s frame    66 | CLEAR    | distance    --    | proc  21.9 ms
+t+   8.7s frame    67 | CLEAR    | distance    --    | proc  21.2 ms
+t+   8.8s frame    68 | CLEAR    | distance    --    | proc  24.1 ms
+t+   8.9s frame    69 | CLEAR    | distance    --    | proc  21.8 ms
+t+   9.0s frame    70 | CLEAR    | distance    --    | proc  22.9 ms
+t+   9.1s frame    71 | CLEAR    | distance    --    | proc  23.0 ms
+t+   9.2s frame    72 | CLEAR    | distance    --    | proc  24.4 ms
+t+   9.3s frame    73 | CLEAR    | distance    --    | proc  22.3 ms
+t+   9.4s frame    74 | CLEAR    | distance    --    | proc  22.9 ms
+t+   9.5s frame    75 | CLEAR    | distance    --    | proc  21.5 ms
+t+   9.6s frame    76 | CLEAR    | distance    --    | proc  22.1 ms
+t+   9.7s frame    77 | CLEAR    | distance    --    | proc  21.8 ms
+t+   9.8s frame    78 | CLEAR    | distance    --    | proc  23.1 ms
+t+   9.9s frame    79 | CLEAR    | distance    --    | proc  21.5 ms
+t+  10.0s frame    80 | CLEAR    | distance    --    | proc  22.4 ms
+t+  10.1s frame    81 | CLEAR    | distance    --    | proc  22.2 ms
+t+  10.2s frame    82 | CLEAR    | distance    --    | proc  22.6 ms
+t+  10.3s frame    83 | CLEAR    | distance    --    | proc  22.2 ms
+t+  10.4s frame    84 | CLEAR    | distance    --    | proc  22.4 ms
+t+  10.5s frame    85 | CLEAR    | distance    --    | proc  22.3 ms
+t+  10.6s frame    86 | CLEAR    | distance    --    | proc  21.4 ms
+t+  10.7s frame    87 | CLEAR    | distance    --    | proc  22.0 ms
+t+  10.8s frame    88 | CLEAR    | distance    --    | proc  23.8 ms
+t+  10.9s frame    89 | CLEAR    | distance    --    | proc  22.5 ms
+t+  11.0s frame    90 | CLEAR    | distance    --    | proc  23.0 ms
+t+  11.1s frame    91 | CLEAR    | distance    --    | proc  23.2 ms
+t+  11.2s frame    92 | CLEAR    | distance    --    | proc  23.1 ms
+t+  11.3s frame    93 | CLEAR    | distance    --    | proc  22.4 ms
+t+  11.4s frame    94 | CLEAR    | distance    --    | proc  21.6 ms
+t+  11.5s frame    95 | CLEAR    | distance    --    | proc  40.0 ms
+t+  11.6s frame    96 | CLEAR    | distance    --    | proc  40.1 ms
+t+  11.7s frame    97 | CLEAR    | distance    --    | proc  41.7 ms
+t+  11.8s frame    98 | CLEAR    | distance    --    | proc  50.1 ms
+t+  11.9s frame    99 | CLEAR    | distance    --    | proc  44.8 ms
+t+  12.0s frame   100 | CLEAR    | distance    --    | proc  42.6 ms
+t+  12.1s frame   101 | CLEAR    | distance    --    | proc  42.0 ms
+t+  12.2s frame   102 | CLEAR    | distance    --    | proc  42.6 ms
+t+  12.3s frame   103 | CLEAR    | distance    --    | proc  40.2 ms
+t+  12.4s frame   104 | CLEAR    | distance    --    | proc  38.3 ms
+t+  12.5s frame   105 | CLEAR    | distance    --    | proc  40.3 ms
+t+  12.6s frame   106 | CLEAR    | distance    --    | proc  24.5 ms
+t+  12.7s frame   107 | CLEAR    | distance    --    | proc  46.1 ms
+t+  12.8s frame   108 | CLEAR    | distance    --    | proc  25.8 ms
+t+  12.9s frame   109 | CLEAR    | distance    --    | proc  40.5 ms
+t+  13.0s frame   110 | CLEAR    | distance    --    | proc  37.8 ms
+t+  13.1s frame   111 | CLEAR    | distance    --    | proc  35.3 ms
+t+  13.2s frame   112 | CLEAR    | distance    --    | proc  39.3 ms
+t+  13.3s frame   113 | CLEAR    | distance    --    | proc  40.6 ms
+t+  13.4s frame   114 | CLEAR    | distance    --    | proc  45.0 ms
+t+  13.5s frame   115 | CLEAR    | distance    --    | proc  47.3 ms
+t+  13.6s frame   116 | CLEAR    | distance    --    | proc  50.1 ms
+t+  13.7s frame   117 | CLEAR    | distance    --    | proc  52.0 ms
+t+  13.8s frame   118 | CLEAR    | distance    --    | proc  51.0 ms
+t+  13.9s frame   119 | CLEAR    | distance    --    | proc  45.1 ms
+t+  14.0s frame   120 | CLEAR    | distance    --    | proc  45.8 ms
+t+  14.1s frame   121 | CLEAR    | distance    --    | proc  43.8 ms
+t+  14.2s frame   122 | CLEAR    | distance    --    | proc  43.1 ms
+t+  14.3s frame   123 | CLEAR    | distance    --    | proc  43.7 ms
+t+  14.4s frame   124 | CLEAR    | distance    --    | proc  23.3 ms
+t+  14.5s frame   125 | CLEAR    | distance    --    | proc  23.5 ms
+t+  14.6s frame   126 | CLEAR    | distance    --    | proc  26.3 ms
+t+  14.7s frame   127 | CLEAR    | distance    --    | proc  22.9 ms
+t+  14.8s frame   128 | CLEAR    | distance    --    | proc  24.7 ms
+t+  14.9s frame   129 | CLEAR    | distance    --    | proc  23.4 ms
+t+  15.0s frame   130 | CLEAR    | distance    --    | proc  22.2 ms
+t+  15.1s frame   131 | CLEAR    | distance    --    | proc  22.2 ms
+t+  15.2s frame   132 | CLEAR    | distance    --    | proc  22.6 ms
+t+  15.3s frame   133 | CLEAR    | distance    --    | proc  23.9 ms
+t+  15.4s frame   134 | CLEAR    | distance    --    | proc  24.7 ms
+t+  15.5s frame   135 | CLEAR    | distance    --    | proc  24.7 ms
+t+  15.6s frame   136 | CLEAR    | distance    --    | proc  25.9 ms
+t+  15.7s frame   137 | CLEAR    | distance    --    | proc  26.1 ms
+t+  15.8s frame   138 | CLEAR    | distance    --    | proc  25.8 ms
+t+  15.9s frame   139 | CLEAR    | distance    --    | proc  23.9 ms
+t+  16.0s frame   140 | CLEAR    | distance    --    | proc  24.5 ms
+t+  16.1s frame   141 | CLEAR    | distance    --    | proc  24.8 ms
+t+  16.2s frame   142 | CLEAR    | distance    --    | proc  24.0 ms
+t+  16.3s frame   143 | CLEAR    | distance    --    | proc  25.6 ms
+t+  16.4s frame   144 | CLEAR    | distance    --    | proc  24.7 ms
+t+  16.5s frame   145 | CLEAR    | distance    --    | proc  25.2 ms
+t+  16.6s frame   146 | CLEAR    | distance    --    | proc  25.3 ms
+t+  16.7s frame   147 | CLEAR    | distance    --    | proc  25.3 ms
+t+  16.8s frame   148 | CLEAR    | distance    --    | proc  25.9 ms
+t+  16.9s frame   149 | CLEAR    | distance    --    | proc  24.7 ms
+t+  17.0s frame   150 | CLEAR    | distance    --    | proc  25.1 ms
+t+  17.1s frame   151 | CLEAR    | distance    --    | proc  25.4 ms
+t+  17.2s frame   152 | CLEAR    | distance    --    | proc  25.9 ms
+t+  17.3s frame   153 | CLEAR    | distance    --    | proc  25.3 ms
+t+  17.4s frame   154 | CLEAR    | distance    --    | proc  26.1 ms
+t+  17.5s frame   155 | CLEAR    | distance    --    | proc  25.9 ms
+t+  17.6s frame   156 | CLEAR    | distance    --    | proc  26.1 ms
+t+  17.7s frame   157 | CLEAR    | distance    --    | proc  25.2 ms
+t+  17.8s frame   158 | CLEAR    | distance    --    | proc  26.4 ms
+t+  17.9s frame   159 | CLEAR    | distance    --    | proc  24.7 ms
+t+  18.0s frame   160 | CLEAR    | distance    --    | proc  25.1 ms
+t+  18.1s frame   161 | CLEAR    | distance    --    | proc  25.1 ms
+t+  18.2s frame   162 | CLEAR    | distance    --    | proc  24.8 ms
+t+  18.3s frame   163 | CLEAR    | distance    --    | proc  24.8 ms
+t+  18.4s frame   164 | CLEAR    | distance    --    | proc  25.6 ms
+t+  18.4s frame   165 | CLEAR    | distance    --    | proc  25.2 ms
+t+  18.6s frame   166 | CLEAR    | distance    --    | proc  24.9 ms
+t+  18.7s frame   167 | CLEAR    | distance    --    | proc  26.3 ms
+t+  18.8s frame   168 | CLEAR    | distance    --    | proc  25.0 ms
+t+  18.9s frame   169 | CLEAR    | distance    --    | proc  24.5 ms
+t+  19.0s frame   170 | CLEAR    | distance    --    | proc  25.2 ms
+t+  19.1s frame   171 | CLEAR    | distance    --    | proc  24.5 ms
+t+  19.2s frame   172 | CLEAR    | distance    --    | proc  25.1 ms
+t+  19.3s frame   173 | CLEAR    | distance    --    | proc  25.1 ms
+t+  19.4s frame   174 | CLEAR    | distance    --    | proc  25.0 ms
+t+  19.5s frame   175 | CLEAR    | distance    --    | proc  24.9 ms
+t+  19.6s frame   176 | CLEAR    | distance    --    | proc  25.2 ms
+t+  19.7s frame   177 | CLEAR    | distance    --    | proc  24.2 ms
+t+  19.8s frame   178 | CLEAR    | distance    --    | proc  25.2 ms
+t+  19.9s frame   179 | CLEAR    | distance    --    | proc  24.8 ms
+t+  20.0s frame   180 | CLEAR    | distance    --    | proc  24.8 ms
+t+  20.1s frame   181 | CLEAR    | distance    --    | proc  24.8 ms
+t+  20.2s frame   182 | CLEAR    | distance    --    | proc  25.5 ms
+t+  20.3s frame   183 | CLEAR    | distance    --    | proc  25.7 ms
+t+  20.4s frame   184 | CLEAR    | distance    --    | proc  25.7 ms
+t+  20.5s frame   185 | CLEAR    | distance    --    | proc  25.7 ms
+t+  20.6s frame   186 | CLEAR    | distance    --    | proc  25.9 ms
+t+  20.7s frame   187 | CLEAR    | distance    --    | proc  34.3 ms
+t+  20.8s frame   188 | CLEAR    | distance    --    | proc  27.1 ms
+t+  20.9s frame   189 | CLEAR    | distance    --    | proc  24.4 ms
+t+  21.0s frame   190 | CLEAR    | distance    --    | proc  25.5 ms
+t+  21.1s frame   191 | CLEAR    | distance    --    | proc  24.8 ms
+t+  21.2s frame   192 | CLEAR    | distance    --    | proc  24.5 ms
+t+  21.3s frame   193 | CLEAR    | distance    --    | proc  25.3 ms
+t+  21.4s frame   194 | CLEAR    | distance    --    | proc  25.6 ms
+t+  21.4s frame   195 | CLEAR    | distance    --    | proc  24.3 ms
+t+  21.6s frame   196 | CLEAR    | distance    --    | proc  25.3 ms
+t+  21.7s frame   197 | CLEAR    | distance    --    | proc  24.8 ms
+t+  21.8s frame   198 | CLEAR    | distance    --    | proc  25.7 ms
+t+  21.9s frame   199 | CLEAR    | distance    --    | proc  25.4 ms
+t+  22.0s frame   200 | CLEAR    | distance    --    | proc  26.1 ms
+t+  22.1s frame   201 | CLEAR    | distance    --    | proc  26.2 ms
+t+  22.2s frame   202 | CLEAR    | distance    --    | proc  26.0 ms
+t+  22.3s frame   203 | CLEAR    | distance    --    | proc  25.5 ms
+t+  22.4s frame   204 | CLEAR    | distance    --    | proc  37.0 ms
+t+  22.5s frame   205 | CLEAR    | distance    --    | proc  25.7 ms
+t+  22.6s frame   206 | CLEAR    | distance    --    | proc  25.5 ms
+t+  22.7s frame   207 | CLEAR    | distance    --    | proc  32.9 ms
+t+  22.8s frame   208 | CLEAR    | distance    --    | proc  24.8 ms
+t+  22.9s frame   209 | CLEAR    | distance    --    | proc  24.9 ms
+t+  23.0s frame   210 | CLEAR    | distance    --    | proc  35.7 ms
+t+  23.1s frame   211 | CLEAR    | distance    --    | proc  37.4 ms
+t+  23.2s frame   212 | CLEAR    | distance    --    | proc  36.9 ms
+t+  23.3s frame   213 | CLEAR    | distance    --    | proc  34.6 ms
+t+  23.4s frame   214 | CLEAR    | distance    --    | proc  35.0 ms
+t+  23.5s frame   215 | CLEAR    | distance    --    | proc  30.7 ms
+t+  23.6s frame   216 | CLEAR    | distance    --    | proc  34.0 ms
+t+  23.7s frame   217 | CLEAR    | distance    --    | proc  32.1 ms
+t+  23.8s frame   218 | CLEAR    | distance    --    | proc  36.3 ms
+t+  23.9s frame   219 | CLEAR    | distance    --    | proc  34.5 ms
+t+  24.0s frame   220 | CLEAR    | distance    --    | proc  34.5 ms
+t+  24.1s frame   221 | CLEAR    | distance    --    | proc  34.7 ms
+t+  24.2s frame   222 | CLEAR    | distance    --    | proc  32.9 ms
+t+  24.3s frame   223 | CLEAR    | distance    --    | proc  32.7 ms
+t+  24.4s frame   224 | CLEAR    | distance    --    | proc  31.7 ms
+t+  24.5s frame   225 | CLEAR    | distance    --    | proc  29.9 ms
+t+  24.6s frame   226 | CLEAR    | distance    --    | proc  32.4 ms
+t+  24.7s frame   227 | CLEAR    | distance    --    | proc  33.1 ms
+t+  24.8s frame   228 | CLEAR    | distance    --    | proc  34.1 ms
+t+  24.9s frame   229 | CLEAR    | distance    --    | proc  32.9 ms
+t+  25.0s frame   230 | CLEAR    | distance    --    | proc  33.4 ms
+t+  25.1s frame   231 | CLEAR    | distance    --    | proc  33.5 ms
+t+  25.2s frame   232 | CLEAR    | distance    --    | proc  33.3 ms
+t+  25.3s frame   233 | CLEAR    | distance    --    | proc  31.3 ms
+t+  25.4s frame   234 | CLEAR    | distance    --    | proc  35.1 ms
+t+  25.5s frame   235 | CLEAR    | distance    --    | proc  33.1 ms
+t+  25.6s frame   236 | CLEAR    | distance    --    | proc  33.8 ms
+t+  25.7s frame   237 | CLEAR    | distance    --    | proc  34.0 ms
+t+  25.8s frame   238 | CLEAR    | distance    --    | proc  33.7 ms
+t+  25.9s frame   239 | CLEAR    | distance    --    | proc  33.0 ms
+t+  26.0s frame   240 | CLEAR    | distance    --    | proc  32.6 ms
+t+  26.1s frame   241 | CLEAR    | distance    --    | proc  30.4 ms
+t+  26.2s frame   242 | CLEAR    | distance    --    | proc  33.1 ms
+t+  26.3s frame   243 | CLEAR    | distance    --    | proc  32.9 ms
+t+  26.4s frame   244 | CLEAR    | distance    --    | proc  33.6 ms
+t+  26.5s frame   245 | CLEAR    | distance    --    | proc  22.1 ms
+t+  26.5s frame   246 | CLEAR    | distance    --    | proc  24.0 ms
+t+  26.7s frame   247 | CLEAR    | distance    --    | proc  24.0 ms
+t+  26.8s frame   248 | CLEAR    | distance    --    | proc  23.9 ms
+t+  26.8s frame   249 | CLEAR    | distance    --    | proc  22.8 ms
+t+  27.0s frame   250 | CLEAR    | distance    --    | proc  33.2 ms
+t+  27.1s frame   251 | CLEAR    | distance    --    | proc  35.9 ms
+t+  28.7s frame   251 | UNKNOWN  | distance    --    | proc   0.0 ms | input stale: no cloud for > 1.5 s
+t+  29.2s frame   251 | UNKNOWN  | distance    --    | proc   0.0 ms | input stale: no cloud for > 1.5 s
+t+  29.7s frame   251 | UNKNOWN  | distance    --    | proc   0.0 ms | input stale: no cloud for > 1.5 s
+t+  30.2s frame   251 | UNKNOWN  | distance    --    | proc   0.0 ms | input stale: no cloud for > 1.5 s
+t+  30.7s frame   251 | UNKNOWN  | distance    --    | proc   0.0 ms | input stale: no cloud for > 1.5 s
+t+  31.2s frame   251 | UNKNOWN  | distance    --    | proc   0.0 ms | input stale: no cloud for > 1.5 s
+t+  31.7s frame   251 | UNKNOWN  | distance    --    | proc   0.0 ms | input stale: no cloud for > 1.5 s
+t+  32.2s frame   251 | UNKNOWN  | distance    --    | proc   0.0 ms | input stale: no cloud for > 1.5 s
+t+  32.7s frame   251 | UNKNOWN  | distance    --    | proc   0.0 ms | input stale: no cloud for > 1.5 s
+t+  33.2s frame   251 | UNKNOWN  | distance    --    | proc   0.0 ms | input stale: no cloud for > 1.5 s
+t+  33.7s frame   251 | UNKNOWN  | distance    --    | proc   0.0 ms | input stale: no cloud for > 1.5 s
+t+  34.2s frame   251 | UNKNOWN  | distance    --    | proc   0.0 ms | input stale: no cloud for > 1.5 s
+t+  34.7s frame   251 | UNKNOWN  | distance    --    | proc   0.0 ms | input stale: no cloud for > 1.5 s
+t+  35.2s frame   251 | UNKNOWN  | distance    --    | proc   0.0 ms | input stale: no cloud for > 1.5 s
+t+  35.7s frame   251 | UNKNOWN  | distance    --    | proc   0.0 ms | input stale: no cloud for > 1.5 s
+t+  36.2s frame   251 | UNKNOWN  | distance    --    | proc   0.0 ms | input stale: no cloud for > 1.5 s
+t+  36.7s frame   251 | UNKNOWN  | distance    --    | proc   0.0 ms | input stale: no cloud for > 1.5 s
+t+  37.2s frame   251 | UNKNOWN  | distance    --    | proc   0.0 ms | input stale: no cloud for > 1.5 s
+t+  37.7s frame   251 | UNKNOWN  | distance    --    | proc   0.0 ms | input stale: no cloud for > 1.5 s
+t+  38.2s frame   251 | UNKNOWN  | distance    --    | proc   0.0 ms | input stale: no cloud for > 1.5 s
+t+  38.7s frame   251 | UNKNOWN  | distance    --    | proc   0.0 ms | input stale: no cloud for > 1.5 s

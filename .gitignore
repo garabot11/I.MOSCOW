@@ -1,0 +1,14 @@
+# В репозиторий попадают только эти папки (dataset — данные организаторов, 26 ГБ, не загружается)
+/*
+!/.gitignore
+!/README.md
+!/audit/
+!/dist/
+!/solution/
+
+# Архив образа лежит в репозитории частями (лимит GitHub — 100 МБ на файл), см. dist/README.md
+/dist/metro-lidar-final.tar.gz
+
+__pycache__/
+.pytest_cache/
+*.pyc

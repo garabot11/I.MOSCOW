@@ -1,0 +1,45 @@
+{
+  "date": "2026-09-29",
+  "image": "metro-lidar:final",
+  "image_id": "sha256:68a2bea3259b8c71aa9a03f95c4d658062e08e103b09a7ee699c63bcfec2d431",
+  "tests": {
+    "command": "docker run --rm --network none metro-lidar:final python3 -m pytest -q -p no:cacheprovider /workspace/tests",
+    "passed": 18,
+    "duration_s": 32.14
+  },
+  "offline": {
+    "bags": 6,
+    "frames": 2488,
+    "status_distance_timestamp_mismatches_to_supplied_final_results": 0
+  },
+  "video_inspection": "ffprobe verified both MP4s; sampled frame at t=12 s obstacle video and t=15 s clear video visually inspected. Full videos not watched end to end.",
+  "not_performed": [
+    "Fresh Docker build",
+    "Hidden control bag",
+    "Organizer hardware benchmark",
+    "New GUI launch",
+    "Official ground-truth validation",
+    "Implementation fixes"
+  ],
+  "source_hashes": {
+    "Dockerfile": "dce1dc6169cafd3816c959e8f814962c9fb9229d9d0a35652cd14c89766f87a7",
+    "README.md": "0086470b48754d19f9b9567a2f45752cb40908dd4bb53d30be421167e876c057",
+    "docs/experiments.md": "fb7c10d9ce445bcd6de472fb86d87d7550443da2ac0bb28b35e0d3f4d040074f",
+    "annotations/events.yaml": "a73674d35dce13e27cb38609bc1edbdcdee05642f1158513302ded25bc2ce080",
+    "scripts/run_stream_test.sh": "c2e95760e909baff4cd78ff80364c36f8fe14877a4bf18008e971748bfe1b9f8",
+    "scripts/run_demo.sh": "8a619830bcf2beba9687ab1fb04bb07061be5e7fd8a50d04010385c83c67c628",
+    "scripts/eval_all_container.sh": "72d39cf057d86f63c15a406715367ca400abe53ea0c3db51745e62b6eddb422d",
+    "src/metro_obstacle_detector/setup.py": "d65303ba30265ab74c42c35ca7ad33e30f9fd647f9eb40d0b9e329fe8747730b",
+    "src/metro_obstacle_detector/launch/detector.launch.py": "6f776f1e4983976c42673efe4218b28d5bee134c072296e26714b399ad0c0bff",
+    "src/metro_obstacle_detector/metro_obstacle_detector/temporal.py": "14c7ec49b9848b1966619d81022cd4f244a5c5cee33414b0d5d1f4da0bd81e3d",
+    "src/metro_obstacle_detector/metro_obstacle_detector/track_model.py": "6f35856b65d2b6e047cb00fd1ad9910c8e868c568b49e6fd81e92d0f26603e73",
+    "src/metro_obstacle_detector/metro_obstacle_detector/status_monitor.py": "a1600ea01d74c63e917f73a9755170099dbd800b254842516df3cd9a3ccc7568",
+    "src/metro_obstacle_detector/metro_obstacle_detector/__init__.py": "649fc8227f7bd542704df050d497c8d62352914748c1877e9f42f30b7986fbd0",
+    "src/metro_obstacle_detector/metro_obstacle_detector/offline.py": "64aef48d6d76cb3184844b2cc87bf5f1f8393de94f1809932f427e50461cc195",
+    "src/metro_obstacle_detector/metro_obstacle_detector/config.py": "31582dd2df12e55fe81f4fce1b7162dd3ac185165b95c239f0d497beabb2f791",
+    "src/metro_obstacle_detector/metro_obstacle_detector/cloud_io.py": "7958f175f53558c06b5a6d8bcc665f11024a2588596bf5fb8e4bf8427549e9c9",
+    "src/metro_obstacle_detector/metro_obstacle_detector/markers.py": "9e94594633868093cd007b1720ed77dd79d70a5a9affe1ca6a95ea072ba092b2",
+    "src/metro_obstacle_detector/metro_obstacle_detector/node.py": "d299e90fe721db5e9602ced5a07e4010465561eb504f055a48736aada82a3342",
+    "src/metro_obstacle_detector/metro_obstacle_detector/detector.py": "4eff9b326c9a1709517e2a0a6fdc413e0dc18c1832a0b55c96cdcc49e5c852bd"
+  }
+}

@@ -1,0 +1,290 @@
+{
+ "results_dir": "results/ablation/straight_corridor",
+ "bags": {
+  "doubleT_obstacle": {
+   "frames": 101,
+   "tp": 0,
+   "fp": 0,
+   "fn": 24,
+   "tn": 0,
+   "uncertain_frames": 77,
+   "unknown_on_positive": 0,
+   "unknown_on_negative": 0,
+   "false_alarm_events": [],
+   "uncertain_alarm_events": [
+    {
+     "frames": [
+      2,
+      10
+     ],
+     "n_frames": 5
+    },
+    {
+     "frames": [
+      68,
+      118
+     ],
+     "n_frames": 26
+    },
+    {
+     "frames": [
+      130,
+      200
+     ],
+     "n_frames": 36
+    }
+   ],
+   "obstacle_events": [
+    {
+     "event_id": "obstacle_1",
+     "frames_processed": 24,
+     "frames_detected": 0,
+     "detected": false,
+     "first_detection": null,
+     "distance_reported_m": null,
+     "distance_reference_m": [
+      55.4,
+      56.7
+     ]
+    }
+   ],
+   "processing_ms": {
+    "median": 85.2,
+    "p95": 89.7,
+    "p99": 90.4,
+    "max": 93.8
+   }
+  },
+  "doubleT_platform": {
+   "frames": 173,
+   "tp": 0,
+   "fp": 1,
+   "fn": 0,
+   "tn": 172,
+   "uncertain_frames": 0,
+   "unknown_on_positive": 0,
+   "unknown_on_negative": 0,
+   "false_alarm_events": [
+    {
+     "frames": [
+      210,
+      210
+     ],
+     "time_s": [
+      20.9876,
+      20.9876
+     ],
+     "distance_m": [
+      65.996,
+      65.996
+     ],
+     "n_frames": 1
+    }
+   ],
+   "uncertain_alarm_events": [],
+   "obstacle_events": [],
+   "processing_ms": {
+    "median": 62.4,
+    "p95": 84.7,
+    "p99": 93.5,
+    "max": 94.5
+   }
+  },
+  "roundT_doubleT": {
+   "frames": 126,
+   "tp": 0,
+   "fp": 12,
+   "fn": 0,
+   "tn": 114,
+   "uncertain_frames": 0,
+   "unknown_on_positive": 0,
+   "unknown_on_negative": 0,
+   "false_alarm_events": [
+    {
+     "frames": [
+      4,
+      8
+     ],
+     "time_s": [
+      0.4047,
+      0.7865
+     ],
+     "distance_m": [
+      78.884,
+      96.204
+     ],
+     "n_frames": 3
+    },
+    {
+     "frames": [
+      98,
+      116
+     ],
+     "time_s": [
+      9.7726,
+      11.5797
+     ],
+     "distance_m": [
+      22.656,
+      41.684
+     ],
+     "n_frames": 10
+    }
+   ],
+   "uncertain_alarm_events": [],
+   "obstacle_events": [],
+   "processing_ms": {
+    "median": 66.4,
+    "p95": 81.3,
+    "p99": 87.7,
+    "max": 97.6
+   }
+  },
+  "roundT_pressureGate_roundT": {
+   "frames": 134,
+   "tp": 0,
+   "fp": 10,
+   "fn": 0,
+   "tn": 124,
+   "uncertain_frames": 0,
+   "unknown_on_positive": 0,
+   "unknown_on_negative": 0,
+   "false_alarm_events": [
+    {
+     "frames": [
+      106,
+      112
+     ],
+     "time_s": [
+      10.5934,
+      11.1931
+     ],
+     "distance_m": [
+      31.08,
+      52.384
+     ],
+     "n_frames": 4
+    },
+    {
+     "frames": [
+      120,
+      122
+     ],
+     "time_s": [
+      12.0102,
+      12.201
+     ],
+     "distance_m": [
+      29.424,
+      32.376
+     ],
+     "n_frames": 2
+    },
+    {
+     "frames": [
+      164,
+      172
+     ],
+     "time_s": [
+      16.4084,
+      17.1969
+     ],
+     "distance_m": [
+      24.872,
+      33.448
+     ],
+     "n_frames": 5
+    }
+   ],
+   "uncertain_alarm_events": [],
+   "obstacle_events": [],
+   "processing_ms": {
+    "median": 89.0,
+    "p95": 119.4,
+    "p99": 122.7,
+    "max": 128.8
+   }
+  },
+  "roundT_squareT_pressureGate_squareT": {
+   "frames": 273,
+   "tp": 0,
+   "fp": 5,
+   "fn": 0,
+   "tn": 268,
+   "uncertain_frames": 0,
+   "unknown_on_positive": 0,
+   "unknown_on_negative": 0,
+   "false_alarm_events": [
+    {
+     "frames": [
+      330,
+      336
+     ],
+     "time_s": [
+      33.9796,
+      34.6147
+     ],
+     "distance_m": [
+      83.448,
+      91.98
+     ],
+     "n_frames": 4
+    },
+    {
+     "frames": [
+      346,
+      348
+     ],
+     "time_s": [
+      35.5845,
+      35.7849
+     ],
+     "distance_m": [
+      51.308,
+      54.049
+     ],
+     "n_frames": 2
+    }
+   ],
+   "uncertain_alarm_events": [],
+   "obstacle_events": [],
+   "processing_ms": {
+    "median": 89.3,
+    "p95": 110.4,
+    "p99": 118.5,
+    "max": 124.7
+   }
+  },
+  "squareT_platform_squareT_switch": {
+   "frames": 439,
+   "tp": 0,
+   "fp": 0,
+   "fn": 0,
+   "tn": 373,
+   "uncertain_frames": 66,
+   "unknown_on_positive": 0,
+   "unknown_on_negative": 0,
+   "false_alarm_events": [],
+   "uncertain_alarm_events": [],
+   "obstacle_events": [],
+   "processing_ms": {
+    "median": 42.7,
+    "p95": 108.7,
+    "p99": 121.4,
+    "max": 154.9
+   }
+  }
+ },
+ "totals": {
+  "tp": 0,
+  "fp": 28,
+  "fn": 24,
+  "tn": 1051,
+  "false_alarm_events": 8,
+  "uncertain_frames": 143,
+  "frames": 1246,
+  "precision": 0.0,
+  "recall": 0.0,
+  "f1": null
+ }
+}

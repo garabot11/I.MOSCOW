@@ -1,0 +1,1 @@
+bag: roundT_doubleT   topic: /lidar_points   playback rate: 1.0   (ros2 bag play inside the Humble container)

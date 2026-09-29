@@ -1,0 +1,14 @@
+[INFO] [launch]: All log files can be found below /home/imos/.ros/log/2026-09-29-14-10-10-671128-MSI-37
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [detector_node-1]: process started with pid [39]
+[INFO] [rviz2-2]: process started with pid [41]
+[rviz2-2] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-imos'
+[detector_node-1] [INFO] [1790691010.988649421] [metro_obstacle_detector]: input /sensing/lidar/hesai128/pointcloud (reliable, depth 1, raw CDR decoding); axes forward=-y up=+z; config=/workspace/install/share/metro_obstacle_detector/config/detector.yaml; log=/results/demo.jsonl
+[rviz2-2] [INFO] [1790691011.026883400] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-2] [INFO] [1790691011.026997440] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[rviz2-2] [INFO] [1790691011.063010623] [rviz2]: Stereo is NOT SUPPORTED
+[detector_node-1] [WARN] [1790691012.475056290] [metro_obstacle_detector]: no input: no cloud received on /sensing/lidar/hesai128/pointcloud since start (1.5 s): publishing UNKNOWN
+[detector_node-1] [INFO] [1790691022.566970402] [metro_obstacle_detector]: frames=50 status=detected dist=56.14480133056641 proc ms median=75.1 p95=86.5 max=92.8
+[detector_node-1] [INFO] [1790691027.595658055] [metro_obstacle_detector]: frames=100 status=clear dist=None proc ms median=69.2 p95=84.1 max=92.8
+[detector_node-1] [INFO] [1790691032.677184231] [metro_obstacle_detector]: frames=150 status=clear dist=None proc ms median=67.4 p95=83.8 max=92.8
+[detector_node-1] [WARN] [1790691039.475484803] [metro_obstacle_detector]: input stale: no cloud for > 1.5 s: publishing UNKNOWN

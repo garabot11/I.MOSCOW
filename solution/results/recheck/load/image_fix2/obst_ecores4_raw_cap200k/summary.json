@@ -1,0 +1,27 @@
+{
+ "bag": "doubleT_obstacle",
+ "sent": 201,
+ "processed": 201,
+ "not_processed": 0,
+ "processing_ms": {
+  "median": 72.96,
+  "p95": 77.34,
+  "max": 96.8
+ },
+ "inter_arrival_s": {
+  "median": 0.0995,
+  "p95": 0.1363,
+  "max": 0.4023
+ },
+ "node_cpu_s_total": 16.22,
+ "node_cpu_ms_per_processed_frame": 80.7,
+ "node_cpu_percent_median_active": 78.9,
+ "rss_mb_max": 175.8,
+ "affinity": [
+  12,
+  13,
+  14,
+  15
+ ],
+ "load_before": " 15:32:22 up  3:25,  1 user,  load average: 0.52, 0.71, 0.63"
+}

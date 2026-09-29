@@ -1,0 +1,10 @@
+[INFO] [launch]: All log files can be found below /home/imos/.ros/log/2026-09-28-22-41-14-357048-MSI-37
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [detector_node-1]: process started with pid [39]
+[detector_node-1] [INFO] [1790635274.676690650] [metro_obstacle_detector]: subscribed to /lidar_points (reliable, depth 1); axes forward=-y up=+z; config=/workspace/install/share/metro_obstacle_detector/config/detector.yaml; log=/results/stream.jsonl
+[detector_node-1] [INFO] [1790635283.398471185] [metro_obstacle_detector]: frames=50 status=clear dist=None proc ms median=27.1 p95=40.5 max=41.0
+[detector_node-1] [INFO] [1790635288.385737678] [metro_obstacle_detector]: frames=100 status=clear dist=None proc ms median=22.6 p95=40.8 max=45.7
+[detector_node-1] [INFO] [1790635293.372779325] [metro_obstacle_detector]: frames=150 status=clear dist=None proc ms median=23.9 p95=43.9 max=48.7
+[detector_node-1] [INFO] [1790635298.379772657] [metro_obstacle_detector]: frames=200 status=clear dist=None proc ms median=24.3 p95=43.1 max=48.7
+[detector_node-1] [INFO] [1790635303.400987569] [metro_obstacle_detector]: frames=250 status=clear dist=None proc ms median=25.0 p95=42.8 max=48.7
+[detector_node-1] [WARN] [1790635305.164288069] [metro_obstacle_detector]: no input cloud for 1.5 s: publishing UNKNOWN

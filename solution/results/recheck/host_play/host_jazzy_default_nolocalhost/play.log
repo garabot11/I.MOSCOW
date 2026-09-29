@@ -1,0 +1,5 @@
+[INFO] [1790689417.974189991] [rosbag2_storage]: Opened database '/home/gag/i.mos/dataset/for_hackathon/roundT_doubleT/roundT_doubleT_0.db3' for READ_ONLY.
+[INFO] [1790689417.981942363] [rosbag2_player]: Set rate to 1
+[INFO] [1790689417.988118646] [rosbag2_player]: Playback until timestamp: -1
+[INFO] [1790689417.988209444] [rosbag2_player]: Sleep 2000000000 ns
+[ERROR] [1790689450.176771194] [rosbag2_player]: Timed out while waiting for all published messages to be acknowledged for topic /lidar_points

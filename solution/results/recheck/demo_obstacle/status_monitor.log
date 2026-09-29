@@ -1,0 +1,157 @@
+listening on /obstacles/status ...
+t+   0.1s frame     2 | CLEAR    | distance    --    | proc  90.8 ms
+t+   0.3s frame     3 | CLEAR    | distance    --    | proc  99.6 ms
+t+   0.4s frame     4 | CLEAR    | distance    --    | proc  88.9 ms
+t+   0.5s frame     5 | CLEAR    | distance    --    | proc  89.6 ms
+t+   0.6s frame     6 | CLEAR    | distance    --    | proc  87.7 ms | nearest object: 55.7 m, 0.9x1.1 m, 24 pts, conf 1.00 (unconfirmed)
+t+   0.8s frame     7 | OBSTACLE | distance   55.7 m | proc  91.7 ms | nearest object: 55.7 m, 0.7x1.1 m, 27 pts, conf 1.00
+t+   0.9s frame     8 | OBSTACLE | distance   55.7 m | proc  98.7 ms | nearest object: 55.7 m, 0.6x1.1 m, 28 pts, conf 1.00
+t+   1.1s frame     9 | OBSTACLE | distance   55.7 m | proc  98.7 ms | nearest object: 55.7 m, 0.6x1.1 m, 27 pts, conf 1.00
+t+   1.2s frame    10 | OBSTACLE | distance   55.7 m | proc 101.3 ms | nearest object: 55.7 m, 0.6x1.1 m, 27 pts, conf 1.00
+t+   1.3s frame    11 | OBSTACLE | distance   55.7 m | proc  90.4 ms | nearest object: 55.7 m, 0.7x1.1 m, 28 pts, conf 1.00
+t+   1.4s frame    12 | OBSTACLE | distance   55.7 m | proc  94.2 ms | nearest object: 55.7 m, 0.7x1.1 m, 27 pts, conf 1.00
+t+   1.6s frame    13 | OBSTACLE | distance   55.8 m | proc  93.7 ms | nearest object: 55.8 m, 0.7x1.1 m, 23 pts, conf 1.00
+t+   1.7s frame    14 | OBSTACLE | distance   55.9 m | proc  88.5 ms | nearest object: 55.9 m, 0.6x1.1 m, 23 pts, conf 1.00
+t+   1.8s frame    15 | OBSTACLE | distance   55.9 m | proc  95.4 ms | nearest object: 55.9 m, 0.8x1.1 m, 26 pts, conf 1.00
+t+   2.0s frame    16 | OBSTACLE | distance   55.9 m | proc 101.3 ms | nearest object: 55.9 m, 0.8x1.1 m, 29 pts, conf 1.00
+t+   2.1s frame    17 | OBSTACLE | distance   55.9 m | proc  99.8 ms | nearest object: 55.9 m, 0.8x0.8 m, 22 pts, conf 1.00
+t+   2.3s frame    18 | OBSTACLE | distance   55.9 m | proc  97.0 ms | nearest object: 55.9 m, 0.9x0.9 m, 27 pts, conf 1.00
+t+   2.4s frame    19 | OBSTACLE | distance   55.8 m | proc 100.9 ms | nearest object: 55.8 m, 0.9x0.7 m, 23 pts, conf 1.00
+t+   2.5s frame    20 | OBSTACLE | distance   55.8 m | proc  98.0 ms | nearest object: 55.8 m, 0.8x0.5 m, 18 pts, conf 1.00
+t+   2.7s frame    21 | OBSTACLE | distance   55.8 m | proc  92.1 ms | nearest object: 55.8 m, 0.8x0.4 m, 16 pts, conf 1.00
+t+   2.8s frame    22 | OBSTACLE | distance   55.9 m | proc  92.6 ms | nearest object: 55.9 m, 0.8x0.5 m, 22 pts, conf 1.00
+t+   2.9s frame    23 | OBSTACLE | distance   55.8 m | proc  97.4 ms | nearest object: 55.8 m, 0.8x0.6 m, 22 pts, conf 1.00
+t+   3.1s frame    24 | OBSTACLE | distance   55.9 m | proc  99.5 ms | nearest object: 55.9 m, 1.0x0.6 m, 23 pts, conf 1.00
+t+   3.2s frame    25 | OBSTACLE | distance   55.8 m | proc  99.6 ms | nearest object: 55.8 m, 0.9x0.5 m, 21 pts, conf 1.00
+t+   3.4s frame    26 | OBSTACLE | distance   55.8 m | proc 102.7 ms | nearest object: 55.8 m, 0.8x0.6 m, 22 pts, conf 1.00
+t+   3.5s frame    27 | OBSTACLE | distance   55.9 m | proc  97.8 ms | nearest object: 55.9 m, 1.0x0.6 m, 23 pts, conf 1.00
+t+   3.6s frame    28 | OBSTACLE | distance   55.9 m | proc  91.4 ms | nearest object: 55.9 m, 1.0x0.9 m, 25 pts, conf 1.00
+t+   3.8s frame    29 | OBSTACLE | distance   55.9 m | proc 102.3 ms | nearest object: 55.9 m, 0.9x0.6 m, 22 pts, conf 1.00
+t+   3.9s frame    30 | OBSTACLE | distance   55.8 m | proc  96.6 ms | nearest object: 55.8 m, 1.0x0.9 m, 22 pts, conf 1.00
+t+   4.1s frame    31 | OBSTACLE | distance   55.9 m | proc  94.1 ms | nearest object: 55.9 m, 0.6x0.9 m, 20 pts, conf 1.00
+t+   4.2s frame    32 | OBSTACLE | distance   55.9 m | proc  95.0 ms | nearest object: 55.9 m, 0.7x1.2 m, 30 pts, conf 1.00
+t+   4.3s frame    33 | OBSTACLE | distance   56.0 m | proc  97.7 ms | nearest object: 56.0 m, 0.8x1.0 m, 26 pts, conf 1.00
+t+   4.5s frame    34 | OBSTACLE | distance   56.0 m | proc  97.5 ms | nearest object: 56.0 m, 0.7x1.2 m, 31 pts, conf 1.00
+t+   4.6s frame    35 | OBSTACLE | distance   56.1 m | proc  96.0 ms | nearest object: 56.1 m, 0.6x1.1 m, 29 pts, conf 1.00
+t+   4.7s frame    36 | OBSTACLE | distance   56.1 m | proc  93.1 ms | nearest object: 56.1 m, 0.6x1.3 m, 28 pts, conf 1.00
+t+   4.9s frame    37 | OBSTACLE | distance   56.2 m | proc 101.2 ms | nearest object: 56.2 m, 0.6x1.1 m, 26 pts, conf 1.00
+t+   5.0s frame    38 | OBSTACLE | distance   56.2 m | proc  95.8 ms | nearest object: 56.2 m, 0.7x1.4 m, 25 pts, conf 1.00
+t+   5.1s frame    39 | OBSTACLE | distance   56.3 m | proc  92.5 ms | nearest object: 56.3 m, 0.8x1.1 m, 26 pts, conf 1.00
+t+   5.3s frame    40 | OBSTACLE | distance   56.3 m | proc  91.9 ms | nearest object: 56.3 m, 0.6x1.0 m, 19 pts, conf 1.00
+t+   5.4s frame    41 | OBSTACLE | distance   56.3 m | proc  94.1 ms | nearest object: 56.3 m, 0.6x1.3 m, 20 pts, conf 1.00
+t+   5.5s frame    42 | OBSTACLE | distance   56.3 m | proc  94.9 ms | nearest object: 56.3 m, 0.6x1.0 m, 22 pts, conf 1.00
+t+   5.7s frame    43 | OBSTACLE | distance   56.4 m | proc  94.0 ms | nearest object: 56.4 m, 0.7x1.1 m, 22 pts, conf 1.00
+t+   5.8s frame    44 | OBSTACLE | distance   56.4 m | proc  92.1 ms | nearest object: 56.4 m, 0.7x1.1 m, 19 pts, conf 1.00
+t+   5.9s frame    45 | CLEAR    | distance    --    | proc  89.2 ms
+t+   6.1s frame    46 | CLEAR    | distance    --    | proc  88.8 ms
+t+   6.2s frame    47 | CLEAR    | distance    --    | proc  99.9 ms
+t+   6.3s frame    48 | CLEAR    | distance    --    | proc  93.0 ms
+t+   6.4s frame    49 | CLEAR    | distance    --    | proc  70.1 ms
+t+   6.6s frame    50 | CLEAR    | distance    --    | proc  86.4 ms
+t+   6.7s frame    51 | CLEAR    | distance    --    | proc  68.2 ms
+t+   6.8s frame    52 | CLEAR    | distance    --    | proc  80.0 ms
+t+   6.9s frame    53 | CLEAR    | distance    --    | proc  66.6 ms
+t+   7.0s frame    54 | CLEAR    | distance    --    | proc  66.0 ms
+t+   7.1s frame    55 | CLEAR    | distance    --    | proc  74.8 ms
+t+   7.2s frame    56 | CLEAR    | distance    --    | proc  65.8 ms
+t+   7.3s frame    57 | CLEAR    | distance    --    | proc  66.6 ms
+t+   7.5s frame    58 | CLEAR    | distance    --    | proc  75.6 ms
+t+   7.6s frame    59 | CLEAR    | distance    --    | proc  71.4 ms
+t+   7.7s frame    60 | CLEAR    | distance    --    | proc  67.3 ms
+t+   7.8s frame    61 | CLEAR    | distance    --    | proc  98.0 ms
+t+   7.9s frame    62 | CLEAR    | distance    --    | proc  93.4 ms
+t+   8.1s frame    63 | CLEAR    | distance    --    | proc  90.7 ms
+t+   8.2s frame    64 | CLEAR    | distance    --    | proc  86.4 ms
+t+   8.3s frame    65 | CLEAR    | distance    --    | proc  92.5 ms
+t+   8.5s frame    66 | CLEAR    | distance    --    | proc  89.7 ms
+t+   8.6s frame    67 | CLEAR    | distance    --    | proc 100.3 ms
+t+   8.7s frame    68 | CLEAR    | distance    --    | proc  94.6 ms
+t+   8.9s frame    69 | CLEAR    | distance    --    | proc  98.6 ms
+t+   9.0s frame    70 | CLEAR    | distance    --    | proc  77.9 ms
+t+   9.1s frame    71 | CLEAR    | distance    --    | proc  83.3 ms
+t+   9.2s frame    72 | CLEAR    | distance    --    | proc  77.4 ms
+t+   9.4s frame    73 | CLEAR    | distance    --    | proc  78.7 ms
+t+   9.5s frame    74 | CLEAR    | distance    --    | proc  80.5 ms
+t+   9.6s frame    75 | CLEAR    | distance    --    | proc  74.3 ms
+t+   9.7s frame    76 | CLEAR    | distance    --    | proc  76.6 ms
+t+   9.9s frame    77 | CLEAR    | distance    --    | proc  82.4 ms
+t+  10.0s frame    78 | CLEAR    | distance    --    | proc  72.0 ms
+t+  10.1s frame    79 | CLEAR    | distance    --    | proc  78.1 ms
+t+  10.2s frame    80 | CLEAR    | distance    --    | proc  74.2 ms
+t+  10.3s frame    81 | CLEAR    | distance    --    | proc  67.0 ms
+t+  10.4s frame    82 | CLEAR    | distance    --    | proc  74.5 ms
+t+  10.5s frame    83 | CLEAR    | distance    --    | proc  71.2 ms
+t+  10.6s frame    84 | CLEAR    | distance    --    | proc  69.3 ms
+t+  10.8s frame    85 | CLEAR    | distance    --    | proc  70.7 ms
+t+  10.9s frame    86 | CLEAR    | distance    --    | proc  79.3 ms
+t+  11.0s frame    87 | CLEAR    | distance    --    | proc  74.3 ms
+t+  11.1s frame    88 | CLEAR    | distance    --    | proc  70.1 ms
+t+  11.2s frame    89 | CLEAR    | distance    --    | proc  72.5 ms
+t+  11.3s frame    90 | CLEAR    | distance    --    | proc  74.2 ms
+t+  11.5s frame    91 | CLEAR    | distance    --    | proc  72.7 ms
+t+  11.6s frame    92 | CLEAR    | distance    --    | proc  77.5 ms
+t+  11.7s frame    93 | CLEAR    | distance    --    | proc  83.0 ms
+t+  11.8s frame    94 | CLEAR    | distance    --    | proc  78.4 ms
+t+  11.9s frame    95 | CLEAR    | distance    --    | proc  70.3 ms
+t+  12.0s frame    96 | CLEAR    | distance    --    | proc  72.4 ms
+t+  12.2s frame    97 | CLEAR    | distance    --    | proc  92.5 ms
+t+  12.3s frame    98 | CLEAR    | distance    --    | proc  71.9 ms
+t+  12.4s frame    99 | CLEAR    | distance    --    | proc  75.6 ms
+t+  12.5s frame   100 | CLEAR    | distance    --    | proc  68.4 ms
+t+  12.6s frame   101 | CLEAR    | distance    --    | proc  71.3 ms
+t+  12.7s frame   102 | CLEAR    | distance    --    | proc  77.0 ms
+t+  12.9s frame   103 | CLEAR    | distance    --    | proc  75.7 ms
+t+  13.0s frame   104 | CLEAR    | distance    --    | proc  89.3 ms
+t+  13.1s frame   105 | CLEAR    | distance    --    | proc  92.9 ms
+t+  13.2s frame   106 | CLEAR    | distance    --    | proc  73.8 ms
+t+  13.4s frame   107 | CLEAR    | distance    --    | proc  95.1 ms
+t+  13.5s frame   108 | CLEAR    | distance    --    | proc 101.5 ms
+t+  13.7s frame   109 | CLEAR    | distance    --    | proc  94.9 ms
+t+  13.8s frame   110 | CLEAR    | distance    --    | proc  80.1 ms
+t+  13.9s frame   111 | CLEAR    | distance    --    | proc  98.2 ms
+t+  14.0s frame   112 | CLEAR    | distance    --    | proc  66.6 ms
+t+  14.2s frame   113 | CLEAR    | distance    --    | proc  93.2 ms
+t+  14.3s frame   114 | CLEAR    | distance    --    | proc  97.3 ms
+t+  14.4s frame   115 | CLEAR    | distance    --    | proc  98.0 ms
+t+  14.6s frame   116 | CLEAR    | distance    --    | proc  95.7 ms
+t+  14.7s frame   117 | CLEAR    | distance    --    | proc  94.6 ms
+t+  14.9s frame   118 | CLEAR    | distance    --    | proc 100.0 ms
+t+  15.0s frame   119 | CLEAR    | distance    --    | proc  96.6 ms
+t+  15.1s frame   120 | CLEAR    | distance    --    | proc  71.9 ms
+t+  15.2s frame   121 | CLEAR    | distance    --    | proc  88.2 ms
+t+  15.4s frame   122 | CLEAR    | distance    --    | proc  93.8 ms
+t+  15.5s frame   123 | CLEAR    | distance    --    | proc  93.6 ms
+t+  15.6s frame   124 | CLEAR    | distance    --    | proc  99.4 ms
+t+  15.8s frame   125 | CLEAR    | distance    --    | proc  94.8 ms
+t+  15.9s frame   126 | CLEAR    | distance    --    | proc  69.2 ms
+t+  16.3s frame   127 | CLEAR    | distance    --    | proc  97.5 ms
+t+  16.4s frame   128 | CLEAR    | distance    --    | proc  93.1 ms
+t+  16.6s frame   129 | CLEAR    | distance    --    | proc  92.5 ms
+t+  16.7s frame   130 | CLEAR    | distance    --    | proc  66.3 ms
+t+  16.8s frame   131 | CLEAR    | distance    --    | proc  95.2 ms
+t+  16.9s frame   132 | CLEAR    | distance    --    | proc  94.1 ms
+t+  17.1s frame   133 | CLEAR    | distance    --    | proc  72.1 ms
+t+  17.2s frame   134 | CLEAR    | distance    --    | proc  66.5 ms
+t+  17.3s frame   135 | CLEAR    | distance    --    | proc  69.9 ms
+t+  17.4s frame   136 | CLEAR    | distance    --    | proc  75.6 ms
+t+  17.5s frame   137 | CLEAR    | distance    --    | proc  69.4 ms
+t+  17.6s frame   138 | CLEAR    | distance    --    | proc  87.9 ms
+t+  17.8s frame   139 | CLEAR    | distance    --    | proc  68.1 ms
+t+  17.9s frame   140 | CLEAR    | distance    --    | proc  74.1 ms
+t+  18.0s frame   141 | CLEAR    | distance    --    | proc  88.3 ms
+t+  18.1s frame   142 | CLEAR    | distance    --    | proc  89.5 ms
+t+  18.2s frame   143 | CLEAR    | distance    --    | proc  68.1 ms
+t+  18.4s frame   144 | CLEAR    | distance    --    | proc  92.8 ms
+t+  18.5s frame   145 | CLEAR    | distance    --    | proc  68.3 ms
+t+  18.6s frame   146 | CLEAR    | distance    --    | proc  83.6 ms
+t+  18.7s frame   147 | CLEAR    | distance    --    | proc  75.6 ms
+t+  18.8s frame   148 | CLEAR    | distance    --    | proc  72.3 ms
+t+  19.0s frame   149 | CLEAR    | distance    --    | proc  92.0 ms
+t+  19.1s frame   150 | CLEAR    | distance    --    | proc  68.1 ms
+t+  19.2s frame   151 | CLEAR    | distance    --    | proc  93.3 ms
+t+  19.4s frame   152 | CLEAR    | distance    --    | proc  98.3 ms
+t+  19.5s frame   153 | CLEAR    | distance    --    | proc  95.2 ms
+t+  19.6s frame   154 | CLEAR    | distance    --    | proc  92.4 ms
+t+  19.8s frame   155 | CLEAR    | distance    --    | proc  89.5 ms
+t+  19.9s frame   156 | CLEAR    | distance    --    | proc  87.0 ms
+t+  21.7s frame   156 | UNKNOWN  | distance    --    | proc   0.0 ms | input stale: no cloud for > 1.5 s

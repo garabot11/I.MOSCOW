@@ -1,0 +1,359 @@
+{
+ "results_dir": "results/ablation/fixed_thresholds",
+ "bags": {
+  "doubleT_obstacle": {
+   "frames": 101,
+   "tp": 24,
+   "fp": 0,
+   "fn": 0,
+   "tn": 0,
+   "uncertain_frames": 77,
+   "unknown_on_positive": 0,
+   "unknown_on_negative": 0,
+   "false_alarm_events": [],
+   "uncertain_alarm_events": [
+    {
+     "frames": [
+      130,
+      130
+     ],
+     "n_frames": 1
+    }
+   ],
+   "obstacle_events": [
+    {
+     "event_id": "obstacle_1",
+     "frames_processed": 24,
+     "frames_detected": 24,
+     "detected": true,
+     "first_detection": {
+      "frame": 16,
+      "time_s": 1.5996,
+      "distance_m": 55.676
+     },
+     "distance_reported_m": [
+      55.676,
+      56.364
+     ],
+     "distance_reference_m": [
+      55.4,
+      56.7
+     ]
+    }
+   ],
+   "processing_ms": {
+    "median": 83.3,
+    "p95": 88.1,
+    "p99": 91.1,
+    "max": 91.2
+   }
+  },
+  "doubleT_platform": {
+   "frames": 173,
+   "tp": 0,
+   "fp": 24,
+   "fn": 0,
+   "tn": 149,
+   "uncertain_frames": 0,
+   "unknown_on_positive": 0,
+   "unknown_on_negative": 0,
+   "false_alarm_events": [
+    {
+     "frames": [
+      48,
+      48
+     ],
+     "time_s": [
+      4.7924,
+      4.7924
+     ],
+     "distance_m": [
+      77.908,
+      77.908
+     ],
+     "n_frames": 1
+    },
+    {
+     "frames": [
+      58,
+      62
+     ],
+     "time_s": [
+      5.7941,
+      6.1933
+     ],
+     "distance_m": [
+      73.412,
+      78.712
+     ],
+     "n_frames": 3
+    },
+    {
+     "frames": [
+      70,
+      76
+     ],
+     "time_s": [
+      6.9907,
+      7.5992
+     ],
+     "distance_m": [
+      45.772,
+      57.888
+     ],
+     "n_frames": 4
+    },
+    {
+     "frames": [
+      82,
+      88
+     ],
+     "time_s": [
+      8.1957,
+      8.7939
+     ],
+     "distance_m": [
+      57.1,
+      71.044
+     ],
+     "n_frames": 4
+    },
+    {
+     "frames": [
+      96,
+      110
+     ],
+     "time_s": [
+      9.5944,
+      10.9905
+     ],
+     "distance_m": [
+      75.6,
+      112.632
+     ],
+     "n_frames": 8
+    },
+    {
+     "frames": [
+      124,
+      138
+     ],
+     "time_s": [
+      12.3915,
+      13.7983
+     ],
+     "distance_m": [
+      45.916,
+      57.528
+     ],
+     "n_frames": 8
+    }
+   ],
+   "uncertain_alarm_events": [],
+   "obstacle_events": [],
+   "processing_ms": {
+    "median": 65.1,
+    "p95": 84.6,
+    "p99": 94.1,
+    "max": 97.0
+   }
+  },
+  "roundT_doubleT": {
+   "frames": 126,
+   "tp": 0,
+   "fp": 7,
+   "fn": 0,
+   "tn": 119,
+   "uncertain_frames": 0,
+   "unknown_on_positive": 0,
+   "unknown_on_negative": 0,
+   "false_alarm_events": [
+    {
+     "frames": [
+      112,
+      124
+     ],
+     "time_s": [
+      11.1869,
+      12.385
+     ],
+     "distance_m": [
+      88.996,
+      99.113
+     ],
+     "n_frames": 7
+    }
+   ],
+   "uncertain_alarm_events": [],
+   "obstacle_events": [],
+   "processing_ms": {
+    "median": 66.6,
+    "p95": 84.7,
+    "p99": 94.3,
+    "max": 96.8
+   }
+  },
+  "roundT_pressureGate_roundT": {
+   "frames": 134,
+   "tp": 0,
+   "fp": 1,
+   "fn": 0,
+   "tn": 133,
+   "uncertain_frames": 0,
+   "unknown_on_positive": 0,
+   "unknown_on_negative": 0,
+   "false_alarm_events": [
+    {
+     "frames": [
+      170,
+      170
+     ],
+     "time_s": [
+      16.9962,
+      16.9962
+     ],
+     "distance_m": [
+      104.257,
+      104.257
+     ],
+     "n_frames": 1
+    }
+   ],
+   "uncertain_alarm_events": [],
+   "obstacle_events": [],
+   "processing_ms": {
+    "median": 68.5,
+    "p95": 77.7,
+    "p99": 79.3,
+    "max": 92.2
+   }
+  },
+  "roundT_squareT_pressureGate_squareT": {
+   "frames": 273,
+   "tp": 0,
+   "fp": 1,
+   "fn": 0,
+   "tn": 272,
+   "uncertain_frames": 0,
+   "unknown_on_positive": 0,
+   "unknown_on_negative": 0,
+   "false_alarm_events": [
+    {
+     "frames": [
+      300,
+      300
+     ],
+     "time_s": [
+      31.0045,
+      31.0045
+     ],
+     "distance_m": [
+      115.952,
+      115.952
+     ],
+     "n_frames": 1
+    }
+   ],
+   "uncertain_alarm_events": [],
+   "obstacle_events": [],
+   "processing_ms": {
+    "median": 53.5,
+    "p95": 68.1,
+    "p99": 69.0,
+    "max": 71.4
+   }
+  },
+  "squareT_platform_squareT_switch": {
+   "frames": 439,
+   "tp": 0,
+   "fp": 21,
+   "fn": 0,
+   "tn": 352,
+   "uncertain_frames": 66,
+   "unknown_on_positive": 0,
+   "unknown_on_negative": 0,
+   "false_alarm_events": [
+    {
+     "frames": [
+      98,
+      124
+     ],
+     "time_s": [
+      9.794,
+      12.4012
+     ],
+     "distance_m": [
+      20.348,
+      26.112
+     ],
+     "n_frames": 14
+    },
+    {
+     "frames": [
+      132,
+      144
+     ],
+     "time_s": [
+      13.1982,
+      15.0016
+     ],
+     "distance_m": [
+      21.228,
+      27.732
+     ],
+     "n_frames": 7
+    },
+    {
+     "frames": [
+      154,
+      154
+     ],
+     "time_s": [
+      15.9965,
+      15.9965
+     ],
+     "distance_m": [
+      25.116,
+      25.116
+     ],
+     "n_frames": 1
+    }
+   ],
+   "uncertain_alarm_events": [
+    {
+     "frames": [
+      748,
+      748
+     ],
+     "n_frames": 1
+    },
+    {
+     "frames": [
+      774,
+      790
+     ],
+     "n_frames": 9
+    }
+   ],
+   "obstacle_events": [],
+   "processing_ms": {
+    "median": 45.1,
+    "p95": 83.6,
+    "p99": 97.3,
+    "max": 226.0
+   }
+  }
+ },
+ "totals": {
+  "tp": 24,
+  "fp": 54,
+  "fn": 0,
+  "tn": 1025,
+  "false_alarm_events": 12,
+  "uncertain_frames": 143,
+  "frames": 1246,
+  "precision": 0.3076923076923077,
+  "recall": 1.0,
+  "f1": 0.47058823529411764
+ }
+}

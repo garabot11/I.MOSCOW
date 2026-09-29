@@ -1,0 +1,4 @@
+[INFO] [1790689504.348177987] [rosbag2_storage]: Opened database '/home/gag/i.mos/dataset/for_hackathon/roundT_doubleT/roundT_doubleT_0.db3' for READ_ONLY.
+[INFO] [1790689504.356177850] [rosbag2_player]: Set rate to 1
+[INFO] [1790689504.360226667] [rosbag2_player]: Playback until timestamp: -1
+[INFO] [1790689504.360288842] [rosbag2_player]: Sleep 2000000000 ns

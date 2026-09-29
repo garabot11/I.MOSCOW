@@ -1,0 +1,38 @@
+{
+ "doubleT_obstacle": {
+  "messages": 201,
+  "different": 0,
+  "decode_ms_median_deserialize": 9.04,
+  "decode_ms_median_raw_parser": 4.69
+ },
+ "doubleT_platform": {
+  "messages": 345,
+  "different": 0,
+  "decode_ms_median_deserialize": 2.64,
+  "decode_ms_median_raw_parser": 1.39
+ },
+ "roundT_doubleT": {
+  "messages": 252,
+  "different": 0,
+  "decode_ms_median_deserialize": 2.53,
+  "decode_ms_median_raw_parser": 1.29
+ },
+ "roundT_pressureGate_roundT": {
+  "messages": 268,
+  "different": 0,
+  "decode_ms_median_deserialize": 2.62,
+  "decode_ms_median_raw_parser": 1.37
+ },
+ "roundT_squareT_pressureGate_squareT": {
+  "messages": 545,
+  "different": 0,
+  "decode_ms_median_deserialize": 2.58,
+  "decode_ms_median_raw_parser": 1.32
+ },
+ "squareT_platform_squareT_switch": {
+  "messages": 877,
+  "different": 0,
+  "decode_ms_median_deserialize": 2.6,
+  "decode_ms_median_raw_parser": 1.36
+ }
+}

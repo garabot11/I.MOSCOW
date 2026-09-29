@@ -1,0 +1,30 @@
+[INFO] [1790680556.975430431] [rosbag2_storage]: Opened database '/data/roundT_doubleT/roundT_doubleT_0.db3' for READ_ONLY.
+{
+ "bag": "roundT_doubleT",
+ "messages_in_metadata": 252,
+ "messages_read": 252,
+ "stride": 1,
+ "frames_expected": 252,
+ "frames_processed": 252,
+ "complete": true,
+ "status_counts": {
+  "clear": 252,
+  "detected": 0,
+  "unknown": 0
+ },
+ "status_counts_raw": {
+  "clear": 252,
+  "detected": 0,
+  "unknown": 0
+ },
+ "processing_ms": {
+  "median": 37.87,
+  "p95": 62.41,
+  "p99": 67.42,
+  "max": 70.68,
+  "mean": 43.75
+ },
+ "read_ms_median": 10.84,
+ "wall_s": 14.13,
+ "frames_per_s_including_io": 17.84
+}

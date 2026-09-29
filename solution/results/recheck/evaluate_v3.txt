@@ -1,0 +1,10 @@
+== doubleT_obstacle: frames=201 TP=47 FP=0 FN=0 TN=0 uncertain=154 unknown(pos/neg)=0/0 false-alarm events=0 proc ms median/p95/max=66.2/73.8/82.5
+   obstacle obstacle_1: detected=True frames 47/47 first={'frame': 16, 'time_s': 1.5996, 'distance_m': 55.662} reported dist=[55.662, 56.332] ref=[55.4, 56.7]
+== doubleT_platform: frames=345 TP=0 FP=1 FN=0 TN=344 uncertain=0 unknown(pos/neg)=0/0 false-alarm events=1 proc ms median/p95/max=33.8/56.3/69.7
+   FALSE ALARM frames [73, 73] t=[7.2919, 7.2919] dist=[58.56, 58.56] (1 frames)
+== roundT_doubleT: frames=252 TP=0 FP=0 FN=0 TN=252 uncertain=0 unknown(pos/neg)=0/0 false-alarm events=0 proc ms median/p95/max=37.9/62.4/70.7
+== roundT_pressureGate_roundT: frames=268 TP=0 FP=0 FN=0 TN=268 uncertain=0 unknown(pos/neg)=0/0 false-alarm events=0 proc ms median/p95/max=34.7/54.4/64.8
+== roundT_squareT_pressureGate_squareT: frames=545 TP=0 FP=0 FN=0 TN=545 uncertain=0 unknown(pos/neg)=0/0 false-alarm events=0 proc ms median/p95/max=32.5/54.7/66.4
+== squareT_platform_squareT_switch: frames=877 TP=0 FP=0 FN=0 TN=745 uncertain=132 unknown(pos/neg)=0/0 false-alarm events=0 proc ms median/p95/max=29.5/62.4/187.1
+   alarm on uncertain frames [776, 777] (2 frames) - not counted
+TOTAL frames=2488 TP=47 FP=1 FN=0 TN=2154 precision=0.9791666666666666 recall=1.0 f1=0.9894736842105264 false-alarm events=1

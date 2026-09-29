@@ -1,0 +1,14 @@
+[INFO] [launch]: All log files can be found below /home/imos/.ros/log/2026-09-28-22-36-44-950954-MSI-37
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [detector_node-1]: process started with pid [39]
+[INFO] [rviz2-2]: process started with pid [41]
+[rviz2-2] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-imos'
+[rviz2-2] [INFO] [1790635005.345356170] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-2] [INFO] [1790635005.345539842] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[rviz2-2] [INFO] [1790635005.428523240] [rviz2]: Stereo is NOT SUPPORTED
+[detector_node-1] [INFO] [1790635005.559933686] [metro_obstacle_detector]: subscribed to /lidar_points (reliable, depth 1); axes forward=-y up=+z; config=/workspace/install/share/metro_obstacle_detector/config/detector.yaml; log=/results/demo.jsonl
+[detector_node-1] [INFO] [1790635016.392907432] [metro_obstacle_detector]: frames=50 status=clear dist=None proc ms median=94.3 p95=107.2 max=114.3
+[detector_node-1] [INFO] [1790635021.482819988] [metro_obstacle_detector]: frames=100 status=clear dist=None proc ms median=58.4 p95=106.4 max=114.3
+[detector_node-1] [INFO] [1790635026.480885242] [metro_obstacle_detector]: frames=150 status=clear dist=None proc ms median=60.1 p95=105.9 max=114.3
+[detector_node-1] [INFO] [1790635031.504679892] [metro_obstacle_detector]: frames=200 status=clear dist=None proc ms median=58.3 p95=105.4 max=114.3
+[detector_node-1] [WARN] [1790635037.526922644] [metro_obstacle_detector]: no input cloud for 1.5 s: publishing UNKNOWN

@@ -1,0 +1,13 @@
+[INFO] [launch]: All log files can be found below /home/imos/.ros/log/2026-09-29-11-04-52-790292-MSI-39
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [detector_node-1]: process started with pid [43]
+[detector_node-1] [INFO] [1790679893.397575454] [metro_obstacle_detector]: subscribed to /lidar_points (reliable, depth 1); axes forward=-y up=+z; config=/workspace/install/share/metro_obstacle_detector/config/detector.yaml; log=/results/stream.jsonl
+[detector_node-1] [WARN] [1790679894.875995308] [metro_obstacle_detector]: no input: no cloud received on /lidar_points since start (1.5 s): publishing UNKNOWN
+[detector_node-1] [INFO] [1790679902.120706902] [metro_obstacle_detector]: frames=50 status=clear dist=None proc ms median=65.7 p95=136.2 max=142.5
+[detector_node-1] [INFO] [1790679907.072024304] [metro_obstacle_detector]: frames=100 status=clear dist=None proc ms median=56.2 p95=132.6 max=142.5
+[detector_node-1] [INFO] [1790679912.020147609] [metro_obstacle_detector]: frames=150 status=clear dist=None proc ms median=49.6 p95=131.7 max=142.5
+[detector_node-1] [INFO] [1790679917.042359114] [metro_obstacle_detector]: frames=200 status=clear dist=None proc ms median=40.6 p95=122.4 max=142.5
+[detector_node-1] [WARN] [1790679923.375561048] [metro_obstacle_detector]: input stale: no cloud for > 1.5 s: publishing UNKNOWN
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [detector_node-1]: sending signal 'SIGINT' to process[detector_node-1]
+[INFO] [detector_node-1]: process has finished cleanly [pid 43]

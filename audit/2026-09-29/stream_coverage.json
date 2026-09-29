@@ -1,0 +1,27 @@
+[
+  {
+    "bag": "roundT_doubleT",
+    "bag_messages": 252,
+    "processed": 251,
+    "missing_original_indices": [
+      0
+    ],
+    "status_counts": {
+      "clear": 251
+    }
+  },
+  {
+    "bag": "doubleT_obstacle",
+    "bag_messages": 201,
+    "processed": 198,
+    "missing_original_indices": [
+      0,
+      1,
+      200
+    ],
+    "status_counts": {
+      "clear": 146,
+      "detected": 52
+    }
+  }
+]

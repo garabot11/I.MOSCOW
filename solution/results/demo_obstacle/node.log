@@ -1,0 +1,65 @@
+[INFO] [launch]: All log files can be found below /home/imos/.ros/log/2026-09-28-22-22-41-420993-MSI-37
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [detector_node-1]: process started with pid [39]
+[INFO] [rviz2-2]: process started with pid [41]
+[rviz2-2] QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-imos'
+[rviz2-2] [INFO] [1790634161.724023604] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-2] [INFO] [1790634161.724132563] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[rviz2-2] [INFO] [1790634161.760840409] [rviz2]: Stereo is NOT SUPPORTED
+[detector_node-1] [INFO] [1790634161.843647530] [metro_obstacle_detector]: subscribed to /sensing/lidar/hesai128/pointcloud (reliable, depth 1); axes forward=-y up=+z; config=/workspace/install/share/metro_obstacle_detector/config/detector.yaml; log=/results/demo.jsonl
+[detector_node-1] [INFO] [1790634173.970665928] [metro_obstacle_detector]: frames=50 status=detected dist=56.351998944048674 proc ms median=111.6 p95=119.2 max=131.1
+[detector_node-1] [INFO] [1790634182.145154985] [metro_obstacle_detector]: frames=100 status=clear dist=None proc ms median=119.0 p95=176.9 max=179.4
+[detector_node-1] [INFO] [1790634190.908736275] [metro_obstacle_detector]: frames=150 status=detected dist=55.89760333514465 proc ms median=146.6 p95=177.6 max=185.0
+[detector_node-1] [INFO] [1790634199.452849283] [metro_obstacle_detector]: frames=200 status=clear dist=None proc ms median=148.7 p95=176.9 max=185.0
+[detector_node-1] [INFO] [1790634207.883447236] [metro_obstacle_detector]: frames=250 status=clear dist=None proc ms median=148.7 p95=174.1 max=185.0
+[detector_node-1] [INFO] [1790634216.907076471] [metro_obstacle_detector]: frames=300 status=clear dist=None proc ms median=150.5 p95=173.0 max=185.0
+[detector_node-1] [INFO] [1790634225.335899118] [metro_obstacle_detector]: frames=350 status=clear dist=None proc ms median=149.9 p95=173.4 max=185.0
+[detector_node-1] [INFO] [1790634234.358235598] [metro_obstacle_detector]: frames=400 status=detected dist=56.14480285354315 proc ms median=152.1 p95=172.9 max=185.0
+[detector_node-1] [INFO] [1790634242.996271777] [metro_obstacle_detector]: frames=450 status=clear dist=None proc ms median=155.6 p95=174.6 max=186.4
+[detector_node-1] [INFO] [1790634253.621874996] [metro_obstacle_detector]: frames=500 status=detected dist=55.830003808677446 proc ms median=159.8 p95=182.7 max=265.2
+[detector_node-1] [INFO] [1790634262.808709027] [metro_obstacle_detector]: frames=550 status=clear dist=None proc ms median=159.9 p95=187.5 max=265.2
+[detector_node-1] [INFO] [1790634271.830707623] [metro_obstacle_detector]: frames=600 status=detected dist=55.80040260750256 proc ms median=161.4 p95=185.4 max=265.2
+[detector_node-1] [INFO] [1790634280.490351202] [metro_obstacle_detector]: frames=650 status=clear dist=None proc ms median=163.7 p95=185.0 max=265.2
+[detector_node-1] [INFO] [1790634289.258741847] [metro_obstacle_detector]: frames=700 status=clear dist=None proc ms median=163.6 p95=184.7 max=265.2
+[detector_node-1] [INFO] [1790634298.773303527] [metro_obstacle_detector]: frames=750 status=clear dist=None proc ms median=164.9 p95=184.5 max=265.2
+[detector_node-1] [INFO] [1790634307.523757380] [metro_obstacle_detector]: frames=800 status=clear dist=None proc ms median=164.5 p95=183.7 max=265.2
+[detector_node-1] [INFO] [1790634316.531171732] [metro_obstacle_detector]: frames=850 status=detected dist=56.28720630261707 proc ms median=165.1 p95=183.5 max=265.2
+[detector_node-1] [INFO] [1790634325.014253846] [metro_obstacle_detector]: frames=900 status=clear dist=None proc ms median=165.0 p95=183.0 max=265.2
+[detector_node-1] [INFO] [1790634334.467009447] [metro_obstacle_detector]: frames=950 status=detected dist=55.85120097193356 proc ms median=165.1 p95=183.1 max=265.2
+[detector_node-1] [INFO] [1790634343.579564223] [metro_obstacle_detector]: frames=1000 status=clear dist=None proc ms median=165.0 p95=183.4 max=265.2
+[detector_node-1] [INFO] [1790634352.961382031] [metro_obstacle_detector]: frames=1050 status=detected dist=55.667602213972124 proc ms median=166.0 p95=184.3 max=265.2
+[detector_node-1] [INFO] [1790634362.141167126] [metro_obstacle_detector]: frames=1100 status=clear dist=None proc ms median=166.5 p95=184.8 max=265.2
+[detector_node-1] [INFO] [1790634371.454670867] [metro_obstacle_detector]: frames=1150 status=clear dist=None proc ms median=166.7 p95=186.3 max=265.2
+[detector_node-1] [INFO] [1790634381.644270471] [metro_obstacle_detector]: frames=1200 status=clear dist=None proc ms median=167.3 p95=187.8 max=265.2
+[detector_node-1] [INFO] [1790634390.695994103] [metro_obstacle_detector]: frames=1250 status=clear dist=None proc ms median=167.6 p95=188.6 max=265.2
+[detector_node-1] [INFO] [1790634400.331097392] [metro_obstacle_detector]: frames=1300 status=clear dist=None proc ms median=167.8 p95=189.6 max=265.2
+[detector_node-1] [INFO] [1790634409.138306419] [metro_obstacle_detector]: frames=1350 status=clear dist=None proc ms median=167.9 p95=189.9 max=265.2
+[detector_node-1] [INFO] [1790634419.334170318] [metro_obstacle_detector]: frames=1400 status=clear dist=None proc ms median=168.6 p95=189.9 max=265.2
+[detector_node-1] [INFO] [1790634428.309955960] [metro_obstacle_detector]: frames=1450 status=clear dist=None proc ms median=169.0 p95=190.4 max=265.2
+[detector_node-1] [INFO] [1790634438.683110155] [metro_obstacle_detector]: frames=1500 status=detected dist=56.18000332824477 proc ms median=169.0 p95=190.6 max=246.7
+[detector_node-1] [INFO] [1790634447.385936237] [metro_obstacle_detector]: frames=1550 status=clear dist=None proc ms median=168.7 p95=188.9 max=228.2
+[detector_node-1] [INFO] [1790634456.336355223] [metro_obstacle_detector]: frames=1600 status=detected dist=55.89760333514465 proc ms median=168.5 p95=188.9 max=228.2
+[detector_node-1] [INFO] [1790634464.903879572] [metro_obstacle_detector]: frames=1650 status=clear dist=None proc ms median=168.3 p95=188.9 max=228.2
+[detector_node-1] [INFO] [1790634473.361035266] [metro_obstacle_detector]: frames=1700 status=clear dist=None proc ms median=167.8 p95=189.2 max=228.2
+[detector_node-1] [WARN] [1790634476.827697208] [metro_obstacle_detector]: no input cloud for 1.5 s: publishing UNKNOWN
+[detector_node-1] [INFO] [1790634485.911661682] [metro_obstacle_detector]: frames=1750 status=clear dist=None proc ms median=167.0 p95=188.9 max=228.2
+[detector_node-1] [INFO] [1790634494.282205969] [metro_obstacle_detector]: frames=1800 status=clear dist=None proc ms median=166.9 p95=188.5 max=228.2
+[detector_node-1] [INFO] [1790634503.883332232] [metro_obstacle_detector]: frames=1850 status=clear dist=None proc ms median=166.9 p95=188.5 max=228.2
+[detector_node-1] [INFO] [1790634512.388516021] [metro_obstacle_detector]: frames=1900 status=clear dist=None proc ms median=166.4 p95=188.5 max=228.2
+[detector_node-1] [INFO] [1790634521.407623683] [metro_obstacle_detector]: frames=1950 status=clear dist=None proc ms median=166.7 p95=188.5 max=228.2
+[detector_node-1] [INFO] [1790634529.708229360] [metro_obstacle_detector]: frames=2000 status=clear dist=None proc ms median=166.4 p95=188.4 max=228.2
+[detector_node-1] [INFO] [1790634539.902946078] [metro_obstacle_detector]: frames=2050 status=detected dist=55.862404080155706 proc ms median=166.8 p95=190.3 max=228.2
+[detector_node-1] [INFO] [1790634549.327720508] [metro_obstacle_detector]: frames=2100 status=clear dist=None proc ms median=166.5 p95=191.0 max=228.2
+[detector_node-1] [INFO] [1790634559.404721523] [metro_obstacle_detector]: frames=2150 status=detected dist=55.86320129155894 proc ms median=166.8 p95=190.6 max=228.2
+[detector_node-1] [INFO] [1790634568.731508858] [metro_obstacle_detector]: frames=2200 status=clear dist=None proc ms median=166.2 p95=190.6 max=228.2
+[detector_node-1] [INFO] [1790634578.649642551] [metro_obstacle_detector]: frames=2250 status=detected dist=55.928005606512265 proc ms median=166.7 p95=190.8 max=228.2
+[detector_node-1] [INFO] [1790634588.245518943] [metro_obstacle_detector]: frames=2300 status=clear dist=None proc ms median=166.5 p95=191.0 max=228.2
+[detector_node-1] [INFO] [1790634597.350357644] [metro_obstacle_detector]: frames=2350 status=clear dist=None proc ms median=166.4 p95=190.9 max=228.2
+[detector_node-1] [INFO] [1790634606.157174744] [metro_obstacle_detector]: frames=2400 status=clear dist=None proc ms median=166.1 p95=190.9 max=228.2
+[detector_node-1] [INFO] [1790634614.497555906] [metro_obstacle_detector]: frames=2450 status=clear dist=None proc ms median=165.7 p95=190.8 max=228.2
+[detector_node-1] [INFO] [1790634623.411501076] [metro_obstacle_detector]: frames=2500 status=clear dist=None proc ms median=165.1 p95=189.8 max=218.1
+[detector_node-1] [INFO] [1790634631.614230395] [metro_obstacle_detector]: frames=2550 status=clear dist=None proc ms median=165.0 p95=189.6 max=218.1
+[detector_node-1] [INFO] [1790634640.643894304] [metro_obstacle_detector]: frames=2600 status=detected dist=55.80600067284783 proc ms median=165.1 p95=189.6 max=218.1
+[detector_node-1] [INFO] [1790634649.048927318] [metro_obstacle_detector]: frames=2650 status=clear dist=None proc ms median=165.0 p95=189.6 max=218.1
+[detector_node-1] [INFO] [1790634657.479282701] [metro_obstacle_detector]: frames=2700 status=clear dist=None proc ms median=165.1 p95=189.5 max=218.1
+[detector_node-1] [INFO] [1790634666.507959997] [metro_obstacle_detector]: frames=2750 status=clear dist=None proc ms median=165.3 p95=189.5 max=218.1

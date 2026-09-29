@@ -1,0 +1,11 @@
+{
+ "frames_sqlite": 252,
+ "frames_mcap": 252,
+ "differences_excluding_bag_name_and_timing": 0,
+ "differing_fields": {
+  "bag": 252
+ },
+ "complete": true,
+ "messages_read": 252,
+ "messages_in_metadata": 252
+}

@@ -1,0 +1,39 @@
+{
+ "bag": "roundT_doubleT",
+ "topic": "/lidar_points",
+ "reference": "sent = every message of the bag (ros2 bag play publishes all of them when it exits with 0); processed = node log records; published = statuses seen by a separate subscriber; matched by header stamp",
+ "player_exit_code": 0,
+ "sent": 252,
+ "processed": 252,
+ "processed_fraction": 1.0,
+ "not_processed": 0,
+ "not_processed_indices": [],
+ "not_processed_runs": [],
+ "not_processed_at_start": 0,
+ "not_processed_at_end": 0,
+ "not_processed_inside": 0,
+ "log_records": 252,
+ "log_records_not_in_bag": 0,
+ "log_records_duplicate": 0,
+ "status_counts": {
+  "clear": 252
+ },
+ "processing_ms": {
+  "median": 29.0,
+  "p95": 49.94,
+  "max": 57.84
+ },
+ "inter_arrival_s": {
+  "median": 0.0995,
+  "p95": 0.1146,
+  "max": 0.1275
+ },
+ "observer": {
+  "status_messages": 263,
+  "published_results_for_bag_frames": 252,
+  "processed_but_not_observed": 0,
+  "unknown_before_first_input": 8,
+  "unknown_after_input_stopped": 3,
+  "first_unknown_diagnostics": "no input: no cloud received on /lidar_points since start (1.5 s)"
+ }
+}

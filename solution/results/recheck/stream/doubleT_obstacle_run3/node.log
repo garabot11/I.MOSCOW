@@ -1,0 +1,13 @@
+[INFO] [launch]: All log files can be found below /home/imos/.ros/log/2026-09-29-11-25-09-324514-MSI-39
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [detector_node-1]: process started with pid [53]
+[detector_node-1] [INFO] [1790681109.649893154] [metro_obstacle_detector]: subscribed to /sensing/lidar/hesai128/pointcloud (reliable, depth 1); axes forward=-y up=+z; config=/workspace/install/share/metro_obstacle_detector/config/detector.yaml; log=/results/stream.jsonl
+[detector_node-1] [WARN] [1790681111.134628412] [metro_obstacle_detector]: no input: no cloud received on /sensing/lidar/hesai128/pointcloud since start (1.5 s): publishing UNKNOWN
+[detector_node-1] [INFO] [1790681120.003311014] [metro_obstacle_detector]: frames=50 status=detected dist=55.98000144958496 proc ms median=49.1 p95=54.3 max=56.7
+[detector_node-1] [INFO] [1790681125.000937240] [metro_obstacle_detector]: frames=100 status=clear dist=None proc ms median=48.9 p95=54.5 max=57.5
+[detector_node-1] [INFO] [1790681130.103583835] [metro_obstacle_detector]: frames=150 status=clear dist=None proc ms median=47.7 p95=53.7 max=57.5
+[detector_node-1] [INFO] [1790681135.391893690] [metro_obstacle_detector]: frames=200 status=clear dist=None proc ms median=47.5 p95=53.7 max=57.5
+[detector_node-1] [WARN] [1790681137.134649190] [metro_obstacle_detector]: input stale: no cloud for > 1.5 s: publishing UNKNOWN
+[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[INFO] [detector_node-1]: sending signal 'SIGINT' to process[detector_node-1]
+[INFO] [detector_node-1]: process has finished cleanly [pid 53]

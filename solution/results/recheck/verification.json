@@ -1,0 +1,308 @@
+{
+ "date": "2026-09-29",
+ "image": {
+  "tag": "metro-lidar:final",
+  "id": "sha256:8a6f9d0a83e059715d1e1c48f2fc84a5fc16150ea3f76d33ccd3eae836808653",
+  "build": "docker build --no-cache --pull --target solution from a clean copy of solution/, exit 0, 3 min 48 s",
+  "os": "Ubuntu 22.04.5 LTS",
+  "ros": "humble",
+  "tests": "29 passed",
+  "files_vs_sources": "files compared: 45, different: 0",
+  "superseded_by": "round2_2026-09-29 (sha256:69acee4ec78544ff2b2b9ea44227312fc169117932bd6e2397a9118971bd5a86)"
+ },
+ "offline_full_run": {
+  "script": "scripts/eval_all_container.sh ../dataset/for_hackathon results/final_offline_v3 1 metro-lidar:final (relative paths)",
+  "exit_code": 0,
+  "bags_complete": 6,
+  "frames": 2488,
+  "differences_vs_final_offline_v2": 0,
+  "metrics": {
+   "tp": 47,
+   "fp": 1,
+   "fn": 0,
+   "tn": 2154,
+   "uncertain_frames": 286,
+   "precision": 0.9791666666666666,
+   "recall": 1.0,
+   "f1": 0.9894736842105264,
+   "false_alarm_events": 1
+  }
+ },
+ "batch_failure_probes": {
+  "eval_all_container_bad_image": "exit 1, FAILED lists 6 bags, no ALLDONE",
+  "eval_all_container_missing_data_dir": "exit 2",
+  "ablation_bad_image": "exit 1, FAILED lists 36 runs, no ALLDONE"
+ },
+ "stream": {
+  "protocol": "whole bag, rate 1.0, reliable depth 1, player --start-paused + resume, --wait-for-all-acked 5000, independent observer, matched by header stamp",
+  "runs": 10,
+  "sent": 3394,
+  "processed": 3392,
+  "processed_fraction": 0.99941,
+  "not_processed": {
+   "squareT_platform_squareT_switch_run1": [
+    798,
+    800
+   ]
+  },
+  "status_equal_to_offline_for_every_processed_frame": true,
+  "unknown_before_first_input_per_run": [
+   7,
+   8,
+   9
+  ],
+  "unknown_after_input_stopped_per_run": [
+   3,
+   4
+  ],
+  "image": "sha256:8a6f9d0a… (round 1); round 2 stream results: round2_2026-09-29.stream_final_auto_topic"
+ },
+ "readme_section_2a_literal": {
+  "status_before_input": "UNKNOWN, diagnostics \"no input: no cloud received on /lidar_points since start\"",
+  "docker_exec_entrypoint_play_exit": 0,
+  "live_jsonl_records": 251,
+  "bag_messages": 252,
+  "status_monitor_CLEAR_lines": 251,
+  "bash_lc_and_bash_ic_exec": "ros2 found, exit 0",
+  "note": "terminal 1 started with -d instead of -it (no TTY in the check); the first cloud is lost to the player start burst, documented in README"
+ },
+ "time_jump_probe_real_data": {
+  "jump_reset_triggered": true,
+  "identical_to_fresh_detector": true,
+  "n_box": [
+   0,
+   0
+  ],
+  "curve_max_d_absolute": [
+   55.5,
+   55.5
+  ],
+  "status": [
+   "clear",
+   "clear"
+  ]
+ },
+ "rviz_demo": {
+  "bag": "doubleT_obstacle",
+  "fixed_frame_read_from_bag": "lidar_livox",
+  "screenshot": "demo_obstacle_screen.png",
+  "note": "run with the same sources before the final no-cache rebuild"
+ },
+ "dataset_sha256": "12 of 12 files OK",
+ "host_cpu": {
+  "governor": "powersave",
+  "note": "laptop; timings depend on power state"
+ },
+ "not_done": [
+  "organisers stand (i7-9700E) and hidden control bag",
+  "independent labels / new scenes",
+  "detection range 100-300 m"
+ ],
+ "resources_stream_psutil": {
+  "dir": "results/recheck/resources",
+  "host_load": "browser ≈ 1.3 cores during the measurement",
+  "roundT_doubleT_307k": {
+   "rss_mb_max": 128.4,
+   "cpu_percent_median": 51.9,
+   "processed": "251 of 252",
+   "processing_ms_median": 39.5
+  },
+  "doubleT_obstacle_921k": {
+   "rss_mb_max": 220.0,
+   "cpu_percent_median": 105.7,
+   "processed": "104 of 201",
+   "processing_ms_median": 132.2
+  },
+  "note": "the same 921k bag on the idle machine: 47 ms median, 201/201 (stream runs above)"
+ },
+ "round2_2026-09-29": {
+  "report": "ПРОВЕРКА_ПО_PDF_ПОСЛЕ_ИСПРАВЛЕНИЙ.md, section 6",
+  "image": {
+   "tag": "metro-lidar:final",
+   "id": "sha256:69acee4ec78544ff2b2b9ea44227312fc169117932bd6e2397a9118971bd5a86",
+   "build": "docker build --no-cache --pull from a clean copy, 2 min 34 s",
+   "tests": "38 passed",
+   "files_vs_sources": "47 compared, 0 different",
+   "rosbag2_storage_plugins": [
+    "sqlite3",
+    "mcap"
+   ],
+   "archive": {
+    "path": "/home/gag/i.mos/dist/metro-lidar-final.tar.gz",
+    "size_mb": 462,
+    "sha256": "1c05211bbed1f4ecb62c6da302a56b7eff8c32a7c37cf57f42a39b428de1d313",
+    "gzip_test": "ok",
+    "docker_load": "same image id"
+   }
+  },
+  "offline_full_run_v4": {
+   "differences_vs_v2": 0,
+   "frames": 2488,
+   "metrics": {
+    "tp": 47,
+    "fp": 1,
+    "fn": 0,
+    "tn": 2154,
+    "precision": 0.9791666666666666,
+    "recall": 1.0
+   }
+  },
+  "cdr_parser_equality": {
+   "messages": 2488,
+   "different": 0
+  },
+  "mcap": {
+   "frames_sqlite": 252,
+   "frames_mcap": 252,
+   "differences_excluding_bag_name_and_timing": 0,
+   "differing_fields": {
+    "bag": 252
+   },
+   "complete": true,
+   "messages_read": 252,
+   "messages_in_metadata": 252
+  },
+  "stream_final_auto_topic": {
+   "total_sent": 2740,
+   "total_processed": 2738
+  },
+  "load_final_image": {
+   "final_obst_free_raw": {
+    "processed": 201,
+    "sent": 201,
+    "processing_ms": {
+     "median": 47.63,
+     "p95": 52.44,
+     "max": 56.19
+    },
+    "node_cpu_ms_per_processed_frame": 53.8,
+    "rss_mb_max": 177.0,
+    "affinity": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   "final_round_free_raw": {
+    "processed": 252,
+    "sent": 252,
+    "processing_ms": {
+     "median": 24.0,
+     "p95": 45.27,
+     "max": 49.91
+    },
+    "node_cpu_ms_per_processed_frame": 34.2,
+    "rss_mb_max": 120.8,
+    "affinity": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   "final_obst_ecores4_rclpy": {
+    "processed": 192,
+    "sent": 201,
+    "processing_ms": {
+     "median": 73.39,
+     "p95": 79.73,
+     "max": 85.42
+    },
+    "node_cpu_ms_per_processed_frame": 106.9,
+    "rss_mb_max": 229.9,
+    "affinity": [
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   "final_obst_ecores4_raw": {
+    "processed": 199,
+    "sent": 201,
+    "processing_ms": {
+     "median": 72.88,
+     "p95": 76.25,
+     "max": 83.59
+    },
+    "node_cpu_ms_per_processed_frame": 84.3,
+    "rss_mb_max": 215.5,
+    "affinity": [
+     12,
+     13,
+     14,
+     15
+    ]
+   },
+   "final_round_ecores4_raw": {
+    "processed": 252,
+    "sent": 252,
+    "processing_ms": {
+     "median": 39.41,
+     "p95": 68.77,
+     "max": 76.72
+    },
+    "node_cpu_ms_per_processed_frame": 53.2,
+    "rss_mb_max": 121.2,
+    "affinity": [
+     12,
+     13,
+     14,
+     15
+    ]
+   }
+  },
+  "decimation_max_analysed_points_180000": {
+   "tp": 12,
+   "fp": 1,
+   "fn": 35,
+   "recall": 0.2553191489361702
+  },
+  "external_playback_frames": {
+   "second_humble_container_default": 0,
+   "second_humble_container_ipc_host": 251,
+   "host_jazzy_default": 0,
+   "host_jazzy_udp_builtin": 252,
+   "host_jazzy_default_node_udp_profile": 252,
+   "second_humble_node_udp_profile": 251,
+   "second_humble_localhost_only_node_udp_profile_localhost_only": 0,
+   "same_container_exec_node_udp_profile": 251
+  },
+  "readme_2a_final_auto_topic": {
+   "processed": 251,
+   "sent": 252,
+   "play_exit": 0
+  },
+  "demo_auto_topic": {
+   "topic_resolved": "/sensing/lidar/hesai128/pointcloud",
+   "fixed_frame": "lidar_livox",
+   "status": "OBSTACLE 55.7 m",
+   "screenshot": "not taken: screen was locked"
+  }
+ }
+}

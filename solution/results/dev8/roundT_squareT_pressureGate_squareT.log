@@ -1,0 +1,162 @@
+[INFO] [1790633209.139499664] [rosbag2_storage]: Opened database '/home/gag/i.mos/dataset/for_hackathon/roundT_squareT_pressureGate_squareT/roundT_squareT_pressureGate_squareT_0.db3' for READ_ONLY.
+[roundT_squareT_pressureGate_squareT] #   0 t=   0.00s clear    dist=- box=    0 curve a=-0.0012 b=-1.84e-05 l0=-0.09 n=57 rail z0=-1.33 g=-0.0034   72.5ms
+[roundT_squareT_pressureGate_squareT] #   4 t=   0.39s clear    dist=- box=    0 curve a=-0.0010 b=-1.82e-05 l0=-0.05 n=57 rail z0=-1.33 g=-0.0041   65.8ms
+[roundT_squareT_pressureGate_squareT] #   8 t=   0.80s clear    dist=- box=    0 curve a=-0.0010 b=-2.16e-05 l0=-0.07 n=57 rail z0=-1.32 g=-0.0040   66.1ms
+[roundT_squareT_pressureGate_squareT] #  12 t=   1.18s clear    dist=- box=    0 curve a=-0.0008 b=-2.11e-05 l0=-0.07 n=56 rail z0=-1.33 g=-0.0035   64.8ms
+[roundT_squareT_pressureGate_squareT] #  16 t=   1.59s clear    dist=- box=    0 curve a=-0.0009 b=-2.03e-05 l0=-0.05 n=59 rail z0=-1.33 g=-0.0031   63.9ms
+[roundT_squareT_pressureGate_squareT] #  20 t=   1.99s clear    dist=- box=    0 curve a=-0.0008 b=-1.60e-05 l0=-0.07 n=60 rail z0=-1.34 g=-0.0024   61.7ms
+[roundT_squareT_pressureGate_squareT] #  24 t=   2.39s clear    dist=- box=    0 curve a=-0.0010 b=-2.23e-05 l0=-0.06 n=61 rail z0=-1.33 g=-0.0033   62.9ms
+[roundT_squareT_pressureGate_squareT] #  28 t=   2.79s clear    dist=- box=    4 rej=2 curve a=-0.0012 b=-2.32e-05 l0=-0.08 n=59 rail z0=-1.34 g=-0.0033   96.8ms
+[roundT_squareT_pressureGate_squareT] #  32 t=   3.19s clear    dist=- box=    6 rej=3 curve a=-0.0008 b=-1.69e-05 l0=-0.07 n=60 rail z0=-1.33 g=-0.0022   88.9ms
+[roundT_squareT_pressureGate_squareT] #  36 t=   3.58s clear    dist=- box=   17 rej=8 curve a=-0.0008 b=-7.77e-07 l0=-0.08 n=59 rail z0=-1.33 g=-0.0025   87.6ms
+[roundT_squareT_pressureGate_squareT] #  40 t=   3.99s clear    dist=- box=   15 rej=8 curve a=-0.0016 b=+1.07e-05 l0=-0.05 n=58 rail z0=-1.32 g=-0.0051   87.4ms
+[roundT_squareT_pressureGate_squareT] #  44 t=   4.40s clear    dist=- box=    1 rej=1 curve a=-0.0037 b=+1.89e-05 l0=-0.01 n=60 rail z0=-1.31 g=-0.0059   85.4ms
+[roundT_squareT_pressureGate_squareT] #  48 t=   4.79s clear    dist=- box=    0 curve a=-0.0041 b=-6.32e-06 l0=-0.03 n=61 rail z0=-1.33 g=-0.0068   55.5ms
+[roundT_squareT_pressureGate_squareT] #  52 t=   5.19s clear    dist=- box=    0 curve a=-0.0035 b=-2.14e-06 l0=-0.04 n=59 rail z0=-1.32 g=-0.0061   58.7ms
+[roundT_squareT_pressureGate_squareT] #  56 t=   5.59s clear    dist=- box=    0 curve a=-0.0044 b=-1.03e-05 l0=+0.00 n=59 rail z0=-1.31 g=-0.0036   58.5ms
+[roundT_squareT_pressureGate_squareT] #  60 t=   5.99s clear    dist=- box=    0 curve a=-0.0024 b=-1.66e-05 l0=-0.04 n=57 rail z0=-1.33 g=-0.0026   59.9ms
+[roundT_squareT_pressureGate_squareT] #  64 t=   6.39s clear    dist=- box=    0 curve a=-0.0014 b=-1.54e-05 l0=-0.07 n=56 rail z0=-1.32 g=-0.0014   62.4ms
+[roundT_squareT_pressureGate_squareT] #  68 t=   6.78s clear    dist=- box=    0 curve a=-0.0010 b=-2.24e-05 l0=-0.08 n=56 rail z0=-1.33 g=-0.0002   67.9ms
+[roundT_squareT_pressureGate_squareT] #  72 t=   7.20s clear    dist=- box=    0 curve a=-0.0033 b=-3.45e-05 l0=+0.00 n=54 rail z0=-1.33 g=-0.0005   69.6ms
+[roundT_squareT_pressureGate_squareT] #  76 t=   7.58s clear    dist=- box=    0 curve a=-0.0023 b=-2.96e-05 l0=-0.03 n=54 rail z0=-1.33 g=+0.0001   67.3ms
+[roundT_squareT_pressureGate_squareT] #  80 t=   8.00s clear    dist=- box=    0 curve a=-0.0023 b=-2.96e-05 l0=-0.06 n=49 rail z0=-1.33 g=+0.0001   70.9ms
+[roundT_squareT_pressureGate_squareT] #  84 t=   8.40s clear    dist=- box=    0 curve a=-0.0023 b=-3.39e-05 l0=-0.03 n=51 rail z0=-1.33 g=+0.0007   70.2ms
+[roundT_squareT_pressureGate_squareT] #  88 t=   8.78s clear    dist=- box=    0 curve a=-0.0026 b=-3.55e-05 l0=-0.00 n=50 rail z0=-1.32 g=-0.0000   75.8ms
+[roundT_squareT_pressureGate_squareT] #  92 t=   9.19s clear    dist=- box=    0 curve a=-0.0031 b=-4.29e-05 l0=+0.01 n=49 rail z0=-1.32 g=-0.0003   76.2ms
+[roundT_squareT_pressureGate_squareT] #  96 t=   9.59s clear    dist=- box=    0 curve a=-0.0019 b=-6.90e-05 l0=-0.02 n=50 rail z0=-1.33 g=-0.0004   80.0ms
+[roundT_squareT_pressureGate_squareT] # 100 t=  10.01s clear    dist=- box=    0 curve a=-0.0016 b=-7.82e-05 l0=-0.03 n=48 rail z0=-1.34 g=-0.0005   79.1ms
+[roundT_squareT_pressureGate_squareT] # 104 t=  10.39s clear    dist=- box=    0 curve a=-0.0008 b=-6.25e-05 l0=-0.06 n=46 rail z0=-1.34 g=+0.0018   79.8ms
+[roundT_squareT_pressureGate_squareT] # 108 t=  10.79s clear    dist=- box=    0 curve a=-0.0020 b=-6.57e-05 l0=-0.03 n=48 rail z0=-1.34 g=+0.0023   79.5ms
+[roundT_squareT_pressureGate_squareT] # 112 t=  11.19s clear    dist=- box=    0 curve a=-0.0022 b=-5.74e-05 l0=-0.03 n=48 rail z0=-1.35 g=+0.0025   80.3ms
+[roundT_squareT_pressureGate_squareT] # 116 t=  11.58s clear    dist=- box=    0 curve a=-0.0014 b=-4.90e-05 l0=-0.04 n=47 rail z0=-1.34 g=+0.0015   78.4ms
+[roundT_squareT_pressureGate_squareT] # 120 t=  11.99s clear    dist=- box=    2 rej=1 curve a=-0.0042 b=-5.48e-05 l0=+0.00 n=54 rail z0=-1.34 g=+0.0019  121.3ms
+[roundT_squareT_pressureGate_squareT] # 124 t=  12.39s clear    dist=- box=    0 curve a=-0.0047 b=-3.37e-05 l0=-0.00 n=54 rail z0=-1.34 g=+0.0024   80.8ms
+[roundT_squareT_pressureGate_squareT] # 128 t=  12.79s clear    dist=- box=    1 rej=1 curve a=-0.0074 b=-6.52e-06 l0=-0.10 n=53 rail z0=-1.33 g=+0.0030  118.1ms
+[roundT_squareT_pressureGate_squareT] # 132 t=  13.19s clear    dist=- box=   12 rej=5 curve a=-0.0107 b=+6.25e-06 l0=-0.03 n=54 rail z0=-1.33 g=+0.0026  121.9ms
+[roundT_squareT_pressureGate_squareT] # 136 t=  13.59s clear    dist=- box=    2 rej=1 curve a=-0.0111 b=+3.86e-05 l0=-0.07 n=55 rail z0=-1.32 g=+0.0005  119.4ms
+[roundT_squareT_pressureGate_squareT] # 140 t=  13.99s clear    dist=- box=    3 rej=2 curve a=-0.0118 b=+4.68e-05 l0=-0.09 n=56 rail z0=-1.33 g=+0.0011  118.4ms
+[roundT_squareT_pressureGate_squareT] # 144 t=  14.39s clear    dist=- box=    0 curve a=-0.0100 b=+4.27e-05 l0=-0.09 n=53 rail z0=-1.33 g=+0.0015   79.2ms
+[roundT_squareT_pressureGate_squareT] # 148 t=  14.80s clear    dist=- box=    0 curve a=-0.0113 b=+3.13e-05 l0=+0.05 n=57 rail z0=-1.33 g=+0.0004   76.7ms
+[roundT_squareT_pressureGate_squareT] # 152 t=  15.19s clear    dist=- box=    0 curve a=-0.0106 b=+2.95e-05 l0=+0.04 n=54 rail z0=-1.32 g=-0.0017   71.4ms
+[roundT_squareT_pressureGate_squareT] # 156 t=  15.58s clear    dist=- box=    0 curve a=-0.0076 b=+1.98e-05 l0=-0.01 n=55 rail z0=-1.33 g=-0.0018   72.4ms
+[roundT_squareT_pressureGate_squareT] # 160 t=  15.99s clear    dist=- box=    0 curve a=-0.0065 b=+7.52e-06 l0=-0.02 n=54 rail z0=-1.32 g=-0.0037   72.5ms
+[roundT_squareT_pressureGate_squareT] # 164 t=  16.39s clear    dist=- box=    0 curve a=-0.0046 b=-2.13e-06 l0=-0.05 n=57 rail z0=-1.34 g=-0.0023   70.6ms
+[roundT_squareT_pressureGate_squareT] # 168 t=  16.81s clear    dist=- box=   17 rej=1 curve a=-0.0054 b=-2.32e-06 l0=-0.16 n=57 rail z0=-1.34 g=-0.0026  106.8ms
+[roundT_squareT_pressureGate_squareT] # 172 t=  18.19s clear    dist=- box=    0 curve a=-0.0049 b=-2.18e-06 l0=-0.03 n=53 rail z0=-1.34 g=-0.0024   69.9ms
+[roundT_squareT_pressureGate_squareT] # 176 t=  18.59s clear    dist=- box=    0 curve a=-0.0056 b=-1.40e-05 l0=-0.01 n=58 rail z0=-1.35 g=-0.0024   76.2ms
+[roundT_squareT_pressureGate_squareT] # 180 t=  18.99s clear    dist=- box=    0 curve a=-0.0051 b=-1.15e-05 l0=-0.08 n=59 rail z0=-1.35 g=-0.0024   79.3ms
+[roundT_squareT_pressureGate_squareT] # 184 t=  19.39s clear    dist=- box=    0 curve a=-0.0062 b=-8.65e-06 l0=-0.06 n=59 rail z0=-1.35 g=-0.0016   75.6ms
+[roundT_squareT_pressureGate_squareT] # 188 t=  19.82s clear    dist=- box=    8 rej=1 curve a=-0.0056 b=-2.64e-06 l0=-0.04 n=58 rail z0=-1.35 g=-0.0003  106.3ms
+[roundT_squareT_pressureGate_squareT] # 192 t=  20.19s clear    dist=- box=   10 rej=1 curve a=-0.0052 b=+1.11e-06 l0=-0.01 n=55 rail z0=-1.35 g=-0.0004  105.4ms
+[roundT_squareT_pressureGate_squareT] # 196 t=  20.58s clear    dist=- box=   10 rej=1 curve a=-0.0054 b=-3.06e-06 l0=-0.04 n=54 rail z0=-1.35 g=-0.0013  107.8ms
+[roundT_squareT_pressureGate_squareT] # 200 t=  20.98s clear    dist=- box=    0 curve a=-0.0048 b=-1.05e-05 l0=-0.08 n=61 rail z0=-1.34 g=-0.0033   64.0ms
+[roundT_squareT_pressureGate_squareT] # 204 t=  21.38s clear    dist=- box=   10 rej=1 curve a=-0.0050 b=-1.09e-05 l0=-0.06 n=57 rail z0=-1.36 g=-0.0024   96.4ms
+[roundT_squareT_pressureGate_squareT] # 208 t=  21.79s clear    dist=- box=   10 rej=3 curve a=-0.0047 b=-1.46e-05 l0=-0.07 n=55 rail z0=-1.36 g=-0.0026   88.5ms
+[roundT_squareT_pressureGate_squareT] # 212 t=  22.20s clear    dist=- box=    0 curve a=-0.0040 b=-1.29e-05 l0=-0.08 n=62 rail z0=-1.36 g=-0.0042   57.0ms
+[roundT_squareT_pressureGate_squareT] # 216 t=  22.59s clear    dist=- box=   16 rej=1 curve a=-0.0047 b=-1.20e-05 l0=-0.06 n=61 rail z0=-1.35 g=-0.0053   87.3ms
+[roundT_squareT_pressureGate_squareT] # 220 t=  22.99s clear    dist=- box=    0 curve a=-0.0038 b=-1.60e-05 l0=-0.08 n=56 rail z0=-1.35 g=-0.0053   55.6ms
+[roundT_squareT_pressureGate_squareT] # 224 t=  23.38s clear    dist=- box=    0 curve a=-0.0037 b=-1.37e-05 l0=-0.09 n=56 rail z0=-1.35 g=-0.0035   57.1ms
+[roundT_squareT_pressureGate_squareT] # 228 t=  23.79s clear    dist=- box=    0 curve a=-0.0048 b=-9.64e-06 l0=-0.04 n=57 rail z0=-1.35 g=-0.0046   54.7ms
+[roundT_squareT_pressureGate_squareT] # 232 t=  24.19s clear    dist=- box=    0 curve a=-0.0052 b=-2.27e-06 l0=-0.04 n=58 rail z0=-1.35 g=-0.0060   56.8ms
+[roundT_squareT_pressureGate_squareT] # 236 t=  24.59s clear    dist=- box=    0 curve a=-0.0043 b=-4.76e-06 l0=-0.09 n=55 rail z0=-1.35 g=-0.0049   52.0ms
+[roundT_squareT_pressureGate_squareT] # 240 t=  24.98s clear    dist=- box=    0 curve a=-0.0032 b=-1.56e-05 l0=-0.10 n=57 rail z0=-1.35 g=-0.0048   54.4ms
+[roundT_squareT_pressureGate_squareT] # 244 t=  25.40s clear    dist=- box=    0 curve a=-0.0031 b=-1.83e-05 l0=-0.08 n=56 rail z0=-1.35 g=-0.0047   54.1ms
+[roundT_squareT_pressureGate_squareT] # 248 t=  25.79s clear    dist=- box=   26 rej=2 curve a=-0.0043 b=-1.91e-05 l0=-0.10 n=53 rail z0=-1.37 g=-0.0046   81.6ms
+[roundT_squareT_pressureGate_squareT] # 252 t=  26.19s clear    dist=- box=   22 rej=2 curve a=-0.0035 b=-2.26e-05 l0=-0.06 n=54 rail z0=-1.36 g=-0.0052   86.3ms
+[roundT_squareT_pressureGate_squareT] # 256 t=  26.59s clear    dist=- box=    0 curve a=-0.0019 b=-2.40e-05 l0=-0.05 n=54 rail z0=-1.35 g=-0.0064   56.8ms
+[roundT_squareT_pressureGate_squareT] # 260 t=  26.99s clear    dist=- box=    0 curve a=-0.0042 b=+2.57e-06 l0=-0.03 n=52 rail z0=-1.34 g=-0.0073   53.9ms
+[roundT_squareT_pressureGate_squareT] # 264 t=  27.39s clear    dist=- box=    2 rej=1 curve a=-0.0044 b=+1.45e-05 l0=-0.08 n=53 rail z0=-1.33 g=-0.0092   84.8ms
+[roundT_squareT_pressureGate_squareT] # 268 t=  27.79s clear    dist=- box=    2 rej=1 curve a=-0.0037 b=+1.81e-05 l0=-0.09 n=54 rail z0=-1.34 g=-0.0063   88.9ms
+[roundT_squareT_pressureGate_squareT] # 272 t=  28.18s clear    dist=- box=   12 rej=4 curve a=-0.0038 b=-7.28e-06 l0=-0.05 n=51 rail z0=-1.35 g=-0.0060   81.8ms
+[roundT_squareT_pressureGate_squareT] # 276 t=  28.58s clear    dist=- box=   10 rej=4 curve a=-0.0030 b=-1.36e-05 l0=-0.11 n=51 rail z0=-1.34 g=-0.0064   82.0ms
+[roundT_squareT_pressureGate_squareT] # 280 t=  28.98s clear    dist=- box=    5 rej=2 curve a=-0.0021 b=-1.86e-05 l0=-0.09 n=48 rail z0=-1.33 g=-0.0047   82.0ms
+[roundT_squareT_pressureGate_squareT] # 284 t=  29.38s clear    dist=- box=   16 rej=5 curve a=-0.0023 b=+1.33e-05 l0=-0.11 n=51 rail z0=-1.34 g=-0.0036   80.1ms
+[roundT_squareT_pressureGate_squareT] # 288 t=  29.78s clear    dist=- box=   20 rej=3 curve a=-0.0032 b=+3.00e-05 l0=-0.16 n=49 rail z0=-1.33 g=-0.0027   87.4ms
+[roundT_squareT_pressureGate_squareT] # 292 t=  30.19s clear    dist=- box=   30 rej=5 nearest raw:  145.0 m (d=145.0 l=-0.04 h=2.01 n=6 conf=1.00) curve a=-0.0038 b=+2.53e-05 l0=-0.08 n=49 rail z0=-1.34 g=-0.0032   87.4ms
+[roundT_squareT_pressureGate_squareT] # 296 t=  30.60s clear    dist=- box=   62 rej=6 nearest raw:  115.4 m (d=115.4 l=-0.40 h=2.08 n=5 conf=1.00) curve a=-0.0063 b=-3.92e-05 l0=+0.01 n=51 rail z0=-1.33 g=-0.0020   85.2ms
+[roundT_squareT_pressureGate_squareT] # 300 t=  31.00s clear    dist=- box=   39 rej=8 curve a=-0.0059 b=+4.55e-05 l0=-0.10 n=56 rail z0=-1.36 g=+0.0019   85.7ms
+[roundT_squareT_pressureGate_squareT] # 304 t=  31.39s clear    dist=- box=    0 curve a=-0.0034 b=+9.00e-05 l0=-0.13 n=52 rail z0=-1.36 g=+0.0005   57.0ms
+[roundT_squareT_pressureGate_squareT] # 308 t=  31.80s clear    dist=- box=    0 curve a=-0.0094 b=+1.20e-04 l0=-0.01 n=59 rail z0=-1.33 g=-0.0009   62.8ms
+[roundT_squareT_pressureGate_squareT] # 312 t=  32.18s clear    dist=- box=    0 curve a=-0.0107 b=+1.93e-04 l0=-0.07 n=62 rail z0=-1.29 g=-0.0051   60.5ms
+[roundT_squareT_pressureGate_squareT] # 316 t=  32.59s clear    dist=- box=    0 curve a=-0.0130 b=+2.43e-04 l0=-0.05 n=59 rail z0=-1.33 g=-0.0029   56.4ms
+[roundT_squareT_pressureGate_squareT] # 320 t=  32.98s clear    dist=- box=    0 curve a=-0.0141 b=+3.21e-04 l0=-0.08 n=58 rail z0=-1.32 g=-0.0032   63.2ms
+[roundT_squareT_pressureGate_squareT] # 324 t=  33.38s clear    dist=- box=    0 curve a=-0.0158 b=+3.78e-04 l0=-0.03 n=44 rail z0=-1.32 g=-0.0036   63.1ms
+[roundT_squareT_pressureGate_squareT] # 328 t=  33.82s clear    dist=- box=    0 curve a=-0.0172 b=+4.38e-04 l0=-0.05 n=55 rail z0=-1.34 g=-0.0035   68.9ms
+[roundT_squareT_pressureGate_squareT] # 332 t=  34.19s clear    dist=- box=    0 curve a=-0.0199 b=+5.15e-04 l0=+0.00 n=55 rail z0=-1.33 g=-0.0033   62.5ms
+[roundT_squareT_pressureGate_squareT] # 336 t=  34.61s clear    dist=- box=    0 curve a=-0.0215 b=+5.91e-04 l0=+0.03 n=52 rail z0=-1.33 g=-0.0031   60.1ms
+[roundT_squareT_pressureGate_squareT] # 340 t=  34.99s clear    dist=- box=    0 curve a=-0.0196 b=+6.77e-04 l0=-0.08 n=53 rail z0=-1.33 g=-0.0030   58.0ms
+[roundT_squareT_pressureGate_squareT] # 344 t=  35.39s clear    dist=- box=    0 curve a=-0.0175 b=+7.49e-04 l0=-0.06 n=50 rail z0=-1.33 g=-0.0042   59.7ms
+[roundT_squareT_pressureGate_squareT] # 348 t=  35.78s clear    dist=- box=    0 curve a=-0.0143 b=+8.19e-04 l0=-0.05 n=50 rail z0=-1.32 g=-0.0045   59.7ms
+[roundT_squareT_pressureGate_squareT] # 352 t=  36.19s clear    dist=- box=    0 curve a=-0.0093 b=+9.08e-04 l0=-0.15 n=45 rail z0=-1.31 g=-0.0050   58.9ms
+[roundT_squareT_pressureGate_squareT] # 356 t=  36.58s clear    dist=- box=    0 curve a=-0.0044 b=+9.69e-04 l0=-0.11 n=44 rail z0=-1.31 g=-0.0064   57.8ms
+[roundT_squareT_pressureGate_squareT] # 360 t=  37.00s clear    dist=- box=    0 curve a=+0.0009 b=+1.02e-03 l0=-0.10 n=45 rail z0=-1.31 g=-0.0062   57.6ms
+[roundT_squareT_pressureGate_squareT] # 364 t=  37.38s clear    dist=- box=    0 curve a=+0.0034 b=+1.05e-03 l0=-0.09 n=40 rail z0=-1.32 g=-0.0048   58.5ms
+[roundT_squareT_pressureGate_squareT] # 368 t=  37.79s clear    dist=- box=    0 curve a=+0.0083 b=+1.10e-03 l0=-0.10 n=43 rail z0=-1.33 g=-0.0029   62.3ms
+[roundT_squareT_pressureGate_squareT] # 372 t=  38.21s clear    dist=- box=    0 curve a=+0.0130 b=+1.14e-03 l0=-0.13 n=38 rail z0=-1.32 g=-0.0035   60.8ms
+[roundT_squareT_pressureGate_squareT] # 376 t=  38.59s clear    dist=- box=    0 curve a=+0.0167 b=+1.18e-03 l0=-0.11 n=41 rail z0=-1.31 g=-0.0042   61.3ms
+[roundT_squareT_pressureGate_squareT] # 380 t=  38.98s clear    dist=- box=    0 curve a=+0.0165 b=+1.19e-03 l0=-0.05 n=43 rail z0=-1.32 g=-0.0031   59.5ms
+[roundT_squareT_pressureGate_squareT] # 384 t=  39.39s clear    dist=- box=    0 curve a=+0.0192 b=+1.22e-03 l0=-0.08 n=45 rail z0=-1.32 g=-0.0027   62.4ms
+[roundT_squareT_pressureGate_squareT] # 388 t=  39.78s clear    dist=- box=    0 curve a=+0.0175 b=+1.23e-03 l0=-0.07 n=42 rail z0=-1.32 g=-0.0031   61.2ms
+[roundT_squareT_pressureGate_squareT] # 392 t=  40.18s clear    dist=- box=    0 curve a=+0.0180 b=+1.24e-03 l0=-0.03 n=39 rail z0=-1.33 g=-0.0019   62.0ms
+[roundT_squareT_pressureGate_squareT] # 396 t=  40.58s clear    dist=- box=    0 curve a=+0.0181 b=+1.24e-03 l0=-0.10 n=39 rail z0=-1.33 g=-0.0021   64.0ms
+[roundT_squareT_pressureGate_squareT] # 400 t=  40.99s clear    dist=- box=    0 curve a=+0.0196 b=+1.26e-03 l0=-0.12 n=41 rail z0=-1.32 g=-0.0013   61.2ms
+[roundT_squareT_pressureGate_squareT] # 404 t=  41.38s clear    dist=- box=    0 curve a=+0.0184 b=+1.25e-03 l0=-0.02 n=42 rail z0=-1.32 g=-0.0013   61.5ms
+[roundT_squareT_pressureGate_squareT] # 408 t=  41.79s clear    dist=- box=    0 curve a=+0.0183 b=+1.25e-03 l0=-0.11 n=40 rail z0=-1.32 g=-0.0017   62.5ms
+[roundT_squareT_pressureGate_squareT] # 412 t=  42.19s clear    dist=- box=    0 curve a=+0.0168 b=+1.25e-03 l0=-0.07 n=43 rail z0=-1.33 g=-0.0021   63.1ms
+[roundT_squareT_pressureGate_squareT] # 416 t=  42.59s clear    dist=- box=    0 curve a=+0.0197 b=+1.26e-03 l0=-0.11 n=39 rail z0=-1.33 g=-0.0021   63.0ms
+[roundT_squareT_pressureGate_squareT] # 420 t=  42.98s clear    dist=- box=    0 curve a=+0.0191 b=+1.25e-03 l0=-0.11 n=45 rail z0=-1.33 g=-0.0009   63.0ms
+[roundT_squareT_pressureGate_squareT] # 424 t=  43.38s clear    dist=- box=    0 curve a=+0.0184 b=+1.25e-03 l0=-0.06 n=44 rail z0=-1.33 g=-0.0004   60.6ms
+[roundT_squareT_pressureGate_squareT] # 428 t=  43.78s clear    dist=- box=    0 curve a=+0.0165 b=+1.23e-03 l0=+0.03 n=39 rail z0=-1.32 g=-0.0017   62.4ms
+[roundT_squareT_pressureGate_squareT] # 432 t=  44.18s clear    dist=- box=    0 curve a=+0.0178 b=+1.24e-03 l0=-0.09 n=44 rail z0=-1.32 g=-0.0018   62.7ms
+[roundT_squareT_pressureGate_squareT] # 436 t=  44.58s clear    dist=- box=    0 curve a=+0.0162 b=+1.22e-03 l0=+0.04 n=46 rail z0=-1.32 g=-0.0016   62.9ms
+[roundT_squareT_pressureGate_squareT] # 440 t=  44.98s clear    dist=- box=    0 curve a=+0.0163 b=+1.23e-03 l0=-0.04 n=41 rail z0=-1.32 g=-0.0021   64.2ms
+[roundT_squareT_pressureGate_squareT] # 444 t=  45.38s clear    dist=- box=    0 curve a=+0.0177 b=+1.24e-03 l0=-0.08 n=45 rail z0=-1.32 g=-0.0016   61.2ms
+[roundT_squareT_pressureGate_squareT] # 448 t=  45.78s clear    dist=- box=    0 curve a=+0.0170 b=+1.24e-03 l0=-0.06 n=40 rail z0=-1.32 g=-0.0023   61.9ms
+[roundT_squareT_pressureGate_squareT] # 452 t=  46.18s clear    dist=- box=    0 curve a=+0.0197 b=+1.26e-03 l0=-0.09 n=45 rail z0=-1.32 g=-0.0017   61.0ms
+[roundT_squareT_pressureGate_squareT] # 456 t=  46.58s clear    dist=- box=    0 curve a=+0.0181 b=+1.26e-03 l0=-0.09 n=42 rail z0=-1.33 g=-0.0022   60.0ms
+[roundT_squareT_pressureGate_squareT] # 460 t=  46.98s clear    dist=- box=    0 curve a=+0.0178 b=+1.28e-03 l0=-0.08 n=42 rail z0=-1.32 g=-0.0021   59.2ms
+[roundT_squareT_pressureGate_squareT] # 464 t=  47.38s clear    dist=- box=    0 curve a=+0.0184 b=+1.29e-03 l0=-0.10 n=42 rail z0=-1.31 g=-0.0028   61.3ms
+[roundT_squareT_pressureGate_squareT] # 468 t=  47.78s clear    dist=- box=    0 curve a=+0.0153 b=+1.26e-03 l0=-0.11 n=43 rail z0=-1.32 g=-0.0020   61.3ms
+[roundT_squareT_pressureGate_squareT] # 472 t=  48.18s clear    dist=- box=    0 curve a=+0.0154 b=+1.25e-03 l0=+0.00 n=44 rail z0=-1.31 g=-0.0027   59.7ms
+[roundT_squareT_pressureGate_squareT] # 476 t=  48.58s clear    dist=- box=    0 curve a=+0.0149 b=+1.24e-03 l0=-0.01 n=44 rail z0=-1.31 g=-0.0026   59.0ms
+[roundT_squareT_pressureGate_squareT] # 480 t=  48.98s clear    dist=- box=    0 curve a=+0.0154 b=+1.25e-03 l0=-0.03 n=39 rail z0=-1.33 g=-0.0013   59.4ms
+[roundT_squareT_pressureGate_squareT] # 484 t=  49.38s clear    dist=- box=    0 curve a=+0.0157 b=+1.27e-03 l0=-0.08 n=41 rail z0=-1.33 g=-0.0025   59.2ms
+[roundT_squareT_pressureGate_squareT] # 488 t=  49.78s clear    dist=- box=    0 curve a=+0.0146 b=+1.27e-03 l0=-0.08 n=40 rail z0=-1.32 g=-0.0025   59.9ms
+[roundT_squareT_pressureGate_squareT] # 492 t=  50.18s clear    dist=- box=    0 curve a=+0.0148 b=+1.28e-03 l0=-0.08 n=45 rail z0=-1.32 g=-0.0025   59.4ms
+[roundT_squareT_pressureGate_squareT] # 496 t=  50.58s clear    dist=- box=    0 curve a=+0.0150 b=+1.28e-03 l0=-0.09 n=46 rail z0=-1.32 g=-0.0035   58.3ms
+[roundT_squareT_pressureGate_squareT] # 500 t=  50.98s clear    dist=- box=    0 curve a=+0.0136 b=+1.28e-03 l0=-0.05 n=46 rail z0=-1.30 g=-0.0046   59.0ms
+[roundT_squareT_pressureGate_squareT] # 504 t=  51.38s clear    dist=- box=    0 curve a=+0.0160 b=+1.29e-03 l0=-0.06 n=44 rail z0=-1.31 g=-0.0047   59.7ms
+[roundT_squareT_pressureGate_squareT] # 508 t=  51.78s clear    dist=- box=    0 curve a=+0.0168 b=+1.28e-03 l0=-0.13 n=46 rail z0=-1.32 g=-0.0039   60.1ms
+[roundT_squareT_pressureGate_squareT] # 512 t=  52.18s clear    dist=- box=    0 curve a=+0.0158 b=+1.26e-03 l0=-0.08 n=43 rail z0=-1.31 g=-0.0040   63.5ms
+[roundT_squareT_pressureGate_squareT] # 516 t=  52.59s clear    dist=- box=    0 curve a=+0.0159 b=+1.26e-03 l0=-0.08 n=40 rail z0=-1.30 g=-0.0053   60.1ms
+[roundT_squareT_pressureGate_squareT] # 520 t=  52.98s clear    dist=- box=    0 curve a=+0.0160 b=+1.26e-03 l0=-0.07 n=42 rail z0=-1.31 g=-0.0049   61.0ms
+[roundT_squareT_pressureGate_squareT] # 524 t=  53.38s clear    dist=- box=    0 curve a=+0.0160 b=+1.26e-03 l0=-0.08 n=40 rail z0=-1.31 g=-0.0043   62.2ms
+[roundT_squareT_pressureGate_squareT] # 528 t=  53.78s clear    dist=- box=    0 curve a=+0.0167 b=+1.26e-03 l0=-0.12 n=44 rail z0=-1.33 g=-0.0027   61.1ms
+[roundT_squareT_pressureGate_squareT] # 532 t=  54.18s clear    dist=- box=    0 curve a=+0.0164 b=+1.26e-03 l0=-0.11 n=42 rail z0=-1.33 g=-0.0018   60.8ms
+[roundT_squareT_pressureGate_squareT] # 536 t=  54.58s clear    dist=- box=    0 curve a=+0.0157 b=+1.26e-03 l0=-0.10 n=44 rail z0=-1.33 g=-0.0004   62.0ms
+[roundT_squareT_pressureGate_squareT] # 540 t=  54.98s clear    dist=- box=    0 curve a=+0.0178 b=+1.28e-03 l0=-0.09 n=43 rail z0=-1.32 g=-0.0000   61.2ms
+[roundT_squareT_pressureGate_squareT] # 544 t=  55.38s clear    dist=- box=    0 curve a=+0.0177 b=+1.27e-03 l0=-0.13 n=43 rail z0=-1.32 g=+0.0003   61.6ms
+{
+ "bag": "roundT_squareT_pressureGate_squareT",
+ "frames_processed": 137,
+ "status_counts": {
+  "clear": 137,
+  "detected": 0,
+  "unknown": 0
+ },
+ "status_counts_raw": {
+  "clear": 135,
+  "detected": 2,
+  "unknown": 0
+ },
+ "processing_ms": {
+  "median": 62.94,
+  "p95": 106.42,
+  "p99": 120.59,
+  "max": 121.94,
+  "mean": 70.4
+ },
+ "read_ms_median": 11.48,
+ "wall_s": 17.11,
+ "frames_per_s_including_io": 8.0
+}

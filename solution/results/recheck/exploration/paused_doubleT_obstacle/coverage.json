@@ -1,0 +1,47 @@
+{
+ "bag": "doubleT_obstacle",
+ "topic": "/sensing/lidar/hesai128/pointcloud",
+ "reference": "sent = every message of the bag (ros2 bag play publishes all of them when it exits with 0); processed = node log records; published = statuses seen by a separate subscriber; matched by header stamp",
+ "player_exit_code": 0,
+ "sent": 201,
+ "processed": 200,
+ "processed_fraction": 0.995,
+ "not_processed": 1,
+ "not_processed_indices": [
+  131
+ ],
+ "not_processed_runs": [
+  [
+   131,
+   131
+  ]
+ ],
+ "not_processed_at_start": 0,
+ "not_processed_at_end": 0,
+ "not_processed_inside": 1,
+ "log_records": 200,
+ "log_records_not_in_bag": 0,
+ "log_records_duplicate": 0,
+ "status_counts": {
+  "clear": 148,
+  "detected": 52
+ },
+ "processing_ms": {
+  "median": 53.63,
+  "p95": 74.83,
+  "max": 88.75
+ },
+ "inter_arrival_s": {
+  "median": 0.1002,
+  "p95": 0.1177,
+  "max": 0.4154
+ },
+ "observer": {
+  "status_messages": 211,
+  "published_results_for_bag_frames": 200,
+  "processed_but_not_observed": 0,
+  "unknown_before_first_input": 8,
+  "unknown_after_input_stopped": 3,
+  "first_unknown_diagnostics": "no input: no cloud received on /sensing/lidar/hesai128/pointcloud since start (1.5 s)"
+ }
+}

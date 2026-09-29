@@ -1,0 +1,11 @@
+{
+ "bag": "roundT_doubleT_mcap",
+ "topics": {
+  "/lidar_points": {
+   "type": "sensor_msgs/msg/PointCloud2",
+   "messages": 252
+  }
+ },
+ "cloud_topic": "/lidar_points",
+ "frame_id": "hesai_lidar"
+}

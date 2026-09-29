@@ -1,0 +1,16 @@
+{
+ "jump_reset_triggered": true,
+ "identical_to_fresh_detector": true,
+ "n_box": [
+  0,
+  0
+ ],
+ "curve_max_d_absolute": [
+  55.5,
+  55.5
+ ],
+ "status": [
+  "clear",
+  "clear"
+ ]
+}

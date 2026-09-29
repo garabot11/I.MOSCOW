@@ -1,0 +1,10 @@
+t+  24.3s frame   237 | CLEAR    | distance    --    | proc  74.3 ms
+t+  24.4s frame   238 | CLEAR    | distance    --    | proc  74.2 ms
+t+  24.5s frame   239 | CLEAR    | distance    --    | proc  49.2 ms
+t+  24.6s frame   240 | CLEAR    | distance    --    | proc  50.3 ms
+t+  24.7s frame   241 | CLEAR    | distance    --    | proc  47.2 ms
+t+  24.8s frame   242 | CLEAR    | distance    --    | proc  46.0 ms
+t+  24.9s frame   243 | CLEAR    | distance    --    | proc  47.3 ms
+t+  25.0s frame   244 | CLEAR    | distance    --    | proc  72.6 ms
+t+  25.1s frame   245 | CLEAR    | distance    --    | proc  75.6 ms
+t+  26.7s frame   245 | UNKNOWN  | distance    --    | proc   0.0 ms | input stale: no cloud for > 1.5 s

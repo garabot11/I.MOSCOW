@@ -1,0 +1,24 @@
+{
+  "readme_exec": {
+    "exit": 127,
+    "stdout": "",
+    "stderr": "bash: line 1: ros2: command not found\n"
+  },
+  "sourced_exec": {
+    "exit": 0,
+    "stdout": "metro_obstacle_detector\nmetro_obstacle_msgs\n",
+    "stderr": ""
+  },
+  "os": {
+    "exit": 0,
+    "stdout": "PRETTY_NAME=\"Ubuntu 22.04.5 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"22.04\"\nVERSION=\"22.04.5 LTS (Jammy Jellyfish)\"\nVERSION_CODENAME=jammy\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=jammy\n",
+    "stderr": ""
+  },
+  "image_files_different_from_local": [
+    "scripts/run_stream_test.sh",
+    "scripts/ablation.sh",
+    "scripts/run_demo.sh",
+    "scripts/record_video.sh",
+    "scripts/eval_all_container.sh"
+  ]
+}

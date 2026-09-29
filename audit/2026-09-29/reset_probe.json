@@ -1,0 +1,147 @@
+{
+  "jump_reset_triggered": true,
+  "result_with_old_curve": {
+    "status_raw": "clear",
+    "reason": "",
+    "n_total": 921600,
+    "n_valid": 346808,
+    "n_zero": 574792,
+    "n_nonfinite": 0,
+    "n_roi": 197557,
+    "n_box": 110,
+    "candidates": [],
+    "rejected": [
+      {
+        "distance_m": 76.404,
+        "forward_m": 76.371,
+        "lateral_m": -0.425,
+        "height_m": -1.236,
+        "center_xyz": [
+          -0.425,
+          -76.638,
+          -1.236
+        ],
+        "extent_dlh": [
+          0.595,
+          0.435,
+          2.181
+        ],
+        "n_points": 20,
+        "lateral_offset_from_track": 0.791,
+        "height_above_rail": 2.16,
+        "confidence": 0.0,
+        "track_id": -1,
+        "confirmed": false,
+        "reason": "beyond the range supported by the track model (77 > 15 m)"
+      },
+      {
+        "distance_m": 106.852,
+        "forward_m": 106.828,
+        "lateral_m": -1.019,
+        "height_m": -2.016,
+        "center_xyz": [
+          -1.019,
+          -106.923,
+          -2.016
+        ],
+        "extent_dlh": [
+          0.283,
+          0.128,
+          0.435
+        ],
+        "n_points": 3,
+        "lateral_offset_from_track": 0.829,
+        "height_above_rail": 2.269,
+        "confidence": 0.0,
+        "track_id": -1,
+        "confirmed": false,
+        "reason": "too few points (3<4)"
+      },
+      {
+        "distance_m": 55.603,
+        "forward_m": 55.558,
+        "lateral_m": 0.156,
+        "height_m": -1.542,
+        "center_xyz": [
+          0.156,
+          -55.64,
+          -1.542
+        ],
+        "extent_dlh": [
+          0.221,
+          0.338,
+          0.899
+        ],
+        "n_points": 15,
+        "lateral_offset_from_track": 1.001,
+        "height_above_rail": 1.258,
+        "confidence": 0.0,
+        "track_id": -1,
+        "confirmed": false,
+        "reason": "beyond the range supported by the track model (56 > 15 m)"
+      }
+    ],
+    "timings_ms": {
+      "prepare": 17.79,
+      "track": 29.38,
+      "box": 8.33,
+      "cluster": 17.48,
+      "total": 72.98
+    },
+    "rail": {
+      "z0": -1.746,
+      "grade": -0.01172,
+      "curv": -0.0001296,
+      "n_bins": 28,
+      "ok": true,
+      "max_d_observed": 68.0
+    },
+    "curve": {
+      "l0": -0.124,
+      "a": -0.00953,
+      "b": -6.18e-05,
+      "ok": true,
+      "n_used": 25,
+      "max_d_supported": 135.0,
+      "max_d_absolute": 0.0,
+      "offset_from_trough": true
+    }
+  },
+  "fresh_result": {
+    "status_raw": "clear",
+    "reason": "",
+    "n_total": 921600,
+    "n_valid": 346808,
+    "n_zero": 574792,
+    "n_nonfinite": 0,
+    "n_roi": 197557,
+    "n_box": 0,
+    "candidates": [],
+    "rejected": [],
+    "timings_ms": {
+      "prepare": 17.96,
+      "track": 29.08,
+      "box": 6.78,
+      "cluster": 0.0,
+      "total": 53.82
+    },
+    "rail": {
+      "z0": -1.75,
+      "grade": -0.01126,
+      "curv": -0.000128,
+      "n_bins": 29,
+      "ok": true,
+      "max_d_observed": 66.0
+    },
+    "curve": {
+      "l0": -0.092,
+      "a": -0.01527,
+      "b": -9.2e-05,
+      "ok": true,
+      "n_used": 26,
+      "max_d_supported": 135.0,
+      "max_d_absolute": 55.5,
+      "offset_from_trough": true
+    }
+  }
+}

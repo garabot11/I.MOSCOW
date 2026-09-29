@@ -1,0 +1,4 @@
+stdin is not a terminal device. Keyboard handling disabled.[INFO] [1790690254.423695452] [rosbag2_storage]: Opened database '/data/bag/roundT_pressureGate_roundT_0.db3' for READ_ONLY.
+[INFO] [1790690254.423732363] [rosbag2_player]: Set rate to 1
+[INFO] [1790690254.425619196] [rosbag2_storage]: Opened database '/data/bag/roundT_pressureGate_roundT_0.db3' for READ_ONLY.
+[INFO] [1790690257.455904639] [rosbag2_player]: Resuming play.

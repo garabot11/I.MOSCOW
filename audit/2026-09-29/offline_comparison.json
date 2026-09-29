@@ -1,0 +1,59 @@
+[
+  {
+    "bag": "doubleT_obstacle",
+    "actual_frames": 201,
+    "reference_frames": 201,
+    "mismatches": [],
+    "counts": {
+      "clear": 149,
+      "detected": 52
+    }
+  },
+  {
+    "bag": "doubleT_platform",
+    "actual_frames": 345,
+    "reference_frames": 345,
+    "mismatches": [],
+    "counts": {
+      "clear": 344,
+      "detected": 1
+    }
+  },
+  {
+    "bag": "roundT_doubleT",
+    "actual_frames": 252,
+    "reference_frames": 252,
+    "mismatches": [],
+    "counts": {
+      "clear": 252
+    }
+  },
+  {
+    "bag": "roundT_pressureGate_roundT",
+    "actual_frames": 268,
+    "reference_frames": 268,
+    "mismatches": [],
+    "counts": {
+      "clear": 268
+    }
+  },
+  {
+    "bag": "roundT_squareT_pressureGate_squareT",
+    "actual_frames": 545,
+    "reference_frames": 545,
+    "mismatches": [],
+    "counts": {
+      "clear": 545
+    }
+  },
+  {
+    "bag": "squareT_platform_squareT_switch",
+    "actual_frames": 877,
+    "reference_frames": 877,
+    "mismatches": [],
+    "counts": {
+      "clear": 875,
+      "detected": 2
+    }
+  }
+]
