@@ -14,7 +14,7 @@
 **Основной режим — GPU** (CUDA через PyTorch). **CPU — только аварийный режим.** В нём решение
 громко предупреждает организаторов: что с GPU нейросетевой детектор Д3 работает в каждом кадре и частота
 выше, почему GPU недоступен, как
-это исправить и как связаться с командой IRS-MIREA (Telegram: IRS-MIREA). То же ядро работает
+это исправить и как связаться с командой IRS-MIREA. То же ядро работает
 офлайн по bag-файлу для полной оценки.
 
 English version of this file: `README.en.md`; English summary: the end of this file and of `docs/launch.md`.
@@ -136,8 +136,7 @@ docker run --rm metro-lidar:gpu-dev python3 -m pytest -q /workspace/tests     # 
 Баннер говорит, что GPU недоступен и решение работает в аварийном режиме на CPU; что с GPU
 нейросетевой детектор Д3 работает в каждом кадре (дополнительные свидетельства, на Falcon +22 кадра
 дальнего прохода) и частота выше; на CPU Д3 считается каждый третий кадр. В нём есть причина, точные команды исправления
-(установка NVIDIA Container Toolkit, запуск с `--gpus all`, драйвер ≥ 570) и контакт: «Свяжитесь с
-командой IRS-MIREA в Telegram: IRS-MIREA».
+(установка NVIDIA Container Toolkit, запуск с `--gpus all`, драйвер ≥ 570) и контакт команды IRS-MIREA.
 
 Сборка PyTorch содержит ядра sm_75…sm_120. RTX 4070 Ti SUPER стенда (sm_89) выполняет ядра sm_86
 по двоичной совместимости CUDA. `doctor` печатает список архитектур и capability, пробный расчёт
@@ -345,5 +344,5 @@ scripts/run_stream_test.sh /path/to/bags/roundT_doubleT results/stream /lidar_po
 * **GPU first, CPU only in an emergency:** without a usable GPU the solution runs on the CPU and
   warns the organisers. The RU+EN banner appears at start and every 5 minutes, there is a red text
   in RViz, the `mode` field and `/results/ВНИМАНИЕ_GPU.txt`. The banner gives the reason, the exact
-  fix and the contact "Contact team IRS-MIREA on Telegram: IRS-MIREA".
+  fix and the contact of team IRS-MIREA.
 * **More:** step-by-step launch, GPU check, demo scenario and troubleshooting are in `docs/launch.md`.

@@ -11,7 +11,7 @@ are fused over time:
 
 An obstacle is reported when D1 and D2 both see it at the same place; D3 adds weight. **The GPU is the main
 mode; the CPU is an emergency mode only**, in which the solution warns the organisers loudly (reason, exact
-fix, contact: Telegram IRS-MIREA). The same core runs offline over a whole bag.
+fix, contact of team IRS-MIREA). The same core runs offline over a whole bag.
 
 The authoritative launch guide is the Russian `docs/launch.md` (it ends with an English summary).
 

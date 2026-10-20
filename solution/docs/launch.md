@@ -258,7 +258,7 @@ t+  225.4s frame   291 | OBSTACLE | distance   54.7 m | checked to 120 m | proc 
 В аварийном режиме решение продолжает работать: детекторы Д1 и Д2 всегда считаются на CPU, нейросеть Д3
 считается каждый третий кадр. С видеокартой Д3 работает в каждом кадре и даёт дополнительные свидетельства
 (на Falcon — больше кадров дальнего прохода). Баннер называет причину, точные команды исправления и
-контакт: «Свяжитесь с командой IRS-MIREA в Telegram: IRS-MIREA».
+контакт команды IRS-MIREA.
 
 Вернуться в режим GPU: устранить причину по баннеру, затем `./run.sh stop && ./run.sh --data …`.
 
@@ -423,8 +423,8 @@ docker run --rm --gpus all -v /путь/к/датасету:/data:ro -v "$PWD/re
 * **RViz:** green line = track centre, blue lines / volume = train clearance, red box = confirmed obstacle,
   orange box = unconfirmed candidate, big text = `CLEAR` / `OBSTACLE <distance>` with `track checked to N m`.
 * **Emergency CPU mode:** without a usable GPU the solution runs on the CPU (D3 every third frame) and says so:
-  RU + EN banner at start and every 5 minutes with the reason, the exact fix and "Contact team IRS-MIREA on
-  Telegram: IRS-MIREA", a red line in RViz, `ВНИМАНИЕ_GPU.txt`, `CPU_EMERGENCY` in the console. A GPU failure
+  RU + EN banner at start and every 5 minutes with the reason, the exact fix and the contact of team
+  IRS-MIREA, a red line in RViz, `ВНИМАНИЕ_GPU.txt`, `CPU_EMERGENCY` in the console. A GPU failure
   at run time switches to the CPU on the fly.
 * **Troubleshooting:** §10 maps every message to its fix; the console never shows Python tracebacks.
 * **Launch check of the delivery image (2026-10-20):** 17 of 17 scenarios PASS with 0 tracebacks; live 10 Hz on
