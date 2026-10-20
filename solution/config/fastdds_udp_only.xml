@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Fast DDS profile for the detector container when the bag is played OUTSIDE it (on the host or
+     in another container): UDPv4 only, no shared-memory transport. Fast DDS picks shared memory
+     for peers on the same machine, but a container has its own /dev/shm (and other Fast DDS
+     versions use another segment format), so data would never arrive although discovery works.
+     Use: docker run ... -e FASTRTPS_DEFAULT_PROFILES_FILE=/workspace/config/fastdds_udp_only.xml -->
+<profiles xmlns="http://www.eprosima.com/XMLSchemas/fastRTPS_Profiles">
+  <transport_descriptors>
+    <transport_descriptor>
+      <transport_id>udp_only</transport_id>
+      <type>UDPv4</type>
+    </transport_descriptor>
+  </transport_descriptors>
+  <participant profile_name="udp_only_participant" is_default_profile="true">
+    <rtps>
+      <userTransports>
+        <transport_id>udp_only</transport_id>
+      </userTransports>
+      <useBuiltinTransports>false</useBuiltinTransports>
+    </rtps>
+  </participant>
+</profiles>

@@ -1,0 +1,6 @@
+image: metro-lidar:gpu-dev
+id: sha256:a0e1e7e33476df3e4a7832b7cf31c24d83517a68eb4518154a73d339514cd277
+image_size_bytes: 4488600028
+archive: metro-lidar-final.tar.gz 4476104491 bytes, sha256 ec3f2167ea408a687478fac07656d03dc4ce61ab46cc549fd324cd18ab7c04a3
+parts: 45 x 95M (metro-lidar-final.parts.sha256)
+created: 2026-10-20T16:46:56Z

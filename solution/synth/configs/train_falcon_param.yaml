@@ -1,0 +1,35 @@
+# Training: parametric tunnels, Falcon Prime (layout as recorded), dark and normal reflectivity.
+set: train_falcon_param
+source: parametric
+sensor: falcon_prime
+storage: mcap
+seed: 31019
+frame_id: seyond
+topic: /iv_points
+coordinate_mode: as_recorded
+mount_height_m: 1.98
+pitch_deg: 2.33
+divergence_deg: 0.1
+line_shift_sd_deg: 0.06
+speed_mps: [0.0, 20.0]
+p_stationary: 0.25
+scenes:
+  count: 20
+  negatives: 2
+  frames: 100
+tunnel:
+  kinds: [double, circular, rectangular]
+  p_curve: 0.4
+  radius_m: [300, 2000]
+  straight_before_curve_m: [0, 200]
+  p_platform: 0.1
+  length_m: 500
+objects:
+  n_objects: [1, 4]
+  classes: [person_standing, person_crouching, person_lying, box, debris]
+  class_weights: [4, 2, 1, 2, 1]
+  d_range_m: [15, 330]
+  reflectivity_ranges: [[0.05, 0.15], [0.15, 0.6]]
+  p_out_of_clearance: 0.2
+  p_crossing: 0.3
+return_model: {}

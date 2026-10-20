@@ -1,0 +1,22 @@
+# В репозиторий попадают только эти папки (записи лидара — данные организаторов, не загружаются)
+/*
+!/.gitignore
+!/README.md
+!/dist/
+!/solution/
+
+# Архив образа лежит в релизе v3 (части по 95 МБ); здесь — только контрольные суммы и описание
+/dist/metro-lidar-final.tar.gz
+/dist/metro-lidar-final.tar.gz.part-*
+/dist/*.mp4
+
+# Сырые результаты прогонов и локальные кэши
+/solution/results/
+/solution/synth/results/fake_style/
+/solution/video/demo_*.mp4
+/solution/video/preview_clear.gif
+/solution/video/preview_obstacle.gif
+
+__pycache__/
+.pytest_cache/
+*.pyc

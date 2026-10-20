@@ -1,0 +1,33 @@
+# Far range: one dark (5-10 %) standing person at 150-210 m, straight level track, stationary train, Hesai 307k.
+# Prepared for the far-range numbers; generate on request:
+#   tools/gen_sets.sh val_hesai_far_dark && tools/check_sets.sh val_hesai_far_dark
+set: val_hesai_far_dark
+source: parametric
+sensor: hesai128
+layout: 2400
+storage: mcap
+seed: 20261023
+frame_id: hesai_lidar
+mount_height_m: 1.3
+pitch_deg: 0.0
+divergence_deg: 0.0
+speed_mps: [0.0, 0.0]
+p_stationary: 1.0
+scenes:
+  count: 3
+  negatives: 0
+  frames: 120
+tunnel:
+  kinds: [circular, rectangular, double]
+  p_curve: 0.0
+  p_platform: 0.0
+  grade: false
+  length_m: 400
+objects:
+  n_objects: [1, 1]
+  classes: [person_standing]
+  d_range_m: [150, 210]          # capped at min(sight, 209 - 5 m) by the placement rule
+  reflectivity: [0.05, 0.10]
+  p_out_of_clearance: 0.0
+  p_crossing: 0.0
+return_model: {}

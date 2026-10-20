@@ -1,0 +1,25 @@
+# Training: objects inserted into real Hesai backgrounds (stations + the cleaned double-track tunnel).
+set: train_hesai_insert
+source: insert_real
+sensor: hesai128
+layout: 2400
+storage: mcap
+seed: 31017
+frame_id: hesai_lidar
+divergence_deg: 0.0
+scenes:
+  count: 24
+  negatives: 2
+  frames: 100
+  min_segment: 40
+  bags: [squareT_platform_squareT_switch, doubleT_platform, doubleT_obstacle_clean307]
+objects:
+  n_objects: [1, 4]
+  classes: [person_standing, person_crouching, person_lying, box, debris]
+  class_weights: [3, 2, 1, 2, 1]
+  d_range_m: [15, 210]
+  reflectivity: [0.05, 0.6]
+  p_out_of_clearance: 0.2
+  p_crossing: 0.3
+  max_occluded_frac: 0.25
+return_model: {}

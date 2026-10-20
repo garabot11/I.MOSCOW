@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>metro_obstacle_detector</name>
+  <version>0.1.0</version>
+  <description>Geometric obstacle detection ahead of a metro train from 3D LiDAR point clouds (ROS 2 node + offline evaluator).</description>
+  <maintainer email="gagik.rabota.1@gmail.com">Metro obstacle team</maintainer>
+  <license>MIT</license>
+  <depend>rclpy</depend>
+  <depend>sensor_msgs</depend>
+  <depend>sensor_msgs_py</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>visualization_msgs</depend>
+  <depend>metro_obstacle_msgs</depend>
+  <depend>rosbag2_py</depend>
+  <depend>python3-numpy</depend>
+  <depend>python3-scipy</depend>
+  <depend>python3-yaml</depend>
+  <exec_depend>ros2launch</exec_depend>
+  <test_depend>python3-pytest</test_depend>
+  <export><build_type>ament_python</build_type></export>
+</package>

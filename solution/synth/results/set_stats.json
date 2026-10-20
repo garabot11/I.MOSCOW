@@ -1,0 +1,348 @@
+[
+ {
+  "set": "train_dust",
+  "scenes": 14,
+  "frames": 1120,
+  "pos": 14,
+  "neg": 0,
+  "GB": 1.79,
+  "class_frames": {
+   "dust": 2320,
+   "person_crouching": 400,
+   "box": 480,
+   "person_standing": 720
+  },
+  "visible_obstacle_frames_by_band": {
+   "50-100": 474,
+   "0-50": 666,
+   "150-210": 32,
+   "100-150": 17
+  },
+  "dust_scenes": 14,
+  "single_return_scenes": 5,
+  "tunnels": {
+   "rectangular": 6,
+   "circular": 2,
+   "double": 6
+  },
+  "curves": 2,
+  "moving": 11,
+  "sensor": [
+   "hesai128"
+  ]
+ },
+ {
+  "set": "train_dust_falcon",
+  "scenes": 4,
+  "frames": 320,
+  "pos": 4,
+  "neg": 0,
+  "GB": 0.52,
+  "class_frames": {
+   "box": 240,
+   "dust": 560,
+   "person_standing": 80,
+   "person_crouching": 80
+  },
+  "visible_obstacle_frames_by_band": {
+   "50-100": 190,
+   "210-1000": 30,
+   "100-150": 28,
+   "0-50": 5
+  },
+  "dust_scenes": 4,
+  "single_return_scenes": 1,
+  "tunnels": {
+   "circular": 3,
+   "rectangular": 1
+  },
+  "curves": 0,
+  "moving": 2,
+  "sensor": [
+   "falcon_prime"
+  ]
+ },
+ {
+  "set": "train_falcon_param",
+  "scenes": 20,
+  "frames": 2000,
+  "pos": 18,
+  "neg": 2,
+  "GB": 3.17,
+  "class_frames": {
+   "person_standing": 1800,
+   "debris": 600,
+   "person_crouching": 500,
+   "box": 900,
+   "person_lying": 400
+  },
+  "visible_obstacle_frames_by_band": {
+   "210-1000": 316,
+   "100-150": 648,
+   "50-100": 639,
+   "150-210": 296,
+   "0-50": 476
+  },
+  "dust_scenes": 0,
+  "single_return_scenes": 0,
+  "tunnels": {
+   "rectangular": 4,
+   "double": 9,
+   "circular": 7
+  },
+  "curves": 5,
+  "moving": 16,
+  "sensor": [
+   "falcon_prime"
+  ]
+ },
+ {
+  "set": "train_hesai_insert",
+  "scenes": 24,
+  "frames": 2208,
+  "pos": 22,
+  "neg": 2,
+  "GB": 3.2,
+  "class_frames": {
+   "box": 1352,
+   "person_standing": 1656,
+   "person_lying": 928,
+   "person_crouching": 904,
+   "debris": 528
+  },
+  "visible_obstacle_frames_by_band": {
+   "0-50": 2512,
+   "50-100": 1428,
+   "100-150": 569
+  },
+  "dust_scenes": 0,
+  "single_return_scenes": 0,
+  "tunnels": {
+   "squareT_platform_squareT_switch": 8,
+   "doubleT_platform": 8,
+   "doubleT_obstacle_clean307": 8
+  },
+  "curves": 0,
+  "moving": 0,
+  "sensor": [
+   "hesai128"
+  ]
+ },
+ {
+  "set": "train_hesai_param",
+  "scenes": 36,
+  "frames": 4320,
+  "pos": 32,
+  "neg": 4,
+  "GB": 6.66,
+  "class_frames": {
+   "person_standing": 3600,
+   "person_lying": 1200,
+   "person_crouching": 2760,
+   "box": 1920,
+   "debris": 840
+  },
+  "visible_obstacle_frames_by_band": {
+   "50-100": 1874,
+   "100-150": 1453,
+   "0-50": 1408,
+   "150-210": 713
+  },
+  "dust_scenes": 0,
+  "single_return_scenes": 0,
+  "tunnels": {
+   "circular": 14,
+   "rectangular": 10,
+   "double": 12
+  },
+  "curves": 19,
+  "moving": 29,
+  "sensor": [
+   "hesai128"
+  ]
+ },
+ {
+  "set": "val_dust",
+  "scenes": 10,
+  "frames": 1000,
+  "pos": 10,
+  "neg": 0,
+  "GB": 1.58,
+  "class_frames": {
+   "person_crouching": 300,
+   "box": 700,
+   "dust": 1800,
+   "person_standing": 200
+  },
+  "visible_obstacle_frames_by_band": {
+   "0-50": 817,
+   "50-100": 221
+  },
+  "dust_scenes": 10,
+  "single_return_scenes": 5,
+  "tunnels": {
+   "double": 2,
+   "circular": 5,
+   "rectangular": 3
+  },
+  "curves": 4,
+  "moving": 6,
+  "sensor": [
+   "hesai128"
+  ]
+ },
+ {
+  "set": "val_falcon_param",
+  "scenes": 10,
+  "frames": 1000,
+  "pos": 8,
+  "neg": 2,
+  "GB": 1.59,
+  "class_frames": {
+   "debris": 300,
+   "person_crouching": 400,
+   "person_lying": 100,
+   "person_standing": 500,
+   "box": 300
+  },
+  "visible_obstacle_frames_by_band": {
+   "100-150": 415,
+   "150-210": 206,
+   "50-100": 371,
+   "0-50": 185,
+   "210-1000": 102
+  },
+  "dust_scenes": 0,
+  "single_return_scenes": 0,
+  "tunnels": {
+   "double": 5,
+   "circular": 3,
+   "rectangular": 2
+  },
+  "curves": 3,
+  "moving": 6,
+  "sensor": [
+   "falcon_prime"
+  ]
+ },
+ {
+  "set": "val_hesai_curve",
+  "scenes": 3,
+  "frames": 360,
+  "pos": 2,
+  "neg": 1,
+  "GB": 0.55,
+  "class_frames": {
+   "box": 360,
+   "person_crouching": 120,
+   "person_standing": 240
+  },
+  "visible_obstacle_frames_by_band": {
+   "100-150": 4,
+   "50-100": 215,
+   "0-50": 177
+  },
+  "dust_scenes": 0,
+  "single_return_scenes": 0,
+  "tunnels": {
+   "double": 2,
+   "rectangular": 1
+  },
+  "curves": 3,
+  "moving": 1,
+  "sensor": [
+   "hesai128"
+  ]
+ },
+ {
+  "set": "val_hesai_insert",
+  "scenes": 8,
+  "frames": 784,
+  "pos": 7,
+  "neg": 1,
+  "GB": 1.08,
+  "class_frames": {
+   "person_standing": 392,
+   "box": 348,
+   "person_crouching": 196,
+   "debris": 468
+  },
+  "visible_obstacle_frames_by_band": {
+   "0-50": 544,
+   "100-150": 194,
+   "50-100": 318
+  },
+  "dust_scenes": 0,
+  "single_return_scenes": 0,
+  "tunnels": {
+   "squareT_platform_squareT_switch": 4,
+   "doubleT_platform": 4
+  },
+  "curves": 0,
+  "moving": 0,
+  "sensor": [
+   "hesai128"
+  ]
+ },
+ {
+  "set": "val_hesai_insert_tunnel",
+  "scenes": 6,
+  "frames": 600,
+  "pos": 5,
+  "neg": 1,
+  "GB": 0.94,
+  "class_frames": {
+   "person_crouching": 300,
+   "box": 100,
+   "person_lying": 200,
+   "person_standing": 300
+  },
+  "visible_obstacle_frames_by_band": {
+   "50-100": 328,
+   "0-50": 400
+  },
+  "dust_scenes": 0,
+  "single_return_scenes": 0,
+  "tunnels": {
+   "doubleT_obstacle_clean307": 6
+  },
+  "curves": 0,
+  "moving": 0,
+  "sensor": [
+   "hesai128"
+  ]
+ },
+ {
+  "set": "val_hesai_param",
+  "scenes": 10,
+  "frames": 1200,
+  "pos": 8,
+  "neg": 2,
+  "GB": 1.84,
+  "class_frames": {
+   "box": 480,
+   "person_standing": 840,
+   "person_lying": 240,
+   "person_crouching": 120,
+   "debris": 120
+  },
+  "visible_obstacle_frames_by_band": {
+   "100-150": 437,
+   "50-100": 229,
+   "0-50": 241,
+   "150-210": 306
+  },
+  "dust_scenes": 0,
+  "single_return_scenes": 0,
+  "tunnels": {
+   "double": 4,
+   "circular": 2,
+   "rectangular": 4
+  },
+  "curves": 5,
+  "moving": 8,
+  "sensor": [
+   "hesai128"
+  ]
+ }
+]

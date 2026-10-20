@@ -1,0 +1,376 @@
+#!/bin/bash
+# metro - operator commands inside the metro-lidar container (on PATH as /usr/local/bin/metro).
+#
+#   metro start [--no-rviz] [--cpu] [--topic T] [--fixed-frame F] [--no-console]
+#                                 self-check, detector + RViz in the background, then the live console
+#   metro play <bag-dir|name> [rate] [--topic T] [--keep-topic] [extra ros2 bag play args]
+#                                 play a bag; SPACE = pause/resume, UP/DOWN = rate +-10 %, RIGHT = next
+#                                 message (needs a TTY: docker exec -it / ./run.sh play). Starting another
+#                                 bag stops the previous one; the detector resets itself on the time jump.
+#   metro bags                    list the bags under /data (several dataset folders are fine)
+#   metro status [-n N] [-f]      processes, GPU/CPU mode and the last status lines (-f = follow)
+#   metro console                 live status lines + the emergency banner every 5 min (Ctrl-C detaches)
+#   metro doctor [--full] [...]   self-check report (also /results/logs/doctor.json)
+#   metro banner                  print the emergency banner (nothing in GPU mode)
+#   metro stop                    stop playback, RViz, detector (only processes started by metro)
+#
+# Logs: /results/logs (full); the console shows only short messages.
+
+DATA=${METRO_DATA:-/data}
+RESULTS=${METRO_RESULTS_DIR:-/results}
+LOGS="$RESULTS/logs"
+RUN=${METRO_RUN_DIR:-/tmp/metro-run}
+CANON_TOPIC=${METRO_INPUT_TOPIC:-/lidar_points}   # metro play publishes the chosen cloud here (see play)
+DEFAULT_FRAME=${METRO_FIXED_FRAME:-hesai_lidar}
+WARN_FILE="$RESULTS/ВНИМАНИЕ_GPU.txt"
+export METRO_DATA="$DATA" METRO_RESULTS_DIR="$RESULTS"
+
+if [ -t 1 ]; then B=$'\033[1m'; R=$'\033[1;31m'; G=$'\033[32m'; Y=$'\033[33m'; N=$'\033[0m'; else B= R= G= Y= N=; fi
+say()  { printf '%s\n' "${B}[metro]${N} $*"; }
+warn() { printf '%s\n' "${Y}[metro] $*${N}"; }
+err()  { printf '%s\n' "${R}[metro] $*${N}" >&2; }
+
+source_ros() {
+  if [ -z "${METRO_ROS_SOURCED:-}" ] || ! command -v ros2 > /dev/null 2>&1; then
+    # shellcheck disable=SC1091
+    source /opt/ros/humble/setup.bash > /dev/null 2>&1
+    # shellcheck disable=SC1091
+    [ -f /workspace/install/setup.bash ] && source /workspace/install/setup.bash > /dev/null 2>&1
+    export METRO_ROS_SOURCED=1
+  fi
+}
+
+# CUDA kernel cache under the results mount: survives container restarts (once per host instead of
+# once per start); ~/.nv inside the container is lost with the container
+export CUDA_CACHE_PATH=${CUDA_CACHE_PATH:-$RESULTS/.nv/ComputeCache} CUDA_CACHE_MAXSIZE=${CUDA_CACHE_MAXSIZE:-2147483648}
+
+prepare_dirs() {
+  mkdir -p "$RUN" 2> /dev/null
+  mkdir -p "$CUDA_CACHE_PATH" 2> /dev/null || export CUDA_CACHE_PATH="$RUN/.nv/ComputeCache"
+  if ! mkdir -p "$LOGS" 2> /dev/null || ! [ -w "$LOGS" ]; then
+    LOGS="$RUN/logs"; mkdir -p "$LOGS"
+    warn "results directory $RESULTS is not writable: logs go to $LOGS (fix on the host: ./run.sh --results <writable dir>)"
+  fi
+}
+
+alive() { [ -f "$RUN/$1.pid" ] && kill -0 "$(cat "$RUN/$1.pid" 2> /dev/null)" 2> /dev/null; }
+
+# start a command in its own session (process group = pid), output to a log, pid to $RUN/<name>.pid
+spawn() {
+  local name=$1 log=$2; shift 2
+  # background jobs of a script start with SIGINT ignored and bash cannot undo that: restore the
+  # default handler before exec, otherwise ros2 launch never reacts to metro stop's SIGINT
+  setsid python3 -c 'import os, signal, sys; signal.signal(signal.SIGINT, signal.SIG_DFL); os.execvp(sys.argv[1], sys.argv[1:])' \
+    "$@" > "$log" 2>&1 < /dev/null &
+  echo $! > "$RUN/$name.pid"
+}
+
+# stop a process started by spawn / play: SIGINT, then SIGTERM, then SIGKILL, each to the process group
+# and to the pid itself (a player started from a shell is not a group leader). The pidfile is removed
+# first, so the process that owned it can tell that it was replaced/stopped.
+stop_one() {
+  local name=$1 pid
+  [ -f "$RUN/$name.pid" ] || return 0
+  pid=$(cat "$RUN/$name.pid" 2> /dev/null)
+  rm -f "$RUN/$name.pid"
+  [ -n "$pid" ] && kill -0 "$pid" 2> /dev/null || return 0
+  # anything left: the process itself or, when it leads a process group (spawn = setsid), any member
+  left() { kill -0 "$pid" 2> /dev/null || kill -0 -- "-$pid" 2> /dev/null; }
+  sig_all() { kill "-$1" -- "-$pid" 2> /dev/null; kill "-$1" "$pid" 2> /dev/null; }
+  # one SIGINT to the process itself only: ros2 launch then stops its children in order (a SIGINT to
+  # the whole group lets the node exit first, and launch respawns it); it escalates on a second SIGINT
+  kill -INT "$pid" 2> /dev/null
+  for _ in $(seq 1 40); do left || return 0; sleep 0.2; done
+  sig_all TERM
+  for _ in $(seq 1 15); do left || return 0; sleep 0.2; done
+  sig_all KILL
+  return 0
+}
+
+json_get() {  # json_get <file> <python expression on d>
+  python3 - "$1" "$2" <<'EOF' 2> /dev/null
+import json, sys
+try:
+    d = json.load(open(sys.argv[1], encoding="utf-8"))
+    v = eval(sys.argv[2], {"d": d})
+    print("" if v is None else v)
+except Exception:
+    print("")
+EOF
+}
+
+print_banner() {  # the banner of the last device state / the warning file written by the node
+  local col=""
+  [ -t 1 ] && col="--color"
+  if [ -f "$LOGS/device.json" ] && [ "$(json_get "$LOGS/device.json" 'd.get("mode")')" != gpu ]; then
+    python3 -m metro_obstacle_detector.banner --state "$LOGS/device.json" $col 2> /dev/null
+  elif [ -f "$WARN_FILE" ]; then
+    sed -n '/^#/p' "$WARN_FILE"
+  fi
+}
+
+banner_due() {  # emergency mode now? (device state of the self-check, or a run-time switch written by the node)
+  [ -f "$WARN_FILE" ] && return 0
+  [ -f "$LOGS/device.json" ] && [ "$(json_get "$LOGS/device.json" 'd.get("mode")')" = cpu_emergency ]
+}
+
+# ------------------------------------------------------------------------------------------- start
+cmd_start() {
+  local rviz=1 console=1 topic=auto frame="$DEFAULT_FRAME"
+  while [ $# -gt 0 ]; do
+    case "$1" in
+      --no-rviz|--no-gui) rviz=0 ;;
+      --cpu) export METRO_DEVICE=cpu ;;
+      --topic) topic=${2:-auto}; shift ;;
+      --fixed-frame) frame=${2:-$DEFAULT_FRAME}; shift ;;
+      --no-console) console=0 ;;
+      -h|--help) sed -n '2,20p' "$0"; return 0 ;;
+      *) warn "unknown option $1 (ignored)" ;;
+    esac
+    shift
+  done
+  [ -t 0 ] && [ -t 1 ] || console=0
+  if alive detector; then
+    say "the detector is already running (metro stop to restart it with other options)"
+    [ $console = 1 ] && cmd_console
+    return 0
+  fi
+  # leftovers of a detector that died: stop the helpers it had (only processes recorded by metro)
+  local f
+  stop_one player; stop_one monitor
+  for f in "$RUN"/tf_*.pid; do [ -e "$f" ] && stop_one "$(basename "$f" .pid)"; done
+  rm -f "$RUN/detector.pid"
+  say "self-check (bags: metro bags; full report: metro doctor, $LOGS/doctor.json) ..."
+  # bags are not inspected here (several 20 GB bags would delay the start); they are indexed in the
+  # background right after the start (cache for metro bags / metro play)
+  python3 -m metro_obstacle_detector.doctor --quiet --no-bags --json "$LOGS/doctor.json" ${METRO_DEVICE:+--prefer $METRO_DEVICE} 2> /dev/null
+  python3 -m metro_obstacle_detector.doctor --summary-from "$LOGS/doctor.json" 2> /dev/null
+  local mode gl
+  mode=$(json_get "$LOGS/doctor.json" 'd.get("device_mode")')
+  gl=$(json_get "$LOGS/doctor.json" 'd.get("gl_mode")')
+  [ -n "$gl" ] || gl=none
+  if [ "$mode" != gpu ]; then print_banner; fi
+  if [ $rviz = 1 ] && [ "$gl" = none ]; then
+    warn "RViz is not started (no display / no OpenGL); results: metro status / metro console"
+    rviz=0
+  fi
+  case "$gl" in
+    nvidia) unset LIBGL_ALWAYS_SOFTWARE ;;
+    nvidia_prime) unset LIBGL_ALWAYS_SOFTWARE; export __NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia ;;
+    software) export LIBGL_ALWAYS_SOFTWARE=1 LP_NUM_THREADS=${LP_NUM_THREADS:-2} ;;   # llvmpipe: keep CPUs for the detector
+  esac
+  export QT_X11_NO_MITSHM=1
+  local rv=false; [ $rviz = 1 ] && rv=true
+  spawn detector "$LOGS/detector.log" ros2 launch metro_obstacle_detector detector.launch.py \
+    input_topic:="$topic" rviz:=$rv fixed_frame:="$frame" log_path:="$LOGS/detector.jsonl" \
+    rviz_geometry:="${RVIZ_GEOMETRY:-1500x1000+20+40}" device:="${METRO_DEVICE:-auto}" results_dir:="$RESULTS" \
+    team_contact:="'${METRO_TEAM_CONTACT:-Telegram: IRS-MIREA}'"   # YAML-quoted: "a: b" would become a dict
+  echo "$frame" > "$RUN/fixed_frame"
+  spawn monitor "$LOGS/status_monitor.log" python3 -m metro_obstacle_detector.status_monitor --no-color \
+    --tail-file "$LOGS/status_tail.txt" --tail-lines 20
+  alive bagindex || spawn bagindex "$LOGS/bag_index.log" nice -n 10 python3 -m metro_obstacle_detector.doctor --list-bags
+  # ready = the node has its detectors (log line "D3 on: ... warm-up N s" or "D3 off: ...", printed
+  # after the GPU warm-up) and publishes its first status; bags played earlier would be lost
+  local waited=0 limit=${METRO_READY_TIMEOUT_S:-180}
+  printf '%s' "${B}[metro]${N} waiting for the detector to be ready (models, GPU warm-up) "
+  while [ $waited -lt "$limit" ]; do
+    alive detector || break
+    grep -q -E 'D3 (on|off)' "$LOGS/detector.log" 2> /dev/null && grep -q ' frame ' "$LOGS/status_monitor.log" 2> /dev/null && break
+    sleep 1; waited=$((waited + 1)); [ $((waited % 5)) = 0 ] && printf '.'
+  done
+  echo " ${waited} s"
+  if ! alive detector; then
+    err "the detector did not start; last lines of $LOGS/detector.log:"
+    grep -v -E '^\s*(File |Traceback|\s)' "$LOGS/detector.log" | tail -n 5 >&2
+    return 0
+  fi
+  local d3
+  d3=$(grep -o -E 'D3 (on|off)[^"]*' "$LOGS/detector.log" 2> /dev/null | tail -n 1)
+  if [ -n "$d3" ]; then say "$d3"
+  else warn "no D3 line in $LOGS/detector.log after ${limit} s; continuing"; fi
+  say "${G}detector started${N} (mode: ${mode:-?}, RViz: $([ $rviz = 1 ] && echo "on, GL $gl" || echo off), input: $topic, fixed frame: $frame)"
+  say "next: play a bag in another terminal:  ./run.sh play <bag> [rate]   (on the host)"
+  say "      or here:                          metro play <bag> [rate]      (metro bags lists them)"
+  [ $console = 1 ] && cmd_console
+  return 0
+}
+
+# ------------------------------------------------------------------------------------------- console
+cmd_console() {
+  local log="$LOGS/status_monitor.log" last_banner=0 warn_mtime="" now m tailpid
+  touch "$log" 2> /dev/null
+  say "live status (Ctrl-C leaves the console; the detector keeps running; metro stop stops it)"
+  if banner_due; then print_banner; last_banner=$(date +%s); fi
+  [ -f "$WARN_FILE" ] && warn_mtime=$(stat -c %Y "$WARN_FILE" 2> /dev/null)
+  tail -n 3 -F "$log" 2> /dev/null &
+  tailpid=$!
+  trap 'kill $tailpid 2> /dev/null; echo; say "console closed; the detector keeps running (metro status, metro stop)"; trap - INT TERM; return 0' INT TERM
+  while kill -0 $tailpid 2> /dev/null; do
+    sleep 5
+    now=$(date +%s)
+    m=""; [ -f "$WARN_FILE" ] && m=$(stat -c %Y "$WARN_FILE" 2> /dev/null)
+    if [ -n "$m" ] && [ "$m" != "$warn_mtime" ]; then   # run-time switch to the CPU written by the node
+      warn_mtime=$m; print_banner; last_banner=$now
+    elif banner_due && [ $((now - last_banner)) -ge "${METRO_BANNER_REPEAT_S:-300}" ]; then
+      print_banner; last_banner=$now
+    fi
+    if ! alive detector && [ -f "$RUN/detector.pid" ]; then
+      err "the detector stopped (see $LOGS/detector.log); restart: metro stop && metro start"
+      rm -f "$RUN/detector.pid"
+    fi
+  done
+  trap - INT TERM
+}
+
+# ------------------------------------------------------------------------------------------- play
+cmd_play() {
+  local bag="" rate=1.0 topic="" keep=0 extra=()
+  while [ $# -gt 0 ]; do
+    case "$1" in
+      --topic) topic=$2; shift ;;
+      --keep-topic) keep=1 ;;
+      -h|--help) sed -n '2,20p' "$0"; return 0 ;;
+      *) if [ -z "$bag" ]; then bag=$1
+         elif [[ "$1" =~ ^[0-9]*\.?[0-9]+$ ]] && [ ${#extra[@]} -eq 0 ]; then rate=$1
+         else extra+=("$1"); fi ;;
+    esac
+    shift
+  done
+  if [ -z "$bag" ]; then err "usage: metro play <bag-dir|name> [rate]   (metro bags lists the bags)"; return 1; fi
+  local info
+  info=$(python3 -m metro_obstacle_detector.doctor --resolve-bag "$bag" 2> /dev/null | tail -n 1)
+  if [ "$(printf '%s' "$info" | python3 -c 'import json,sys; print(json.load(sys.stdin).get("ok"))' 2> /dev/null)" != True ]; then
+    err "$(printf '%s' "$info" | python3 -c 'import json,sys; print(json.load(sys.stdin).get("error"))' 2> /dev/null || echo "bag $bag cannot be read")"
+    return 1
+  fi
+  local path storage btopic frame clouds
+  local bname
+  path=$(printf '%s' "$info" | python3 -c 'import json,sys; print(json.load(sys.stdin)["path"])')
+  bname=$(printf '%s' "$info" | python3 -c 'import json,sys; d=json.load(sys.stdin); print(d.get("rel") or d.get("name") or "")')
+  local bdur
+  bdur=$(printf '%s' "$info" | python3 -c 'import json,sys; print(int(float(json.load(sys.stdin).get("duration_s") or 0)))' 2> /dev/null || echo 0)
+  storage=$(printf '%s' "$info" | python3 -c 'import json,sys; print(json.load(sys.stdin).get("storage") or "sqlite3")')
+  btopic=$(printf '%s' "$info" | python3 -c 'import json,sys; print(json.load(sys.stdin).get("cloud_topic") or "")')
+  frame=$(printf '%s' "$info" | python3 -c 'import json,sys; print(json.load(sys.stdin).get("frame_id") or "")')
+  clouds=$(printf '%s' "$info" | python3 -c 'import json,sys; print(" ".join(json.load(sys.stdin).get("cloud_topics") or []))')
+  if [ -n "$topic" ]; then
+    if ! [[ " $clouds " == *" $topic "* ]]; then err "topic $topic is not a PointCloud2 topic of the bag (topics: $clouds)"; return 1; fi
+    btopic=$topic
+  fi
+  # one player at a time: a new bag replaces the running one
+  if alive player; then say "stopping the previous playback"; stop_one player; fi
+  # RViz shows everything in one fixed frame: identity transform fixed frame -> frame of this bag
+  local ff
+  ff=$(cat "$RUN/fixed_frame" 2> /dev/null || echo "$DEFAULT_FRAME")
+  local tfn="tf_${frame//[^A-Za-z0-9_]/_}"
+  if [ -n "$frame" ] && [ "$frame" != "$ff" ] && ! alive "$tfn"; then
+    spawn "$tfn" "$LOGS/$tfn.log" /opt/ros/humble/lib/tf2_ros/static_transform_publisher \
+      --frame-id "$ff" --child-frame-id "$frame"
+  fi
+  # reliable / volatile / keep_last 10 for the cloud, whatever QoS the bag recorded (the detector
+  # subscribes reliable; a best-effort recording would otherwise not match)
+  local qos="$RUN/qos_play.yaml"
+  printf '%s:\n  history: keep_last\n  depth: 10\n  reliability: reliable\n  durability: volatile\n' "$btopic" > "$qos"
+  local args=(bag play "$path" -s "$storage" --topics "$btopic" -r "$rate" --read-ahead-queue-size 20
+              --qos-profile-overrides-path "$qos")
+  local out=$btopic
+  if [ $keep = 0 ] && [ "$btopic" != "$CANON_TOPIC" ]; then
+    args+=(--remap "$btopic:=$CANON_TOPIC"); out="$CANON_TOPIC (from $btopic)"
+  fi
+  if ! [ -t 0 ]; then
+    args+=(--disable-keyboard-controls)
+    warn "no TTY: keyboard controls are off (use: docker exec -it metro-lidar metro play ... / ./run.sh play ...)"
+  fi
+  args+=("${extra[@]}")
+  if ! alive detector; then warn "the detector is not running (metro start); playing anyway"; fi
+  say "playing $bname at rate $rate: $out, frame $frame ($storage)"
+  [ -t 0 ] && say "keys: SPACE pause/resume | UP/DOWN rate +-10 % | RIGHT next message (while paused) | Ctrl-C stop"
+  echo "$bname" > "$RUN/current_bag"
+  echo "$(date '+%F %T') play ${args[*]}" >> "$LOGS/play.log"
+  # the player runs in the foreground (keyboard); its pid is recorded so that another play / stop can end it
+  # (explicit <&0: a background job of a script would otherwise read /dev/null, i.e. no keyboard)
+  local t_start=$SECONDS
+  ros2 "${args[@]}" <&0 2> >(filter_errors "$LOGS/play.log" >&2) &
+  local pid=$!
+  echo $pid > "$RUN/player.pid"
+  local stopped=0
+  trap 'stopped=1; kill -INT $pid 2> /dev/null' INT
+  wait $pid; local rc=$?
+  while kill -0 $pid 2> /dev/null; do wait $pid; rc=$?; done
+  trap - INT
+  local replaced=0
+  if [ "$(cat "$RUN/player.pid" 2> /dev/null)" = "$pid" ]; then rm -f "$RUN/player.pid"; else replaced=1; fi
+  if [ $replaced = 1 ]; then say "playback of $bname ended: another bag was started (or metro stop)"
+  elif [ $stopped = 1 ]; then say "playback stopped (Ctrl-C)"
+  elif [ $rc = 0 ] && [ "$bdur" -gt 0 ] && python3 -c 'import sys; e, d, r = map(float, sys.argv[1:4]); sys.exit(0 if e + 2 < d / max(r, 1e-6) else 1)' \
+        "$((SECONDS - t_start))" "$bdur" "$rate" 2> /dev/null; then
+    say "playback stopped after $((SECONDS - t_start)) s (bag: ${bdur} s at rate $rate): $bname"   # signal from outside
+  elif [ $rc = 0 ]; then say "playback finished: $bname"
+  elif [ $rc = 130 ] || [ $rc = 2 ] || [ $rc = 143 ]; then say "playback stopped"
+  else warn "playback ended with code $rc (details: $LOGS/play.log)"; return 1; fi
+  return 0
+}
+
+# stderr filter: Python tracebacks become one line, everything goes to the log
+filter_errors() {
+  local log=$1 intb=0 line
+  while IFS= read -r line; do
+    printf '%s\n' "$line" >> "$log"
+    if [[ "$line" == Traceback* ]]; then intb=1; continue; fi
+    if [ $intb = 1 ]; then
+      [[ "$line" == " "* ]] && continue
+      intb=0; printf '%s\n' "[metro] playback error: $line (details: $log)"; continue
+    fi
+    printf '%s\n' "$line"
+  done
+}
+
+# ------------------------------------------------------------------------------------------- status / stop
+cmd_status() {
+  local n=12 follow=0
+  while [ $# -gt 0 ]; do case "$1" in -n) n=$2; shift ;; -f) follow=1 ;; esac; shift; done
+  local p
+  for p in detector monitor player; do
+    if alive $p; then printf '  %-9s %s\n' "$p" "${G}running${N} (pid $(cat "$RUN/$p.pid"))"; else printf '  %-9s %s\n' "$p" "stopped"; fi
+  done
+  [ -f "$RUN/current_bag" ] && printf '  %-9s %s\n' "last bag" "$(cat "$RUN/current_bag")"
+  if [ -f "$LOGS/device.json" ]; then
+    printf '  %-9s %s\n' "mode" "$(json_get "$LOGS/device.json" 'd.get("mode") + ((": " + d.get("device_name")) if d.get("device_name") else (": " + d.get("reason", "")))')"
+  fi
+  [ -f "$WARN_FILE" ] && printf '  %-9s %s\n' "warning" "${R}emergency CPU mode${N} - see $WARN_FILE (metro banner)"
+  if [ -f "$LOGS/status_tail.txt" ]; then
+    echo "  last status lines:"; tail -n "$n" "$LOGS/status_tail.txt" | sed 's/^/    /'
+  else
+    echo "  no status yet (detector not started, or no cloud received)"
+  fi
+  [ $follow = 1 ] && tail -n 0 -F "$LOGS/status_monitor.log"
+  return 0
+}
+
+cmd_stop() {
+  local f n
+  stop_one player
+  for f in "$RUN"/tf_*.pid; do [ -e "$f" ] || continue; n=$(basename "$f" .pid); stop_one "$n"; done
+  stop_one bagindex
+  stop_one monitor
+  stop_one detector
+  say "stopped (logs: $LOGS)"
+}
+
+# ------------------------------------------------------------------------------------------- main
+source_ros
+prepare_dirs
+cmd=${1:-help}; shift 2> /dev/null
+case "$cmd" in
+  start)   cmd_start "$@" ;;
+  play)    cmd_play "$@"; exit $? ;;   # an unplayable bag exits 1 (scripts can tell)
+  bags)    python3 -m metro_obstacle_detector.doctor --list-bags "$@" ;;
+  status)  cmd_status "$@" ;;
+  console) cmd_console ;;
+  doctor)  python3 -m metro_obstacle_detector.doctor "$@" ;;
+  banner)  print_banner ;;
+  stop)    cmd_stop ;;
+  help|-h|--help) sed -n '2,20p' "$0" ;;
+  *) err "unknown command '$cmd'"; sed -n '2,20p' "$0" ;;
+esac
+exit 0

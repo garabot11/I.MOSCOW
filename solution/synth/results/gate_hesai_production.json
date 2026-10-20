@@ -1,0 +1,105 @@
+{
+ "real_slots_mean": 145.8125,
+ "production_measured_slots_mean": 132.8125,
+ "production_labelled_slots_mean": 130.0,
+ "ratio_to_real": 0.9108444063437634,
+ "reflectivity": 0.3,
+ "return_model": {
+  "range_10pct_m": 200.0,
+  "steepness": 3.0,
+  "max_range_m": 209.0,
+  "min_range_m": 0.5,
+  "sigma_m": 0.02,
+  "quant_m": 0.004,
+  "detect_cos_exp": 0.45,
+  "dropout": 0.025,
+  "intensity_scale": 100.0,
+  "intensity_cos_exp": 0.15,
+  "intensity_log_sigma": 0.45,
+  "intensity_range_ref_m": 60.0,
+  "intensity_range_exp": 1.3,
+  "intensity_max": 255.0
+ },
+ "rows": [
+  {
+   "frame": 30,
+   "measured_slots": 141,
+   "labelled_object_slots": 130
+  },
+  {
+   "frame": 31,
+   "measured_slots": 131,
+   "labelled_object_slots": 132
+  },
+  {
+   "frame": 32,
+   "measured_slots": 127,
+   "labelled_object_slots": 128
+  },
+  {
+   "frame": 33,
+   "measured_slots": 136,
+   "labelled_object_slots": 128
+  },
+  {
+   "frame": 34,
+   "measured_slots": 134,
+   "labelled_object_slots": 130
+  },
+  {
+   "frame": 35,
+   "measured_slots": 130,
+   "labelled_object_slots": 130
+  },
+  {
+   "frame": 36,
+   "measured_slots": 125,
+   "labelled_object_slots": 126
+  },
+  {
+   "frame": 37,
+   "measured_slots": 133,
+   "labelled_object_slots": 132
+  },
+  {
+   "frame": 38,
+   "measured_slots": 131,
+   "labelled_object_slots": 132
+  },
+  {
+   "frame": 39,
+   "measured_slots": 129,
+   "labelled_object_slots": 128
+  },
+  {
+   "frame": 40,
+   "measured_slots": 132,
+   "labelled_object_slots": 130
+  },
+  {
+   "frame": 41,
+   "measured_slots": 135,
+   "labelled_object_slots": 130
+  },
+  {
+   "frame": 42,
+   "measured_slots": 143,
+   "labelled_object_slots": 132
+  },
+  {
+   "frame": 43,
+   "measured_slots": 129,
+   "labelled_object_slots": 130
+  },
+  {
+   "frame": 44,
+   "measured_slots": 127,
+   "labelled_object_slots": 128
+  },
+  {
+   "frame": 45,
+   "measured_slots": 142,
+   "labelled_object_slots": 134
+  }
+ ]
+}
